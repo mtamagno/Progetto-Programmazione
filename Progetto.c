@@ -2,52 +2,82 @@
 #include<stdlib.h>
 #include<string.h>
 
-void acquisizione(void){
+int main (void){
+acquisizione();
+}
 
-  int primo_termine*,secondo_termine*;
-  string prima_stringa*,seconda_stringa;
-  int acquisizione_finita = 0;
-  int dimensione = 1;
-  int controllo;
+int acquisizione(void){
 
-  primo_termine = (int *) calloc(primo_termine, 1);
+int  *primo_termine,
+ *secondo_termine;
 
-  printf("Premi 1 se vuoi immettere solo numeri, 2 per altro\n");
-  scanf("%d",&controllo);
+char  **prima_stringa,
+ 	  **seconda_stringa;
+int acquisizione_finita = 0;
+int dimensione = 0;
+int controllo;
+
+primo_termine = (int *) malloc(2);
+secondo_termine = (int *) malloc(2);
+prima_stringa = (char **) malloc(100);
+seconda_stringa = (char **) malloc(100);
+*prima_stringa = (char *) malloc(2);
+*seconda_stringa = (char *) malloc(2);
+
+printf("Premi 1 se vuoi immettere solo numeri, 2 per altro\n");
+scanf("%d",&controllo);
 
 
 /*Acquisizione Numerica*/
+if(controllo == 1){
+while(acquisizione_finita == 0){
+	dimensione++;
+ /*Acquisisco il primo termine della coppia*/
+ printf("Inserisci il primo termine della coppia \n");
+ primo_termine = (int *) realloc(primo_termine, (dimensione+1) * sizeof(int));
+ scanf("%d",&primo_termine[dimensione - 1]);
 
-  if(controllo == 1){
+ /*Acquisisco il secondo termine della coppia*/
+ printf("Inserisci il secondo termine della coppia \n");
+ secondo_termine = (int *) realloc(secondo_termine, (dimensione+1) * sizeof(int));
+ scanf("%d",&secondo_termine[dimensione - 1]);
+ 
 
-   while(acquisizione_finita == 0){
+ /*Chiedo all'utente se ci sono altre coppie*/
+ printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
+ scanf("%d",&acquisizione_finita);
+ }
+while(dimensione != 0){
 
-     /*Acquisisco il primo termine della coppia*/
-     printf("Inserisci il primo termine della coppia \n");
-     primo_termine = (int *) realloc(primo_termine, dimensione);
-     scanf("%d",&primo_termine[dimensione - 1]);
-
-     /*Acquisisco il secondo termine della coppia*/
-     printf("Inserisci il secondo termine della coppia \n");
-     secondo_termine = (int *) realloc(secondo_termine, dimensione);
-     scanf("%d",&primo_termine[dimensione - 1]);
-     dimensione++;
-
-     /*Chiedo all'utente se ci sono altre coppie*/
-     printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
-     scanf("%d",&acquisizione_finita);
+     printf("\n%d %d\n",primo_termine[dimensione - 1],secondo_termine[dimensione - 1]);
+     dimensione--;
 
    }
- }
+}
 /*Acquisizione con stringhe*/
+if(controllo == 2){
+while(acquisizione_finita == 0){
+	dimensione++;
+ /*Acquisisco il primo termine della coppia*/
+ printf("Inserisci il primo termine della coppia \n");
+ *prima_stringa = (char *) realloc(prima_stringa, (dimensione+1));
+ scanf("%s",&prima_stringa[dimensione - 1]);
 
-  if(controllo == 2){
-    while(acquisizione_finita == 0){
-      printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
-      scanf("%d",&acquisizione_finita);
-    }
+ /*Acquisisco il secondo termine della coppia*/
+ printf("Inserisci il secondo termine della coppia \n");
+ *seconda_stringa = (char *) realloc(seconda_stringa, (dimensione+1));
+	 scanf("%s",seconda_stringa[dimensione - 1]);
+ 
 
-  }
+ /*Chiedo all'utente se ci sono altre coppie*/
+ printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
+ scanf("%d",acquisizione_finita);
+ }
+while(dimensione != 0){
 
+     printf("\n%s %s\n",prima_stringa[dimensione - 1],seconda_stringa[dimensione - 1]);
+     dimensione--;
 
+   }
+}
 }
