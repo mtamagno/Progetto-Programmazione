@@ -6,6 +6,7 @@
 acquisizione();
 }
 */
+
 struct relBin{
 	int *primo_termine,
 		*secondo_termine;
@@ -14,7 +15,7 @@ struct relBin{
 		 **seconda_stringa;		
 };
 
-struct relBin acquisizione(void){
+struct relBin acquisizione(struct relBin acquisizione){
 
 struct relBin relazione;
 
@@ -89,6 +90,8 @@ while(dimensione != 0){
 
             }
     }
+    
+    return(acquisizione);
 }
 
 
