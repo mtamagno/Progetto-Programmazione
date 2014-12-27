@@ -61,6 +61,7 @@ while(dimensione != 0){
 
    }
 }
+
 /*Acquisizione con stringhe*/
 if(controllo == 2){
 while(acquisizione_finita == 0){
@@ -83,7 +84,7 @@ while(acquisizione_finita == 0){
  
  printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
- ]
+ 
  }
  //prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));
 // seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));
@@ -98,7 +99,7 @@ while(dimensione != 0){
     
     return(acquisizione);
 }
-
+}
 
 int ciao(int ciao){
 	printf("scrivi il numero");
