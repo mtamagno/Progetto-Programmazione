@@ -14,7 +14,7 @@ struct relBin{
 		 **seconda_stringa;		
 };
 
-int acquisizione(void){
+struct relBin acquisizione(void){
 
 struct relBin relazione;
 
