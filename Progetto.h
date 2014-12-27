@@ -28,10 +28,10 @@ relazione.secondo_termine = (int *) malloc(2);
 relazione.prima_stringa = (char **) malloc(100);
 relazione.seconda_stringa = (char **) malloc(100);
 
-
+ while(controllo != 1 || controllo != 2){
 printf("Premi 1 se vuoi immettere solo numeri, 2 per altro\n");
 scanf("%d",&controllo);
-
+}
 
 /*Acquisizione Numerica*/
 if(controllo == 1){
@@ -49,9 +49,11 @@ while(acquisizione_finita == 0){
 
 
  /*Chiedo all'utente se ci sono altre coppie*/
+ while(acquisizione_finita != 0 || acquisizione_finita != 1){
  printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
  }
+}
 while(dimensione != 0){
 
      printf("\n%d %d\n",relazione.primo_termine[dimensione - 1],relazione.secondo_termine[dimensione - 1]);
@@ -77,8 +79,11 @@ while(acquisizione_finita == 0){
 
 
  /*Chiedo all'utente se ci sono altre coppie*/
+ while(acquisizione_finita != 0 || acquisizione_finita != 1){
+ 
  printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
+ ]
  }
  //prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));
 // seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));
