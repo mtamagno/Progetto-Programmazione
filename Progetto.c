@@ -2,10 +2,10 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main (void){
+/*int main (void){
 acquisizione();
 }
-
+*/
 int acquisizione(void){
 
 int  *primo_termine,
@@ -59,14 +59,12 @@ while(acquisizione_finita == 0){
 	dimensione++;
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
- //*prima_stringa [dimensione - 1] = (char *) realloc(prima_stringa, (dimensione+1));
  prima_stringa[dimensione - 1] = (char *) malloc(50);
  scanf("%s",prima_stringa[dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
  printf("Inserisci il secondo termine della coppia \n");
 
- //*seconda_stringa [dimensione - 1] = (char *) realloc(seconda_stringa, (dimensione+1));
 
  seconda_stringa[dimensione - 1] = (char *) malloc(50);
  scanf("%s",seconda_stringa[dimensione - 1]);
