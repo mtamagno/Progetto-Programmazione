@@ -5,5 +5,5 @@ int main(void){
 	struct	relBin ciao;
 	
 	acquisizione(ciao);
-	
+	return(0);	
 }

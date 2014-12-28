@@ -71,14 +71,14 @@ while(acquisizione_finita == 0){
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
  relazione.prima_stringa[dimensione - 1] = (char *) malloc(50);
- scanf("%s",relazione.prima_stringa[dimensione - 1]);
+ scanf(" %[^\n]s",relazione.prima_stringa[dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
  printf("Inserisci il secondo termine della coppia \n");
 
 
  relazione.seconda_stringa[dimensione - 1] = (char *) malloc(50);
- scanf("%s",relazione.seconda_stringa[dimensione - 1]);
+ scanf(" %[^\n]s",relazione.seconda_stringa[dimensione - 1]);
 
 
  /*Chiedo all'utente se ci sono altre coppie*/
