@@ -12,17 +12,16 @@ struct relBin{
 		*secondo_termine;
 		
 	char **prima_stringa,
-		 **seconda_stringa;		
+		 **seconda_stringa;
 	
-	int controllo;
+	int controllo,
+		dimensione;
 };
 
-struct relBin acquisizione(struct relBin acquisizione){
-
-struct relBin relazione;
+struct relBin acquisizione(struct relBin relazione){
 
 int acquisizione_finita = 0;
-int dimensione = 0;
+relazione.dimensione = 0;
 
 relazione.primo_termine = (int *) malloc(2);
 relazione.secondo_termine = (int *) malloc(2);
@@ -39,49 +38,50 @@ scanf("%d",&relazione.controllo);
 /*Acquisizione Numerica*/
 if(relazione.controllo == 1){
 while(acquisizione_finita == 0){
-	dimensione++;
+	relazione.dimensione++;
 	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
- relazione.primo_termine = (int *) realloc(relazione.primo_termine, (dimensione+1) * sizeof(int));
- scanf("%d",&relazione.primo_termine[dimensione - 1]);
-
+ relazione.primo_termine = (int *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(int));
+ /*Check del primo termine della coppia*/
+	while((scanf("%d",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
+	fflush(stdin);
+	printf("\nC'e' un errore, riinserire il primo termine\n");
+	}
+ 
  /*Acquisisco il secondo termine della coppia*/
  printf("Inserisci il secondo termine della coppia \n");
- relazione.secondo_termine = (int *) realloc(relazione.secondo_termine, (dimensione+1) * sizeof(int));
- scanf("%d",&relazione.secondo_termine[dimensione - 1]);
-
+ relazione.secondo_termine = (int *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(int));
+/*Check del secondo termine della coppia*/
+	while((scanf("%d",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
+	fflush(stdin);
+	printf("\nC'e' un errore, riinserire il secondo termine\n");
+	}
 
  /*Chiedo all'utente se ci sono altre coppie*/
  while(acquisizione_finita < 0 || acquisizione_finita > 1){
  printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
- }
-}
-while(dimensione != 0){
-
-     printf("\n%d %d\n",relazione.primo_termine[dimensione - 1],relazione.secondo_termine[dimensione - 1]);
-     dimensione--;
-
-   }
+ 		}
+	}
 }
 
 /*Acquisizione con stringhe*/
 if(relazione.controllo == 2){
 while(acquisizione_finita == 0){
-	dimensione++;
+	relazione.dimensione++;
 	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
- relazione.prima_stringa[dimensione - 1] = (char *) malloc(50);
- scanf(" %[^\n]s",relazione.prima_stringa[dimensione - 1]);
+ relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+ scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
  printf("Inserisci il secondo termine della coppia \n");
 
 
- relazione.seconda_stringa[dimensione - 1] = (char *) malloc(50);
- scanf(" %[^\n]s",relazione.seconda_stringa[dimensione - 1]);
+ relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+ scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
 
 
  /*Chiedo all'utente se ci sono altre coppie*/
@@ -90,25 +90,31 @@ while(acquisizione_finita == 0){
  printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
  
+ 			}
+		}
+	}
+	
+return relazione;
+}
+
+void stampa(struct relBin stampa){
+ int i = 0;
+ if(stampa.controllo == 1){
+  while(i < stampa.dimensione){
+
+     printf("{(%d),(%d)}\n",stampa.primo_termine[i],stampa.secondo_termine[i]);
+     i++;
+
+   }
  }
- /*prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));*/
-/* seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));*/
+ 
+ 
+ if(stampa.controllo == 2){
+  while(i < stampa.dimensione){
 
+     printf("{(%s),(%s)}\n",stampa.primo_termine[i],stampa.secondo_termine[i]);
+     i++;
 
-    }
-    
-    while(dimensione != 0){
-
-     printf("\n%s           %s\n",relazione.prima_stringa[dimensione - 1],relazione.seconda_stringa[dimensione - 1]);
-     dimensione--;
-
-            }
-    return(acquisizione);
-}
-}
-
-int ciao(int ciao){
-	printf("scrivi il numero");
-	scanf("%d",&ciao);
-	return 0;
+   }
+ }
 }

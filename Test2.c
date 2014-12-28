@@ -3,7 +3,7 @@
 
 int main(void){
 	struct	relBin ciao;
-	
-	acquisizione(ciao);
-	return(0);	
+	ciao = acquisizione(ciao);
+	stampa(ciao);
+	return(0);
 }
