@@ -37,6 +37,7 @@ scanf("%d",&controllo);
 if(controllo == 1){
 while(acquisizione_finita == 0){
 	dimensione++;
+	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
  relazione.primo_termine = (int *) realloc(relazione.primo_termine, (dimensione+1) * sizeof(int));
@@ -66,6 +67,7 @@ while(dimensione != 0){
 if(controllo == 2){
 while(acquisizione_finita == 0){
 	dimensione++;
+	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
  printf("Inserisci il primo termine della coppia \n");
  relazione.prima_stringa[dimensione - 1] = (char *) malloc(50);
