@@ -91,14 +91,15 @@ while(acquisizione_finita == 0){
  //prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));
 // seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));
 
-while(dimensione != 0){
+
+    }
+    
+    while(dimensione != 0){
 
      printf("\n%s           %s\n",relazione.prima_stringa[dimensione - 1],relazione.seconda_stringa[dimensione - 1]);
      dimensione--;
 
             }
-    }
-    
     return(acquisizione);
 }
 }
