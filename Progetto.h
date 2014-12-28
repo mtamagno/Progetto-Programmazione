@@ -13,6 +13,8 @@ struct relBin{
 		
 	char **prima_stringa,
 		 **seconda_stringa;		
+	
+	int controllo;
 };
 
 struct relBin acquisizione(struct relBin acquisizione){
@@ -21,20 +23,21 @@ struct relBin relazione;
 
 int acquisizione_finita = 0;
 int dimensione = 0;
-int controllo;
 
 relazione.primo_termine = (int *) malloc(2);
 relazione.secondo_termine = (int *) malloc(2);
 relazione.prima_stringa = (char **) malloc(100);
 relazione.seconda_stringa = (char **) malloc(100);
 
- while((controllo < 1) || (controllo > 2)){
+ while((relazione.controllo < 1) || (relazione.controllo > 2)){
+fflush(stdin);
 printf("Premi 1 se vuoi immettere solo numeri, 2 per altro\n");
-scanf("%d",&controllo);
-}
+scanf("%d",&relazione.controllo);
 
+}
+/**/
 /*Acquisizione Numerica*/
-if(controllo == 1){
+if(relazione.controllo == 1){
 while(acquisizione_finita == 0){
 	dimensione++;
 	acquisizione_finita = 2;
@@ -64,7 +67,7 @@ while(dimensione != 0){
 }
 
 /*Acquisizione con stringhe*/
-if(controllo == 2){
+if(relazione.controllo == 2){
 while(acquisizione_finita == 0){
 	dimensione++;
 	acquisizione_finita = 2;
@@ -88,8 +91,8 @@ while(acquisizione_finita == 0){
  scanf("%d",&acquisizione_finita);
  
  }
- //prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));
-// seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));
+ /*prima_stringa = realloc (prima_stringa , (dimensione+1)*sizeof(*prima_stringa));*/
+/* seconda_stringa = realloc (seconda_stringa, (dimensione+1)*sizeof(*seconda_stringa));*/
 
 
     }
