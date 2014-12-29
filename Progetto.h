@@ -199,7 +199,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				k++;
 			
 			else{
-				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
 				k=verifica.dimensione;
 			}	
 		}
