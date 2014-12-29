@@ -99,12 +99,14 @@ return relazione;
 
 void stampa(struct relBin stampa){
  int i = 0;
+ printf("{");
  if(stampa.controllo == 1){
   while(i < stampa.dimensione){
 
-     printf("{(%d),(%d)}\n",stampa.primo_termine[i],stampa.secondo_termine[i]);
-     i++;
-
+     printf("(%d,%d)",stampa.primo_termine[i],stampa.secondo_termine[i]);
+ 	 if(i+1 != stampa.dimensione)
+     printf(";");
+	 i++;
    }
  }
  
@@ -112,9 +114,12 @@ void stampa(struct relBin stampa){
  if(stampa.controllo == 2){
   while(i < stampa.dimensione){
 
-     printf("{(%s),(%s)}\n",stampa.primo_termine[i],stampa.secondo_termine[i]);
-     i++;
+     printf("(%s,%s)",stampa.prima_stringa[i],stampa.seconda_stringa[i]);
+     if(i+1 != stampa.dimensione)
+     printf(";");
+	 i++;
 
    }
  }
+ printf("}");
 }
