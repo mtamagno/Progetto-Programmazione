@@ -2,10 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-/*int main (void){
-acquisizione();
-}
-*/
+/********************STRUTTURA relBin**************************/
 
 struct relBin{
 	int *primo_termine,
@@ -17,6 +14,8 @@ struct relBin{
 	int controllo,
 		dimensione;
 };
+
+/*******************Funzione di acquisizione********************/
 
 struct relBin acquisizione(struct relBin relazione){
 
@@ -97,6 +96,8 @@ while(acquisizione_finita == 0){
 return relazione;
 }
 
+/******************************FUNZIONE DI STAMPA********************************/
+
 void stampa(struct relBin stampa){
  int i = 0;
  printf("{");
@@ -118,8 +119,61 @@ void stampa(struct relBin stampa){
      if(i+1 != stampa.dimensione)
      printf(";");
 	 i++;
-
-   }
- }
+	
+		}
+ 	}
  printf("}");
+}
+
+/******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
+void verifica_rel_ordine (struct relBin verifica){
+int i,
+	j,
+	riscontro;
+	
+i=0;
+j=0;
+riscontro=0;
+	
+/*Verifica riflessività*/
+/*Definizione: una relazione per la quale esiste almeno un elemento che non è in relazione con sé stesso non soddisfa la definizione di riflessività*/
+while(i < verifica.dimensione){
+	if(verifica.controllo == 1){
+		riscontro=0;
+		if(verifica.primo_termine[i] == verifica.secondo_termine[i])
+			riscontro++;
+		if(riscontro != 0)
+			i++;
+		/**/
+		else{
+			j=0;
+			while(j < verifica.dimensione){
+				if(j == i)
+				j++;
+				else{
+					if(verifica.primo_termine[i] == verifica.primo_termine[j])
+						if(verifica.primo_termine[j] == verifica.secondo_termine[j])
+							riscontro++;
+						
+					j++;
+				}
+			}
+			
+			if(riscontro != 0)
+				i++;
+			
+			else{
+				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				i=verifica.dimensione;
+			}
+		}
+	
+	}
+	
+	if(verifica.controllo == 2){
+		
+	}
+	
+}
+
 }
