@@ -126,27 +126,40 @@ void stampa(struct relBin stampa){
 }
 
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
+
 void verifica_rel_ordine (struct relBin verifica){
 int i,
 	j,
-	riscontro;
-	
-i=0;
-j=0;
-riscontro=0;
-	
+	k,
+	riscontro,
+	secondo_riscontro;
+i = 0;
+j = 0;
+k = 0;
+riscontro = 0;
+secondo_riscontro = 0;
 /*Verifica riflessività*/
 /*Definizione: una relazione per la quale esiste almeno un elemento che non è in relazione con sé stesso non soddisfa la definizione di riflessività*/
-while(i < verifica.dimensione){
+
+while((i < verifica.dimensione) && (k < verifica.dimensione)){
 	if(verifica.controllo == 1){
-		riscontro=0;
+		riscontro = 0;
+		secondo_riscontro = 0;
 		if(verifica.primo_termine[i] == verifica.secondo_termine[i])
 			riscontro++;
-		if(riscontro != 0)
+			secondo_riscontro++;
+		if(riscontro != 0){
 			i++;
+			k++;
+		}
 		/**/
 		else{
 			j=0;
+			riscontro = 0;
+			secondo_riscontro = 0;
+				
+/***************** Controllo la riflessività per gli elementi del primo insieme ******************************/		
+			
 			while(j < verifica.dimensione){
 				if(j == i)
 				j++;
@@ -159,6 +172,21 @@ while(i < verifica.dimensione){
 				}
 			}
 			
+			j = 0;
+			
+/***************** Controllo la riflessività per gli elementi del secondo insieme ******************************/				
+			
+			while(j < verifica.dimensione){
+				if(j == k)
+				j++;
+				else{
+					if(verifica.secondo_termine[k] == verifica.secondo_termine[j])
+						if(verifica.primo_termine[j] == verifica.secondo_termine[j])
+							secondo_riscontro++;
+						
+					j++;
+				}
+			}
 			if(riscontro != 0)
 				i++;
 			
@@ -166,6 +194,14 @@ while(i < verifica.dimensione){
 				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
 				i=verifica.dimensione;
 			}
+			
+			if(secondo_riscontro != 0)
+				k++;
+			
+			else{
+				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				k=verifica.dimensione;
+			}	
 		}
 	
 	}
