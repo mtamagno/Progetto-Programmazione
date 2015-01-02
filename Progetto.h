@@ -163,6 +163,9 @@ else
 	printf(" Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà");
 }
 
+
+/***********FUNZIONE PER CONTROLLARE LA RIFLESSIVITà**********/
+
 int check_riflessivita (struct relBin verifica){
 
 int i,
@@ -333,7 +336,9 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 return(riflessivita);
 }
 
-/* VERIFICA SIMMETRIA */
+
+/***********FUNZIONE PER CONTROLLARE LA SIMMETRIA**********/
+
 
 int check_simmetria(struct relBin verifica){
 int i,
@@ -406,7 +411,9 @@ if(verifica.controllo == 2){
 }
 return(simmetria);
 }
-/*VERIFICA DELLA TRANSITIVITà*/
+
+/*FUNZIONE PER CONTROLLARE LA TRANSITIVITà*/
+
 
 int check_transitivita(struct relBin verifica){
 int i,
