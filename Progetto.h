@@ -29,7 +29,7 @@ relazione.seconda_stringa = (char **) malloc(100);
 
  while((relazione.controllo < 1) || (relazione.controllo > 2)){
 fflush(stdin);
-printf("Premi 1 se vuoi immettere solo numeri, 2 per altro\n");
+printf("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
 scanf("%d",&relazione.controllo);
 
 }
@@ -40,26 +40,26 @@ while(acquisizione_finita == 0){
 	relazione.dimensione++;
 	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
- printf("Inserisci il primo termine della coppia \n");
+ printf("\n Inserisci il primo termine della coppia \n ");
  relazione.primo_termine = (int *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(int));
  /*Check del primo termine della coppia*/
 	while((scanf("%d",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
 	fflush(stdin);
-	printf("\nC'e' un errore, riinserire il primo termine\n");
+	printf("\n C'e' un errore, riinserire il primo termine\n");
 	}
  
  /*Acquisisco il secondo termine della coppia*/
- printf("Inserisci il secondo termine della coppia \n");
+ printf("\n Inserisci il secondo termine della coppia \n ");
  relazione.secondo_termine = (int *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(int));
 /*Check del secondo termine della coppia*/
 	while((scanf("%d",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
 	fflush(stdin);
-	printf("\nC'e' un errore, riinserire il secondo termine\n");
+	printf("\n C'e' un errore, riinserire il secondo termine\n");
 	}
 
  /*Chiedo all'utente se ci sono altre coppie*/
  while(acquisizione_finita < 0 || acquisizione_finita > 1){
- printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
+ printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
  scanf("%d",&acquisizione_finita);
  		}
 	}
@@ -71,12 +71,12 @@ while(acquisizione_finita == 0){
 	relazione.dimensione++;
 	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
- printf("Inserisci il primo termine della coppia \n");
+ printf(" Inserisci il primo termine della coppia \n ");
  relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
  scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
- printf("Inserisci il secondo termine della coppia \n");
+ printf(" Inserisci il secondo termine della coppia \n ");
 
 
  relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
@@ -86,13 +86,13 @@ while(acquisizione_finita == 0){
  /*Chiedo all'utente se ci sono altre coppie*/
  while(acquisizione_finita < 0 || acquisizione_finita > 1){
  
- printf("vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
+ printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
  scanf("%d",&acquisizione_finita);
  
  			}
 		}
 	}
-	
+printf("\n\n   ... Acquisizione Terminata ...\n\n");	
 return relazione;
 }
 
@@ -100,7 +100,8 @@ return relazione;
 
 void stampa(struct relBin stampa){
  int i = 0;
- printf("{");
+ printf("\n La relazione binaria e':");
+ printf("\n\n  {");
  if(stampa.controllo == 1){
   while(i < stampa.dimensione){
 
@@ -122,45 +123,32 @@ void stampa(struct relBin stampa){
 	
 		}
  	}
- printf("}");
+ printf("}\n");
+printf("\n\n   ... Stampa Terminata ...\n\n");	
 }
 
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
 
 void ordine_parziale(struct relBin verifica){
+
 	int riflessivita,
 		transitivita,
 		simmetria;
 		
+		/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
+	printf("\n\n La relazione:\n\n");
+
 	riflessivita = check_riflessivita(verifica);
 	transitivita = check_transitivita(verifica);
 	simmetria = check_simmetria(verifica);
-	
-	/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
-printf("\n\n La relazione:\n\n");
 
-if(riflessivita == 1)
-	printf("   e' riflessiva\n");
-else
-	printf("   non e' riflessiva\n");
-	
+	if(transitivita == 1 && simmetria == 0 && riflessivita == 1)
+		printf("\n Quindi e' una relazione d'ordine parziale\n\n");
 
-if(simmetria == 1)
-	printf("   e' simmetrica\n");
-else
-	printf("   non e' simmetrica\n");
+	else
+		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà\n");
 
-
-if(transitivita == 1)
-	printf("   e' transitiva\n\n");
-else
-	printf("   non è transitiva\n\n");
-
-if(transitivita == 1 && simmetria == 0 && riflessivita == 1)
-	printf(" Quindi e' una relazione d'ordine parziale");
-
-else
-	printf(" Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà");
+	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n");	
 }
 
 
@@ -333,6 +321,11 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 	}
 	
 }
+if(riflessivita == 1)
+	printf("   e' riflessiva\n");
+else
+	printf("   non e' riflessiva\n");
+	
 return(riflessivita);
 }
 
@@ -409,6 +402,12 @@ if(verifica.controllo == 2){
 	}	
 	
 }
+
+if(simmetria == 1)
+	printf("   e' simmetrica\n");
+else
+	printf("   non e' simmetrica\n");
+
 return(simmetria);
 }
 
@@ -519,7 +518,10 @@ if(verifica.controllo == 2){
 
 i++;
 }
-
+if(transitivita == 1)
+	printf("   e' transitiva\n");
+else
+	printf("   non è transitiva\n");
 return(transitivita);
 
 }
