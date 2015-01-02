@@ -133,7 +133,15 @@ int i,
 	j,
 	k,
 	riscontro,
-	secondo_riscontro;
+	secondo_riscontro,
+	riflessivita,
+	transitivita,
+	simmetria;
+
+riflessivita = 1;
+transitivita = 1;
+simmetria = 1;	
+
 i = 0;
 j = 0;
 k = 0;
@@ -198,6 +206,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 			else{
 				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
 				i=verifica.dimensione;
+				riflessivita = 0;
 			}
 			
 			if(secondo_riscontro != 0)
@@ -206,6 +215,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 			else{
 				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
 				k=verifica.dimensione;
+				riflessivita = 0;
 			}	
 		}
 	
@@ -264,6 +274,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 			else{
 				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
 				i=verifica.dimensione;
+				riflessivita = 0;
 			}
 			
 			if(secondo_riscontro != 0)
@@ -272,6 +283,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 			else{
 				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
 				k=verifica.dimensione;
+				riflessivita = 0;
 			}	
 		}
 		
@@ -306,6 +318,7 @@ if(verifica.controllo == 1){
 			printf("la simmetria non è stata trovata");
 			j = verifica.dimensione;
 			i = verifica.dimensione;
+			simmetria = 0;
 			}
 			riscontro = 0;
 		i++;
@@ -331,6 +344,7 @@ if(verifica.controllo == 2){
 			printf("la simmetria non è stata trovata");
 			j = verifica.dimensione;
 			i = verifica.dimensione;
+			simmetria = 0;
 			}
 		riscontro = 0;	
 		i++;
@@ -381,6 +395,7 @@ if(verifica.controllo == 1){
 					k = verifica.dimensione;
 					j = verifica.dimensione;
 					i = verifica.dimensione;
+					transitivita = 0;
 					}
 				riscontro = 0;
 			}
@@ -424,6 +439,7 @@ if(verifica.controllo == 2){
 					k = verifica.dimensione;
 					j = verifica.dimensione;
 					i = verifica.dimensione;
+					transitivita = 0;
 					}
 				riscontro = 0;
 			}
@@ -434,7 +450,25 @@ if(verifica.controllo == 2){
 
 i++;
 }
+/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
+printf("\n La relazione:\n");
 
+if(riflessivita == 1)
+	printf(" e' riflessiva\n");
+else
+	printf(" non e' riflessiva\n");
+	
+
+if(simmetria == 1)
+	printf(" e' simmetrica\n");
+else
+	printf(" non e' simmetrica\n");
+
+
+if(transitivita == 1)
+	printf(" e' transitiva\n");
+else
+	printf("non è transitiva\n");
 
 }
 
