@@ -127,7 +127,7 @@ void stampa(struct relBin stampa){
 
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
 
-void verifica_rel_ordine (struct relBin verifica){
+void verifica_rel_ordine_parziale (struct relBin verifica){
 
 int i,
 	j,
@@ -436,4 +436,12 @@ i++;
 }
 
 
+}
+
+
+void verifica_rel_ordine_totale (struct relBin verifica){
+	
+	verifica_rel_ordine_parziale (verifica);
+	/*DICOTOMIA*/
+	
 }
