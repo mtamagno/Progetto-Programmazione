@@ -6,6 +6,7 @@ int main(void){
 	ciao = acquisizione(ciao);
 	stampa(ciao);
 	printf("\n %d \n \n",ciao.controllo);
-	verifica_rel_ordine(ciao);
+	verifica_rel_ordine_parziale(ciao);
+	verifica_rel_ordine_totale(ciao);
 	return(0);
 }
