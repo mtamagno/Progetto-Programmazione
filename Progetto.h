@@ -139,9 +139,9 @@ void ordine_parziale(struct relBin verifica){
 	printf("\n\n La relazione:\n\n");
 
 	riflessivita = check_riflessivita(verifica);
-	transitivita = check_transitivita(verifica);
 	simmetria = check_simmetria(verifica);
-
+	transitivita = check_transitivita(verifica);
+	
 	if(transitivita == 1 && simmetria == 0 && riflessivita == 1)
 		printf("\n Quindi e' una relazione d'ordine parziale\n\n");
 
@@ -422,7 +422,7 @@ int i,
 	secondo_riscontro,
 	transitivita;
 
-transitivita = 1;
+transitivita = 0;
 
 i = 0;
 j = 0;
@@ -433,45 +433,28 @@ secondo_riscontro = 0;
 /*VERIFICA TRANSITIVITà PER NUMERI*/
 
 if(verifica.controllo == 1){
-
-	while( i < verifica.dimensione){
-		
-		j = 0;
-		
-		while( j < verifica.dimensione){
-		
-		k = 0;
-		
-		/*CONTROLLO SE ESISTE UN (A , B) (B , C) (A , C)*/
-			/*CONTROLLO SE C'è UNA B NEL PRIMO TERMINE*/
-			
-			if(verifica.primo_termine[j] == verifica.secondo_termine[i]){
-		
-		
-				while( k < verifica.dimensione){
-				
-				/*CONTROLLO SE ESISTE (A , C) PER VERIFICARE LA TRANSITIVITà*/
-				
-					if(verifica.primo_termine[i] == verifica.primo_termine[k])
-						if(verifica.secondo_termine[k] == verifica.secondo_termine[j])
-						riscontro++;
-		
-					k++;
-				}
-						
-				if(riscontro == 0){
-					/*printf("la transitività non è stata trovata");*/
-					k = verifica.dimensione;
-					j = verifica.dimensione;
-					i = verifica.dimensione;
-					transitivita = 0;
-					}
-				riscontro = 0;
-			}
+while(i < verifica.dimensione){
+	j=0;
+	while(j < verifica.dimensione){
+		if(i==j)
 		j++;
-		}	
-	i++;
+		else{
+			if(verifica.secondo_termine[i] == verifica.primo_termine[j])
+				while(k < verifica.dimensione){
+					if(k==i)
+					k++;
+					else{
+						if(verifica.primo_termine[i] == verifica.primo_termine[k])
+		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j])
+		 						transitivita=1;
+		 				k++;
+		 			}
+		 		}
+		 	j++;
+		}
 	}
+	i++;
+}
 
 }
 
