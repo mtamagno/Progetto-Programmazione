@@ -428,36 +428,56 @@ i = 0;
 j = 0;
 k = 0;
 riscontro = 0;
+check=verifica.dimensione;
 secondo_riscontro = 0;
 
 /*VERIFICA TRANSITIVITà PER NUMERI*/
 
 if(verifica.controllo == 1){
+	while(i < verifica.dimensione)
+		j=0;
+		while(j < verifica.dimensione)
+			{
+			if(j==i)
+				j++;
+			if(verifica.primo_termine[i]==verifica.primo_termine[j])
+				if(verifica.secondo_termine[i]==verifica.primo_termine[j])
+					check--;
+				j++;
+			}
+		i++;
+	}
 while(i < verifica.dimensione){
 	j=0;
 	while(j < verifica.dimensione){
-		if(i==j)
-		j++;
-		else{
+		/*if(i==j)
+			j++;*/
+		/*else{*/
 			if(verifica.secondo_termine[i] == verifica.primo_termine[j])
 				while(k < verifica.dimensione){
-					if(k==i)
-					k++;
-					else{
+					/*if(k==i)
+						k++;*/
+					/*else{*/
 						if(verifica.primo_termine[i] == verifica.primo_termine[k])
-		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j])
-		 						transitivita=1;
+		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
+		 						riscontro++;
+		 					}
 		 				k++;
-		 			}
+		 			/*}*/
 		 		}
 		 	j++;
-		}
+		/*}*/
 	}
-	i++;
+ 		if(riscontro == (check/3)){
+ 			transitivita = 1;
+ 			i++;
+ 			}
+ 		else{
+	 	transitivita=0;
+ 		 i=verifica.dimensione;	
+	 	}
+	}
 }
-
-}
-
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
 if(verifica.controllo == 2){
