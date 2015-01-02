@@ -298,16 +298,16 @@ if(verifica.controllo == 1){
 			if(verifica.primo_termine[i] == verifica.secondo_termine[j])
 				if(verifica.primo_termine[j] == verifica.secondo_termine[i])
 					riscontro++;
-			
-			if(riscontro == 0){
-				printf("la simmetria non è stata trovata");
-				j = verifica.dimensione;
-				i = verifica.dimensione;
-			}
-			riscontro = 0;	
+				
 			j++;
 		}
 		
+		if(riscontro == 0){
+			printf("la simmetria non è stata trovata");
+			j = verifica.dimensione;
+			i = verifica.dimensione;
+			}
+			riscontro = 0;
 		i++;
 	}	
 	
@@ -324,15 +324,15 @@ if(verifica.controllo == 2){
 				if(verifica.prima_stringa[j] == verifica.seconda_stringa[i])
 					riscontro++;
 			
-			if(riscontro == 0){
-				printf("la simmetria non è stata trovata");
-				j = verifica.dimensione;
-				i = verifica.dimensione;
-			}
-			riscontro = 0;	
 			j++;
 		}
 		
+		if(riscontro == 0){
+			printf("la simmetria non è stata trovata");
+			j = verifica.dimensione;
+			i = verifica.dimensione;
+			}
+		riscontro = 0;	
 		i++;
 	}	
 	
@@ -373,15 +373,16 @@ if(verifica.controllo == 1){
 						if(verifica.secondo_termine[k] == verifica.secondo_termine[j])
 						riscontro++;
 		
-					if(riscontro == 0){
-						printf("la transitività non è stata trovata");
-						k = verifica.dimensione;
-						j = verifica.dimensione;
-						i = verifica.dimensione;
-					}
 					k++;
-				}		
-			
+				}
+						
+				if(riscontro == 0){
+					printf("la transitività non è stata trovata");
+					k = verifica.dimensione;
+					j = verifica.dimensione;
+					i = verifica.dimensione;
+					}
+				riscontro = 0;
 			}
 		j++;
 		}	
@@ -416,15 +417,15 @@ if(verifica.controllo == 2){
 						if(verifica.seconda_stringa[k] == verifica.seconda_stringa[j])
 						riscontro++;
 		
-					if(riscontro == 0){
-						printf("la transitività non è stata trovata");
-						k = verifica.dimensione;
-						j = verifica.dimensione;
-						i = verifica.dimensione;
-					}
 					k++;
 				}		
-			
+				if(riscontro == 0){
+					printf("la transitività non è stata trovata");
+					k = verifica.dimensione;
+					j = verifica.dimensione;
+					i = verifica.dimensione;
+					}
+				riscontro = 0;
 			}
 		j++;
 		}	
