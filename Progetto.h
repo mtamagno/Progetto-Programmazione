@@ -128,6 +128,7 @@ void stampa(struct relBin stampa){
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
 
 void verifica_rel_ordine (struct relBin verifica){
+
 int i,
 	j,
 	k,
@@ -139,9 +140,13 @@ k = 0;
 riscontro = 0;
 secondo_riscontro = 0;
 /*Verifica riflessività*/
+
 /*Definizione: una relazione per la quale esiste almeno un elemento che non è in relazione con sé stesso non soddisfa la definizione di riflessività*/
 
 while((i < verifica.dimensione) && (k < verifica.dimensione)){
+
+/*Verifica riflessività per numeri*/
+
 	if(verifica.controllo == 1){
 		riscontro = 0;
 		secondo_riscontro = 0;
@@ -206,10 +211,228 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 	
 	}
 	
+	/* VERIFICA RIFLESSIVITà PER STRINGHE */
+	
 	if(verifica.controllo == 2){
+			riscontro = 0;
+		secondo_riscontro = 0;
+		if(verifica.prima_stringa[i] == verifica.seconda_stringa[i])
+			riscontro++;
+			secondo_riscontro++;
+		if(riscontro != 0){
+			i++;
+			k++;
+		}
+		/**/
+		else{
+			j=0;
+			riscontro = 0;
+			secondo_riscontro = 0;
+				
+/***************** Controllo la riflessività per gli elementi del primo insieme ******************************/		
+			
+			while(j < verifica.dimensione){
+				if(j == i)
+				j++;
+				else{
+					if(verifica.prima_stringa[i] == verifica.prima_stringa[j])
+						if(verifica.prima_stringa[j] == verifica.seconda_stringa[j])
+							riscontro++;
+						
+					j++;
+				}
+			}
+			
+			j = 0;
+			
+/***************** Controllo la riflessività per gli elementi del secondo insieme ******************************/				
+			
+			while(j < verifica.dimensione){
+				if(j == k)
+				j++;
+				else{
+					if(verifica.seconda_stringa[k] == verifica.seconda_stringa[j])
+						if(verifica.prima_stringa[j] == verifica.seconda_stringa[j])
+							secondo_riscontro++;
+						
+					j++;
+				}
+			}
+			if(riscontro != 0)
+				i++;
+			
+			else{
+				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				i=verifica.dimensione;
+			}
+			
+			if(secondo_riscontro != 0)
+				k++;
+			
+			else{
+				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
+				k=verifica.dimensione;
+			}	
+		}
 		
 	}
 	
 }
+
+/* VERIFICA SIMMETRIA */
+
+i = 0;
+j = 0;
+k = 0;
+riscontro = 0;
+secondo_riscontro = 0;
+
+
+if(verifica.controllo == 1){
+	while( i < verifica.dimensione){
+	
+	j = 0;
+	
+		while( j < verifica.dimensione){
+		
+			if(verifica.primo_termine[i] == verifica.secondo_termine[j])
+				if(verifica.primo_termine[j] == verifica.secondo_termine[i])
+					riscontro++;
+			
+			if(riscontro == 0){
+				printf("la simmetria non è stata trovata");
+				j = verifica.dimensione;
+				i = verifica.dimensione;
+			}
+			riscontro = 0;	
+			j++;
+		}
+		
+		i++;
+	}	
+	
+}
+
+if(verifica.controllo == 2){
+	while( i < verifica.dimensione){
+	
+	j = 0;
+	
+		while( j < verifica.dimensione){
+		
+			if(verifica.prima_stringa[i] == verifica.seconda_stringa[j])
+				if(verifica.prima_stringa[j] == verifica.seconda_stringa[i])
+					riscontro++;
+			
+			if(riscontro == 0){
+				printf("la simmetria non è stata trovata");
+				j = verifica.dimensione;
+				i = verifica.dimensione;
+			}
+			riscontro = 0;	
+			j++;
+		}
+		
+		i++;
+	}	
+	
+}
+
+/*VERIFICA DELLA TRANSITIVITà*/
+
+
+i = 0;
+j = 0;
+k = 0;
+riscontro = 0;
+secondo_riscontro = 0;
+
+/*VERIFICA TRANSITIVITà PER NUMERI*/
+
+if(verifica.controllo == 1){
+
+	while( i < verifica.dimensione){
+		
+		j = 0;
+		
+		while( j < verifica.dimensione){
+		
+		k = 0;
+		
+		/*CONTROLLO SE ESISTE UN (A , B) (B , C) (A , C)*/
+			/*CONTROLLO SE C'è UNA B NEL PRIMO TERMINE*/
+			
+			if(verifica.primo_termine[j] == verifica.secondo_termine[i]){
+		
+		
+				while( k < verifica.dimensione){
+				
+				/*CONTROLLO SE ESISTE (A , C) PER VERIFICARE LA TRANSITIVITà*/
+				
+					if(verifica.primo_termine[i] == verifica.primo_termine[k])
+						if(verifica.secondo_termine[k] == verifica.secondo_termine[j])
+						riscontro++;
+		
+					if(riscontro == 0){
+						printf("la transitività non è stata trovata");
+						k = verifica.dimensione;
+						j = verifica.dimensione;
+						i = verifica.dimensione;
+					}
+					k++;
+				}		
+			
+			}
+		j++;
+		}	
+	
+	}
+
+i++;
+}
+
+/* VERIFICA TRANSITIVITà PER STRINGHE */
+
+if(verifica.controllo == 2){
+
+	while( i < verifica.dimensione){
+		
+		j = 0;
+		
+		while( j < verifica.dimensione){
+		
+		k = 0;
+		
+		/*CONTROLLO SE ESISTE UN (A , B) (B , C) (A , C)*/
+			/*CONTROLLO SE C'è UNA B NEL PRIMO TERMINE*/
+		
+			if(verifica.prima_stringa[j] == verifica.seconda_stringa[i]){
+
+		/*CONTROLLO SE ESISTE (A , C) PER VERIFICARE LA TRANSITIVITà*/		
+		
+				while( k < verifica.dimensione){
+				
+					if(verifica.prima_stringa[i] == verifica.seconda_stringa[k])
+						if(verifica.seconda_stringa[k] == verifica.seconda_stringa[j])
+						riscontro++;
+		
+					if(riscontro == 0){
+						printf("la transitività non è stata trovata");
+						k = verifica.dimensione;
+						j = verifica.dimensione;
+						i = verifica.dimensione;
+					}
+					k++;
+				}		
+			
+			}
+		j++;
+		}	
+	
+	}
+
+i++;
+}
+
 
 }
