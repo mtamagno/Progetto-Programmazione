@@ -127,7 +127,43 @@ void stampa(struct relBin stampa){
 
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
 
-void verifica_rel_ordine_parziale (struct relBin verifica){
+void ordine_parziale(struct relBin verifica){
+	int riflessivita,
+		transitivita,
+		simmetria;
+		
+	riflessivita = check_riflessivita(verifica);
+	transitivita = check_transitivita(verifica);
+	simmetria = check_simmetria(verifica);
+	
+	/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
+printf("\n\n La relazione:\n\n");
+
+if(riflessivita == 1)
+	printf("   e' riflessiva\n");
+else
+	printf("   non e' riflessiva\n");
+	
+
+if(simmetria == 1)
+	printf("   e' simmetrica\n");
+else
+	printf("   non e' simmetrica\n");
+
+
+if(transitivita == 1)
+	printf("   e' transitiva\n\n");
+else
+	printf("   non è transitiva\n\n");
+
+if(transitivita == 1 && simmetria == 0 && riflessivita == 1)
+	printf(" Quindi e' una relazione d'ordine parziale");
+
+else
+	printf(" Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà");
+}
+
+int check_riflessivita (struct relBin verifica){
 
 int i,
 	j,
@@ -204,7 +240,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				i++;
 			
 			else{
-				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				/*printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				*/
 				i=verifica.dimensione;
 				riflessivita = 0;
 			}
@@ -213,7 +250,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				k++;
 			
 			else{
-				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
+				/*printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
+				*/
 				k=verifica.dimensione;
 				riflessivita = 0;
 			}	
@@ -272,7 +310,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				i++;
 			
 			else{
-				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				/*printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",i+1);
+				*/
 				i=verifica.dimensione;
 				riflessivita = 0;
 			}
@@ -281,7 +320,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				k++;
 			
 			else{
-				printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
+				/*printf("\nLa riflessivita' non e' verificata perche' un elemento della coppia %d\nnon e' in relazione con se stesso.\n",k+1);
+				*/
 				k=verifica.dimensione;
 				riflessivita = 0;
 			}	
@@ -290,8 +330,21 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 	}
 	
 }
+return(riflessivita);
+}
 
 /* VERIFICA SIMMETRIA */
+
+int check_simmetria(struct relBin verifica){
+int i,
+	j,
+	k,
+	riscontro,
+	secondo_riscontro,
+	simmetria;
+
+simmetria = 1;	
+
 
 i = 0;
 j = 0;
@@ -315,7 +368,7 @@ if(verifica.controllo == 1){
 		}
 		
 		if(riscontro == 0){
-			printf("la simmetria non è stata trovata");
+		/*	printf("la simmetria non è stata trovata");*/
 			j = verifica.dimensione;
 			i = verifica.dimensione;
 			simmetria = 0;
@@ -341,7 +394,7 @@ if(verifica.controllo == 2){
 		}
 		
 		if(riscontro == 0){
-			printf("la simmetria non è stata trovata");
+		/*	printf("la simmetria non è stata trovata");*/
 			j = verifica.dimensione;
 			i = verifica.dimensione;
 			simmetria = 0;
@@ -351,9 +404,19 @@ if(verifica.controllo == 2){
 	}	
 	
 }
-
+return(simmetria);
+}
 /*VERIFICA DELLA TRANSITIVITà*/
 
+int check_transitivita(struct relBin verifica){
+int i,
+	j,
+	k,
+	riscontro,
+	secondo_riscontro,
+	transitivita;
+
+transitivita = 1;
 
 i = 0;
 j = 0;
@@ -391,7 +454,7 @@ if(verifica.controllo == 1){
 				}
 						
 				if(riscontro == 0){
-					printf("la transitività non è stata trovata");
+					/*printf("la transitività non è stata trovata");*/
 					k = verifica.dimensione;
 					j = verifica.dimensione;
 					i = verifica.dimensione;
@@ -401,10 +464,9 @@ if(verifica.controllo == 1){
 			}
 		j++;
 		}	
-	
+	i++;
 	}
 
-i++;
 }
 
 /* VERIFICA TRANSITIVITà PER STRINGHE */
@@ -435,7 +497,7 @@ if(verifica.controllo == 2){
 					k++;
 				}		
 				if(riscontro == 0){
-					printf("la transitività non è stata trovata");
+					/*printf("la transitività non è stata trovata");*/
 					k = verifica.dimensione;
 					j = verifica.dimensione;
 					i = verifica.dimensione;
@@ -450,32 +512,16 @@ if(verifica.controllo == 2){
 
 i++;
 }
-/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
-printf("\n La relazione:\n");
 
-if(riflessivita == 1)
-	printf(" e' riflessiva\n");
-else
-	printf(" non e' riflessiva\n");
-	
-
-if(simmetria == 1)
-	printf(" e' simmetrica\n");
-else
-	printf(" non e' simmetrica\n");
-
-
-if(transitivita == 1)
-	printf(" e' transitiva\n");
-else
-	printf("non è transitiva\n");
+return(transitivita);
 
 }
 
+/*RELAZIONE D'ORDINE TOTALE*/
 
-void verifica_rel_ordine_totale (struct relBin verifica){
+void ordine_totale (struct relBin verifica){
 	
-	verifica_rel_ordine_parziale (verifica);
+	ordine_parziale (verifica);
 	/*DICOTOMIA*/
 	
 }
