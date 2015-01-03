@@ -419,18 +419,19 @@ int i,
 	j,
 	k,
 	secondo_riscontro,
-	transitivita;
+	l,
+	check,
+	transitivita,
+	riscontro;
 
-float riscontro,
-		check;
 transitivita = 0;
 
 i = 0;
 j = 0;
 k = 0;
+l = 0;
 check = verifica.dimensione;
 riscontro = 0;
-check=verifica.dimensione;
 secondo_riscontro = 0;
 
 /*VERIFICA TRANSITIVITà PER NUMERI*/
@@ -438,14 +439,18 @@ secondo_riscontro = 0;
 
 if(verifica.controllo == 1){
 
+check = verifica.dimensione;
+l = 0;
 while(i < verifica.dimensione){
-	j=0;
+	j=i;
 	while( j < verifica.dimensione){
 		if(j==i)
 		j++;
 		if(verifica.primo_termine[i] ==  verifica.primo_termine[j])
-			if(verifica.secondo_termine[i] == verifica.secondo_termine[j])
+			if(verifica.secondo_termine[i] == verifica.secondo_termine[j]){
 			check--;
+			l++;
+		}
 	j++;
 	}
 	i++;
@@ -474,9 +479,10 @@ i++;
 
 }
 
-if(riscontro == (check/3)){
+if(((riscontro - l) == (check/3)) && (check%3 == 0)){
 	transitivita = 1;
 	}
+	
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
 if(verifica.controllo == 2){
