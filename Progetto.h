@@ -437,7 +437,6 @@ secondo_riscontro = 0;
 
 
 if(verifica.controllo == 1){
-<<<<<<< HEAD
 
 while(i < verifica.dimensione){
 	j=0;
@@ -466,43 +465,9 @@ while(i < verifica.dimensione){
 		 						riscontro++;
 						 k++;
 		 			
-		 			
-=======
-	while(i < verifica.dimensione)
-		j=0;
-		while(j < verifica.dimensione)
-			{
-			if(j==i)
-				j++;
-			if(verifica.primo_termine[i]==verifica.primo_termine[j])
-				if(verifica.secondo_termine[i]==verifica.primo_termine[j])
-					check--;
-				j++;
-			}
-		i++;
-	}
-while(i < verifica.dimensione){
-	j=0;
-	while(j < verifica.dimensione){
-		/*if(i==j)
-			j++;*/
-		/*else{*/
-			if(verifica.secondo_termine[i] == verifica.primo_termine[j])
-				while(k < verifica.dimensione){
-					/*if(k==i)
-						k++;*/
-					/*else{*/
-						if(verifica.primo_termine[i] == verifica.primo_termine[k])
-		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
-		 						riscontro++;
-		 					}
-		 				k++;
-		 			/*}*/
->>>>>>> origin/master
 		 		}
 		 		
 		 	j++;
-<<<<<<< HEAD
 		}
 i++;	
 }
@@ -512,20 +477,6 @@ i++;
 if(riscontro == (check/3)){
 	transitivita = 1;
 	}
-=======
-		/*}*/
-	}
- 		if(riscontro == (check/3)){
- 			transitivita = 1;
- 			i++;
- 			}
- 		else{
-	 	transitivita=0;
- 		 i=verifica.dimensione;	
-	 	}
-	}
-}
->>>>>>> origin/master
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
 if(verifica.controllo == 2){
