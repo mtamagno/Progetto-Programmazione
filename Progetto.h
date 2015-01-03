@@ -487,45 +487,50 @@ if(((riscontro - l) == (check/3)) && (check%3 == 0)){
 
 if(verifica.controllo == 2){
 
-	while( i < verifica.dimensione){
-		
-		j = 0;
-		
-		while( j < verifica.dimensione){
-		
-		k = 0;
-		
-		/*CONTROLLO SE ESISTE UN (A , B) (B , C) (A , C)*/
-			/*CONTROLLO SE C'è UNA B NEL PRIMO TERMINE*/
-		
-			if(verifica.prima_stringa[j] == verifica.seconda_stringa[i]){
-
-		/*CONTROLLO SE ESISTE (A , C) PER VERIFICARE LA TRANSITIVITà*/		
-		
-				while( k < verifica.dimensione){
-				
-					if(verifica.prima_stringa[i] == verifica.seconda_stringa[k])
-						if(verifica.seconda_stringa[k] == verifica.seconda_stringa[j])
-						riscontro++;
-		
-					k++;
-				}		
-				if(riscontro == 0){
-					/*printf("la transitività non è stata trovata");*/
-					k = verifica.dimensione;
-					j = verifica.dimensione;
-					i = verifica.dimensione;
-					transitivita = 0;
-					}
-				riscontro = 0;
-			}
+check = verifica.dimensione;
+l = 0;
+while(i < verifica.dimensione){
+	j=i;
+	while( j < verifica.dimensione){
+		if(j==i)
 		j++;
-		}	
-	
+		if((strcmp (verifica.prima_stringa[i],verifica.seconda_stringa[j])) == 0)
+			if((strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[j])) == 0){
+			check--;
+			l++;
+		}
+	j++;
 	}
-
-i++;
+	i++;
 }
+
+i=0;
+
+while(i < verifica.dimensione){
+	j = 0;
+	while(j < verifica.dimensione){
+		k=0;
+			if((strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]))== 0)
+				while(k < verifica.dimensione){
+						
+						if((strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[k])) == 0)
+		 					if((strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j])) == 0)
+		 						riscontro++;
+						 k++;
+		 			
+		 		}
+		 		
+		 	j++;
+		}
+i++;	
+}
+
+}
+
+if(((riscontro - l) == (check/3)) && (check%3 == 0)){
+	transitivita = 1;
+	}
+	
 if(transitivita == 1)
 	printf("   e' transitiva\n");
 else
