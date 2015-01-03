@@ -418,22 +418,56 @@ int check_transitivita(struct relBin verifica){
 int i,
 	j,
 	k,
-	riscontro,
 	secondo_riscontro,
 	transitivita;
 
+float riscontro,
+		check;
 transitivita = 0;
 
 i = 0;
 j = 0;
 k = 0;
+check = verifica.dimensione;
 riscontro = 0;
 check=verifica.dimensione;
 secondo_riscontro = 0;
 
 /*VERIFICA TRANSITIVITà PER NUMERI*/
 
+
 if(verifica.controllo == 1){
+<<<<<<< HEAD
+
+while(i < verifica.dimensione){
+	j=0;
+	while( j < verifica.dimensione){
+		if(j==i)
+		j++;
+		if(verifica.primo_termine[i] ==  verifica.primo_termine[j])
+			if(verifica.secondo_termine[i] == verifica.secondo_termine[j])
+			check--;
+	j++;
+	}
+	i++;
+}
+
+i=0;
+
+while(i < verifica.dimensione){
+	j = 0;
+	while(j < verifica.dimensione){
+		k=0;
+			if(verifica.secondo_termine[i] == verifica.primo_termine[j])
+				while(k < verifica.dimensione){
+						
+						if(verifica.primo_termine[i] == verifica.primo_termine[k])
+		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j])
+		 						riscontro++;
+						 k++;
+		 			
+		 			
+=======
 	while(i < verifica.dimensione)
 		j=0;
 		while(j < verifica.dimensione)
@@ -464,8 +498,21 @@ while(i < verifica.dimensione){
 		 					}
 		 				k++;
 		 			/*}*/
+>>>>>>> origin/master
 		 		}
+		 		
 		 	j++;
+<<<<<<< HEAD
+		}
+i++;	
+}
+
+}
+
+if(riscontro == (check/3)){
+	transitivita = 1;
+	}
+=======
 		/*}*/
 	}
  		if(riscontro == (check/3)){
@@ -478,6 +525,7 @@ while(i < verifica.dimensione){
 	 	}
 	}
 }
+>>>>>>> origin/master
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
 if(verifica.controllo == 2){
