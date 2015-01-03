@@ -442,10 +442,8 @@ if(verifica.controllo == 1){
 check = verifica.dimensione;
 l = 0;
 while(i < verifica.dimensione){
-	j=i;
+	j=i+1;
 	while( j < verifica.dimensione){
-		if(j==i)
-		j++;
 		if(verifica.primo_termine[i] ==  verifica.primo_termine[j])
 			if(verifica.secondo_termine[i] == verifica.secondo_termine[j]){
 			check--;
@@ -490,10 +488,8 @@ if(verifica.controllo == 2){
 check = verifica.dimensione;
 l = 0;
 while(i < verifica.dimensione){
-	j=i;
+	j=i+1;
 	while( j < verifica.dimensione){
-		if(j==i)
-		j++;
 		if((strcmp (verifica.prima_stringa[i],verifica.seconda_stringa[j])) == 0)
 			if((strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[j])) == 0){
 			check--;
