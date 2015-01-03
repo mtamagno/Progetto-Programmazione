@@ -489,9 +489,9 @@ check = verifica.dimensione;
 l = 0;
 while(i < verifica.dimensione){
 	j=i+1;
-	while( j < verifica.dimensione){
-		if((strcmp (verifica.prima_stringa[i],verifica.prima_stringa[j])) == 0)
-			if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[j])) == 0){
+	while( j < verifica.dimensione ){
+		if( strcmp(verifica.prima_stringa[i],verifica.prima_stringa[j]) == 0 )
+			if( strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[j]) == 0 ){
 			check--;
 			l++;
 		}
@@ -506,11 +506,11 @@ while(i < verifica.dimensione){
 	j = 0;
 	while(j < verifica.dimensione){
 		k=0;
-			if((strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]))== 0)
+			if(strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]) == 0)
 				while(k < verifica.dimensione){
-						
-						if((strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[k])) == 0)
-		 					if((strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j])) == 0)
+					
+						if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k]) == 0)
+		 					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0)
 		 						riscontro++;
 						 k++;
 		 			
