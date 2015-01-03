@@ -255,7 +255,7 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 	if(verifica.controllo == 2){
 			riscontro = 0;
 		secondo_riscontro = 0;
-		if(verifica.prima_stringa[i] == verifica.seconda_stringa[i])
+		if(strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[i]) == 0)
 			riscontro++;
 			secondo_riscontro++;
 		if(riscontro != 0){
@@ -274,8 +274,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				if(j == i)
 				j++;
 				else{
-					if(verifica.prima_stringa[i] == verifica.prima_stringa[j])
-						if(verifica.prima_stringa[j] == verifica.seconda_stringa[j])
+					if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[j]) == 0)
+						if(strcmp(verifica.prima_stringa[j],verifica.seconda_stringa[j]) == 0)
 							riscontro++;
 						
 					j++;
@@ -290,8 +290,8 @@ while((i < verifica.dimensione) && (k < verifica.dimensione)){
 				if(j == k)
 				j++;
 				else{
-					if(verifica.seconda_stringa[k] == verifica.seconda_stringa[j])
-						if(verifica.prima_stringa[j] == verifica.seconda_stringa[j])
+					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0)
+						if(strcmp(verifica.prima_stringa[j],verifica.seconda_stringa[j]) == 0)
 							secondo_riscontro++;
 						
 					j++;
@@ -384,8 +384,8 @@ if(verifica.controllo == 2){
 	
 		while( j < verifica.dimensione){
 		
-			if(verifica.prima_stringa[i] == verifica.seconda_stringa[j])
-				if(verifica.prima_stringa[j] == verifica.seconda_stringa[i])
+			if(strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[j]) == 0 )
+				if(strcmp(verifica.prima_stringa[j],verifica.seconda_stringa[i]) == 0 )
 					riscontro++;
 			
 			j++;
