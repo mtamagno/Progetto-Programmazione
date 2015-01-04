@@ -15,6 +15,8 @@ struct relBin{
 		dimensione;
 };
 
+
+
 /*******************Funzione di acquisizione********************/
 
 struct relBin acquisizione(struct relBin relazione){
