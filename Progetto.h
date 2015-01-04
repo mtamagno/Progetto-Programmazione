@@ -520,6 +520,7 @@ void check_dicotomia(struct relBin verifica){
 	dimensione = verifica.dimensione;
 	
 	while( a < verifica.dimensione){
+		b=a+1;
 		while ( b < verifica.dimensione){
 			if(verifica.primo_termine[a] == verifica.primo_termine[b])
 				if(verifica.secondo_termine[a] == verifica.secondo_termine[b])
