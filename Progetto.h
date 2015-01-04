@@ -133,14 +133,14 @@ void ordine_parziale(struct relBin verifica){
 
 	int riflessivita,
 		transitivita,
-		simmetria;
-		
+		simmetria;	
 		/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
 	printf("\n\n La relazione:\n\n");
 
 	riflessivita = check_riflessivita(verifica);
 	simmetria = check_simmetria(verifica);
 	transitivita = check_transitivita(verifica);
+	check_dicotomia(verifica);
 	
 	if(transitivita == 1 && simmetria == 0 && riflessivita == 1)
 		printf("\n Quindi e' una relazione d'ordine parziale\n\n");
@@ -148,7 +148,8 @@ void ordine_parziale(struct relBin verifica){
 	else
 		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà\n");
 
-	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n");	
+	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n");
+	return;
 }
 
 
@@ -507,9 +508,48 @@ int check_transitivita(struct relBin verifica){
 
 /*RELAZIONE D'ORDINE TOTALE*/
 
+void check_dicotomia(struct relBin verifica){
+	int a,b,c;
+	int numero_elementi;
+	int dicotomia = 0;
+	
+	a=0;
+	b=0;
+	c=0;
+	numero_elementi=1;
+	
+	while(b<verifica.dimensione){
+		if(verifica.primo_termine[a] != verifica.primo_termine[b])
+			numero_elementi++;
+		b++;
+	}
+	
+	c = numero_elementi;
+	
+	while(numero_elementi > 0){
+	
+		numero_elementi--;
+		c = c + numero_elementi;
+		
+	}
+	
+	if(verifica.dimensione == c)
+	dicotomia = 1;
+	
+	if(dicotomia == 1)
+	printf("   e' dicotomica");
+
+	else
+	printf("non è dicotomica");
+}
+
+
+
+
 void ordine_totale (struct relBin verifica){
 	
 	ordine_parziale (verifica);
+	check_dicotomia (verifica);
 	/*DICOTOMIA*/
 	
 }

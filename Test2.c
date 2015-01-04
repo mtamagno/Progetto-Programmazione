@@ -9,7 +9,7 @@ int main(void){
 	ciao = acquisizione(ciao);
 	
 	stampa(ciao);
-	ordine_parziale(ciao);
+	ordine_totale(ciao);
 /*	ordine_totale(ciao);*/
 	return(0);
 }
