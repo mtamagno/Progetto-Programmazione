@@ -512,6 +512,23 @@ void check_dicotomia(struct relBin verifica){
 	int a,b,c;
 	int numero_elementi;
 	int dicotomia = 0;
+	int dimensione;
+	
+	a=0;
+	b=0;
+	c=0;
+	dimensione = verifica.dimensione;
+	
+	while( a < verifica.dimensione){
+		while ( b < verifica.dimensione){
+			if(verifica.primo_termine[a] == verifica.primo_termine[b])
+				if(verifica.secondo_termine[a] == verifica.secondo_termine[b])
+				dimensione--;
+		b++;
+		}
+	a++;
+	}
+	
 	
 	a=0;
 	b=0;
@@ -533,7 +550,7 @@ void check_dicotomia(struct relBin verifica){
 		
 	}
 	
-	if(verifica.dimensione == c)
+	if(dimensione == c)
 	dicotomia = 1;
 	
 	if(dicotomia == 1)
