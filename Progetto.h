@@ -584,7 +584,7 @@ int check_dicotomia(struct relBin verifica){
 		printf("   e' dicotomica\n\n");
 
 	else
-		printf("   non è dicotomica\n\n");
+		printf("   non e' dicotomica\n\n");
 
 	return(dicotomia);
 }
@@ -601,10 +601,10 @@ void ordine_totale (struct relBin verifica){
 	dicotomia = check_dicotomia (verifica);
 
 	if(parziale == 0)
-		printf(" \n l'ordine non è totale in quanto non e' nemmeno parziale");
+		printf(" \n l'ordine non e' totale in quanto non e' nemmeno parziale");
 
 	if(dicotomia == 0)
-		printf(" \n l'ordine non è totale in quanto non viene rispettata la propieta' di dicotomia");
+		printf(" \n l'ordine non e' totale in quanto non viene rispettata la propieta' di dicotomia");
 
 	if(dicotomia == 1 && parziale == 1)
 		printf("\n Quindi e' una relazione d'ordine totale");
