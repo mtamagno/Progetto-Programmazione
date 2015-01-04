@@ -441,18 +441,6 @@ if(verifica.controllo == 1){
 
 check = verifica.dimensione;
 l = 0;
-while(i < verifica.dimensione){
-	j=i+1;
-	while( j < verifica.dimensione){
-		if(verifica.primo_termine[i] ==  verifica.primo_termine[j])
-			if(verifica.secondo_termine[i] == verifica.secondo_termine[j]){
-			check--;
-			l++;
-		}
-	j++;
-	}
-	i++;
-}
 
 i=0;
 
@@ -460,15 +448,24 @@ while(i < verifica.dimensione){
 	j = 0;
 	while(j < verifica.dimensione){
 		k=0;
-			if(verifica.secondo_termine[i] == verifica.primo_termine[j])
+			if(verifica.secondo_termine[i] == verifica.primo_termine[j]){
+				transitivita = 0;
 				while(k < verifica.dimensione){
 						
-						if(verifica.primo_termine[i] == verifica.primo_termine[k])
-		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j])
-		 						riscontro++;
+						if(verifica.primo_termine[i] == verifica.primo_termine[k]){
+		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
+								 transitivita = 1;
+								 j = verifica.dimensione;
+								 k = verifica.dimensione;
+							}
+						}
 						 k++;
-		 			
-		 		}
+		 	}
+		 	if(transitivita == 0){
+		 		j = verifica.dimensione;
+		 		i = verifica.dimensione;
+		 	}
+		}
 		 		
 		 	j++;
 		}
@@ -477,9 +474,6 @@ i++;
 
 }
 
-if(((riscontro - l) == (check/3)) && (check%3 == 0)){
-	transitivita = 1;
-	}
 	
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
@@ -496,6 +490,10 @@ while(i < verifica.dimensione){
 			l++;
 		}
 	j++;
+	}
+	if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[i]) == 0){
+		check--;
+		l++;
 	}
 	i++;
 }
@@ -523,9 +521,6 @@ i++;
 
 }
 
-if(((riscontro - l) == (check/3)) && (check%3 == 0)){
-	transitivita = 1;
-	}
 	
 if(transitivita == 1)
 	printf("   e' transitiva\n");
