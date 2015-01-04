@@ -415,44 +415,33 @@ return(simmetria);
 
 
 int check_transitivita(struct relBin verifica){
-int i,
-	j,
-	k,
-	secondo_riscontro,
-	l,
-	check,
-	transitivita,
-	riscontro;
+	
+	int i,
+		j,
+		k,
+		transitivita;
 
-transitivita = 0;
-
-i = 0;
-j = 0;
-k = 0;
-l = 0;
-check = verifica.dimensione;
-riscontro = 0;
-secondo_riscontro = 0;
+/*SETTO LA TRANSITIVITA INIZIALMENTE COME VERA E AZZERO I CONTATORI*/
+	transitivita = 1;
+	i = 0;
+	j = 0;
+	k = 0;
 
 /*VERIFICA TRANSITIVITà PER NUMERI*/
 
 
-if(verifica.controllo == 1){
+	if(verifica.controllo == 1){
 
-check = verifica.dimensione;
-l = 0;
+	
+		while(i < verifica.dimensione){
+			j = 0;
 
-i=0;
+			while(j < verifica.dimensione){
+				k=0;
 
-while(i < verifica.dimensione){
-	j = 0;
-
-	while(j < verifica.dimensione){
-		k=0;
-
-			if(verifica.secondo_termine[i] == verifica.primo_termine[j]){
+				if(verifica.secondo_termine[i] == verifica.primo_termine[j]){
 					transitivita = 0;
-				while(k < verifica.dimensione){
+					while(k < verifica.dimensione){
 						
 						if(verifica.primo_termine[i] == verifica.primo_termine[k]){
 		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
@@ -462,100 +451,57 @@ while(i < verifica.dimensione){
 							}
 						}
 						 k++;
-		 	}
+		 			}
 
+				}
+				j++;
+			}
+
+			i++;	
 		}
-j++;
-}
-
-i++;	
-}
-
-j=0;
-i=0;
-
-while( i < verifica.dimensione){
-	j=0;
-	check=0;
-	while( j < verifica.dimensione){
-		if(j == i)
-		j++;
-		if(verifica.primo_termine[i] == verifica.secondo_termine[j])
-		check = 1;
-		j++;
 	}
-	j=0;
-	while( j < verifica.dimensione){
-		if(j == i)
-		j++;
-		if(verifica.primo_termine[i] == verifica.primo_termine[j])
-		check = 1;
-		j++;
-	}
-	if(check == 0){
-		i = verifica.dimensione;
-		transitivita = 0;
-	}
-	i++;
-}
-
-
-
-}
 
 	
 /* VERIFICA TRANSITIVITà PER STRINGHE */
 
-if(verifica.controllo == 2){
+	if(verifica.controllo == 2){
 
-check = verifica.dimensione;
-l = 0;
-while(i < verifica.dimensione){
-	j=i+1;
-	while( j < verifica.dimensione ){
-		if( strcmp(verifica.prima_stringa[i],verifica.prima_stringa[j]) == 0 )
-			if( strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[j]) == 0 ){
-			check--;
-			l++;
-		}
-	j++;
-	}
-	if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[i]) == 0){
-		check--;
-		l++;
-	}
-	i++;
-}
 
-i=0;
+		while(i < verifica.dimensione){
+			j = 0;
 
-while(i < verifica.dimensione){
-	j = 0;
-	while(j < verifica.dimensione){
-		k=0;
-			if(strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]) == 0)
-				while(k < verifica.dimensione){
-					
-						if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k]) == 0)
-		 					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0)
-		 						riscontro++;
+			while(j < verifica.dimensione){
+				k=0;
+
+				if(strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]) == 0){
+					transitivita = 0;
+					while(k < verifica.dimensione){
+						
+						if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k]) == 0){
+		 					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0){
+								 transitivita = 1;
+								 j = verifica.dimensione;
+								 k = verifica.dimensione;
+							}
+						}
 						 k++;
-		 			
-		 		}
-		 		
-		 	j++;
-		}
-i++;	
-}
+		 			}
 
-}
+				}
+				j++;
+			}
+
+			i++;	
+		}
+
+	}
 
 	
-if(transitivita == 1)
-	printf("   e' transitiva\n");
-else
-	printf("   non è transitiva\n");
-return(transitivita);
+	if(transitivita == 1)
+		printf("   e' transitiva\n");
+	else
+		printf("   non è transitiva\n");
+	return(transitivita);
 
 }
 
