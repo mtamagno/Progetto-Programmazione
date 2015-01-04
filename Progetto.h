@@ -446,10 +446,12 @@ i=0;
 
 while(i < verifica.dimensione){
 	j = 0;
+
 	while(j < verifica.dimensione){
 		k=0;
+
 			if(verifica.secondo_termine[i] == verifica.primo_termine[j]){
-				transitivita = 0;
+					transitivita = 0;
 				while(k < verifica.dimensione){
 						
 						if(verifica.primo_termine[i] == verifica.primo_termine[k]){
@@ -461,16 +463,43 @@ while(i < verifica.dimensione){
 						}
 						 k++;
 		 	}
-		 	if(transitivita == 0){
-		 		j = verifica.dimensione;
-		 		i = verifica.dimensione;
-		 	}
+
 		}
-		 		
-		 	j++;
-		}
+j++;
+}
+
 i++;	
 }
+
+j=0;
+i=0;
+
+while( i < verifica.dimensione){
+	j=0;
+	check=0;
+	while( j < verifica.dimensione){
+		if(j == i)
+		j++;
+		if(verifica.primo_termine[i] == verifica.secondo_termine[j])
+		check = 1;
+		j++;
+	}
+	j=0;
+	while( j < verifica.dimensione){
+		if(j == i)
+		j++;
+		if(verifica.primo_termine[i] == verifica.primo_termine[j])
+		check = 1;
+		j++;
+	}
+	if(check == 0){
+		i = verifica.dimensione;
+		transitivita = 0;
+	}
+	i++;
+}
+
+
 
 }
 
