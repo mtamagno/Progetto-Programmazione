@@ -10,7 +10,7 @@ int main(void){
 	
 	stampa(ciao);
 /*	ordine_totale(ciao);*/
-/*	ordine_totale(ciao);*/
+	ordine_totale(ciao);
 /*	relazione_equivalenza(ciao);*/
 	check_funzione(ciao);
 	return(0);

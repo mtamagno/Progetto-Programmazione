@@ -156,7 +156,7 @@ int ordine_parziale(struct relBin verifica){
 		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà\n");
 		parziale = 0;
 	}
-	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n");
+	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n\n\n");
 	return(parziale);
 }
 
@@ -581,15 +581,30 @@ int check_dicotomia(struct relBin verifica){
 	if(verifica.controllo == 2){
 	
 		while( a < verifica.dimensione){
-			b=a+1;
+			d = a-1;
+			b = a+1;
+			secondo_riscontro = 0;
+		if(a>0){
+			while ( d >= 0 ){
+				if((strcmp(verifica.prima_stringa[a],verifica.prima_stringa[d])) == 0){
+					if((strcmp(verifica.seconda_stringa[a],verifica.seconda_stringa[d])) == 0)
+						secondo_riscontro = 1;
+				}
+				d--;
+			}
+		}
+		
+		if(secondo_riscontro != 1){
 			while ( b < verifica.dimensione){
 				if((strcmp(verifica.prima_stringa[a],verifica.prima_stringa[b])) == 0)
-					if((strcmp(verifica.seconda_stringa[a],verifica.seconda_stringa[b])) == 0)
-					dimensione--;
+					if((strcmp(verifica.seconda_stringa[a],verifica.seconda_stringa[b])) == 0){
+						dimensione--;
+				}
 			b++;
 			}
-		a++;
 		}
+		a++;
+	}
 	
 	
 		a=0;
@@ -597,12 +612,25 @@ int check_dicotomia(struct relBin verifica){
 		c=0;
 		numero_elementi=1;
 	
-		while(b<verifica.dimensione){
-			if((strcmp(verifica.prima_stringa[a],verifica.prima_stringa[b])) != 0)
-				numero_elementi++;
-		b++;
+		while(a<verifica.dimensione){
+			d=a-1;
+			secondo_riscontro = 0;
+			
+			while(d >= 0){
+				if((strcmp(verifica.prima_stringa[a],verifica.prima_stringa[d])) == 0)
+					secondo_riscontro = 1;
+					d--;
+			}
+			if(secondo_riscontro != 1){
+				if((strcmp(verifica.prima_stringa[a],verifica.seconda_stringa[a])) == 0)
+					riscontro++;
+					
+			}
+		a++;
 		}
-	
+		
+		numero_elementi = riscontro;
+		
 		c = numero_elementi;
 	
 		while(numero_elementi > 0){
@@ -645,7 +673,7 @@ void ordine_totale (struct relBin verifica){
 	if(dicotomia == 1 && parziale == 1)
 		printf("\n Quindi e' una relazione d'ordine totale");
 		
-	printf("\n\n   ... Controllo Ordine Totale Terminato ...\n\n");	
+	printf("\n\n   ... Controllo Ordine Totale Terminato ...\n\n\n\n");	
 }
 
 /*Funzione che stabilisce se e' una relazione di equivalenza o meno*/
