@@ -3,14 +3,18 @@
 #include<string.h>
 
 /********************STRUTTURA relBin**************************/
-
+/***** Creo una struttura dove salvare le coppie appartenenti alla Relazione*******/
+	
 struct relBin{
+	/****** Coppia Numerica ******/
 	double 	*primo_termine,
 			*secondo_termine;
-		
+	
+	/***** Coppia Qualsiasi******/	
 	char **prima_stringa,
 		 **seconda_stringa;
 	
+	/**** Variabili per salvare se ho acquisito una coppia numerica o no e il numero delle coppie*****/
 	int controllo,
 		dimensione;
 };
@@ -37,63 +41,75 @@ scanf("%d",&relazione.controllo);
 }
 /**/
 /*Acquisizione Numerica*/
+
 if(relazione.controllo == 1){
-while(acquisizione_finita == 0){
-	relazione.dimensione++;
-	acquisizione_finita = 2;
+	while(acquisizione_finita == 0){
+		relazione.dimensione++;
+		acquisizione_finita = 2;
+ 
  /*Acquisisco il primo termine della coppia*/
- printf("\n Inserisci il primo termine della coppia \n ");
- relazione.primo_termine = (double *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(double));
+ 
+		printf("\n Inserisci il primo termine della coppia \n ");
+		relazione.primo_termine = (double *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(double));
+ 
  /*Check del primo termine della coppia*/
+
 	while((scanf("%lf",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
-	fflush(stdin);
-	printf("\n C'e' un errore, riinserire il primo termine\n");
-	}
+		fflush(stdin);
+		printf("\n C'e' un errore, riinserire il primo termine\n");
+		}
  
  /*Acquisisco il secondo termine della coppia*/
- printf("\n Inserisci il secondo termine della coppia \n ");
- relazione.secondo_termine = (double *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(double));
+ 	
+	 	printf("\n Inserisci il secondo termine della coppia \n ");
+		relazione.secondo_termine = (double *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(double));
+
 /*Check del secondo termine della coppia*/
+
 	while((scanf("%lf",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
-	fflush(stdin);
-	printf("\n C'e' un errore, riinserire il secondo termine\n");
-	}
+		fflush(stdin);
+		printf("\n C'e' un errore, riinserire il secondo termine\n");
+		}
 
  /*Chiedo all'utente se ci sono altre coppie*/
- while(acquisizione_finita < 0 || acquisizione_finita > 1){
- printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
- scanf("%d",&acquisizione_finita);
+ 
+ 	while(acquisizione_finita < 0 || acquisizione_finita > 1){
+ 		printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
+ 		scanf("%d",&acquisizione_finita);
  		}
 	}
 }
 
 /*Acquisizione con stringhe*/
 if(relazione.controllo == 2){
-while(acquisizione_finita == 0){
-	relazione.dimensione++;
-	acquisizione_finita = 2;
+	while(acquisizione_finita == 0){
+		relazione.dimensione++;
+		acquisizione_finita = 2;
+
  /*Acquisisco il primo termine della coppia*/
- printf(" Inserisci il primo termine della coppia \n ");
- relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
- scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
+
+ 		printf(" Inserisci il primo termine della coppia \n ");
+ 		relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+		scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
- printf(" Inserisci il secondo termine della coppia \n ");
 
-
- relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
- scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
+ 		printf(" Inserisci il secondo termine della coppia \n ");
+ 		relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+ 		scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
 
 
  /*Chiedo all'utente se ci sono altre coppie*/
- while(acquisizione_finita < 0 || acquisizione_finita > 1){
+		
+		while(acquisizione_finita < 0 || acquisizione_finita > 1){
  
- printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
- scanf("%d",&acquisizione_finita);
+ 			printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
+ 			scanf("%d",&acquisizione_finita);
  
  			}
 		}
 	}
+
 printf("\n\n   ... Acquisizione Terminata ...\n\n");	
 return relazione;
 }
@@ -107,6 +123,8 @@ void stampa(struct relBin stampa){
  printf("\n La relazione binaria e':");
  printf("\n\n  {");
  	
+/******Stampa per coppie numeriche *****/
+
 	 if(stampa.controllo == 1){
  		 while(i < stampa.dimensione){
 
@@ -117,6 +135,7 @@ void stampa(struct relBin stampa){
 		}
 	 }
  
+ /********Stampa  per coppie non numeriche *********/
  
  	if(stampa.controllo == 2){
   		while(i < stampa.dimensione){
@@ -127,6 +146,9 @@ void stampa(struct relBin stampa){
 	
 		}
  	}
+ 	
+/***************** Fine Stampa *******************/
+
  	printf(" }\n");
 	printf("\n\n   ... Stampa Terminata ...\n\n");	
 
@@ -140,12 +162,18 @@ int ordine_parziale(struct relBin verifica){
 		transitivita,
 		simmetria,	
 		parziale;
-		/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
+		
+	/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
+	
 	printf("\n\n La relazione:\n\n");
+
+/********* Chiamo le funzioni per poter stabilire le propietà ******************/
 
 	riflessivita = check_riflessivita(verifica);
 	simmetria = check_simmetria(verifica);
 	transitivita = check_transitivita(verifica);
+
+/************* Controllo se rispetta le propietà per essere una relazione d'ordine parziale************/
 	
 	if(transitivita == 1 && simmetria == 0 && riflessivita == 1){
 		parziale = 1;
@@ -156,6 +184,9 @@ int ordine_parziale(struct relBin verifica){
 		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà\n");
 		parziale = 0;
 	}
+	
+/************* Fine controllo Ordine Parziale *********************/
+	
 	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n\n\n");
 	return(parziale);
 }
@@ -251,7 +282,7 @@ int check_riflessivita (struct relBin verifica){
 	
 		}
 	
-	/* VERIFICA RIFLESSIVITà PER STRINGHE */
+	/*************** VERIFICA RIFLESSIVITà PER STRINGHE *****************/
 	
 	if(verifica.controllo == 2){
 		riscontro = 0;
@@ -318,17 +349,27 @@ int check_riflessivita (struct relBin verifica){
 	}
 	
 }
+
+/********* Controllo se è riflessiva *******************/
+
 	if(riflessivita == 1)
 		printf("   e' riflessiva\n");
 	else
 		printf("   non e' riflessiva\n");
+
+/*********** Fine riflessivita ***********************/
 	
 	return(riflessivita);
 }
 
 
-/***********FUNZIONE PER CONTROLLARE LA SIMMETRIA**********/
 
+/*********** FUNZIONE PER CONTROLLARE LA SIMMETRIA**********/
+
+/************* Definizione: In matematica, una relazione binaria R in un insieme
+/*************				 X è simmetrica se e solo se,
+************** presi due elementi qualsiasi a e b, vale che se a è in relazione 
+************** con b allora anche b è in relazione con a.*************/
 
 int check_simmetria(struct relBin verifica){
 	
@@ -391,15 +432,25 @@ int check_simmetria(struct relBin verifica){
 	
 	}
 
+/***** Controllo se la simmetria è stata verificata *********/
+
 	if(simmetria == 1)
 		printf("   e' simmetrica\n");
 	else
 		printf("   e' asimmetrica\n");
 
+/****** Fine controllo simmetria ******/
+
 	return(simmetria);
 }
 
-/*FUNZIONE PER CONTROLLARE LA TRANSITIVITà*/
+
+
+/* FUNZIONE PER CONTROLLARE LA TRANSITIVITà */
+
+/****** Definizione: In matematica, una relazione binaria R in un insieme X è transitiva se e solo se 
+		per ogni a, b, c appartenenti ad X, se a è in relazione con b e b è in relazione con c, allora
+		 a è in relazione con c.*******/
 
 
 int check_transitivita(struct relBin verifica){
@@ -484,16 +535,20 @@ int check_transitivita(struct relBin verifica){
 
 	}
 
+/********** Controllo se la relazione è Transitiva *********/
 	
 	if(transitivita == 1)
 		printf("   e' transitiva\n");
 	else
 		printf("   non e' transitiva\n");
+		
+/************ Fine controllo Transitività ************/
+		
 	return(transitivita);
 
 }
 
-/*RELAZIONE D'ORDINE TOTALE*/
+/********** Dicotomia *************/
 
 int check_dicotomia(struct relBin verifica){
 
@@ -508,8 +563,13 @@ int check_dicotomia(struct relBin verifica){
 	c=0;
 	d=a-1;
 	dimensione = verifica.dimensione;
+
+/********* Dicotomia per numeri *********/
 	
 	if(verifica.controllo == 1){
+		
+/********** Conto il numero delle coppie esistenti (scarto le coppie uguali) *********/		
+		
 		while( a < verifica.dimensione){
 			d = a-1;
 			b = a+1;
@@ -529,7 +589,6 @@ int check_dicotomia(struct relBin verifica){
 				if(verifica.primo_termine[a] == verifica.primo_termine[b])
 					if(verifica.secondo_termine[a] == verifica.secondo_termine[b]){
 						dimensione--;
-				/*	secondo_riscontro--;*/
 				}
 			b++;
 			}
@@ -543,7 +602,7 @@ int check_dicotomia(struct relBin verifica){
 		c=0;
 		numero_elementi=0;
 		
-		
+/*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
 		riscontro = 0;
 	
@@ -568,6 +627,8 @@ int check_dicotomia(struct relBin verifica){
 	
 	
 	c = numero_elementi;
+
+/************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
 	
 	while(numero_elementi > 0){	
 		numero_elementi--;
@@ -579,6 +640,8 @@ int check_dicotomia(struct relBin verifica){
 /******************** VERIFICA DICOTOMICA PER STRINGHE *****************/
 
 	if(verifica.controllo == 2){
+	
+/********** Conto il numero delle coppie esistenti (scarto le coppie uguali) *********/	
 	
 		while( a < verifica.dimensione){
 			d = a-1;
@@ -610,7 +673,9 @@ int check_dicotomia(struct relBin verifica){
 		a=0;
 		b=0;
 		c=0;
-		numero_elementi=1;
+		numero_elementi=0;
+		
+/*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
 		while(a<verifica.dimensione){
 			d=a-1;
@@ -632,6 +697,8 @@ int check_dicotomia(struct relBin verifica){
 		numero_elementi = riscontro;
 		
 		c = numero_elementi;
+
+/************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
 	
 		while(numero_elementi > 0){
 	
@@ -641,6 +708,8 @@ int check_dicotomia(struct relBin verifica){
 		}
 
 	}
+
+/************* Verifico se la dicotomia è verificata ****************/
 	
 	if(dimensione == c)
 		dicotomia = 1;
@@ -650,6 +719,8 @@ int check_dicotomia(struct relBin verifica){
 
 	else
 		printf("   non e' dicotomica\n\n");
+
+/***************** Fine verifica dicotomia ******************/
 
 	return(dicotomia);
 }
@@ -743,4 +814,11 @@ void check_funzione(struct relBin verifica){
 
 
 int check_suriettivita(struct relBin verifica){
+
+
+}
+
+int check_iniettivita(struct relBin verifica){
+	
+	
 }
