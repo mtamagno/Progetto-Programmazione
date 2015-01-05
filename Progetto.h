@@ -615,7 +615,7 @@ int check_dicotomia(struct relBin verifica){
 	return(dicotomia);
 }
 
-
+/*Funzione di verifica dell'ordine totale*/
 
 
 void ordine_totale (struct relBin verifica){
@@ -636,3 +636,23 @@ void ordine_totale (struct relBin verifica){
 		
 	printf("\n\n   ... Controllo Ordine Totale Terminato ...\n\n");	
 }
+
+void relazione_equivalenza(struct relBin verifica){
+	int riflessivita;
+	int simmetria;
+	int transitivita;
+	
+	riflessivita	= 	check_riflessivita(verifica);
+	simmetria 		= 	check_simmetria(verifica);
+	transitivita	=	check_transitivita(verifica);
+	
+	if(riflessivita == 1 && simmetria == 1 && transitivita == 1)
+	printf("\n Quindi e' una relazione di equivalenza\n");
+	if(riflessivita == 0)
+	printf("\n Quindi non e' una relazione di equivalenza perche' non riflessiva\n");
+	if(simmetria == 0)
+	printf("\n Quindi non e' una relazione di equivalenza perche' non simmetrica\n");
+	if(transitivita == 0)
+	printf("\n Quindi non e' una relazione di equivalenza perche' non transitiva\n");	
+}
+
