@@ -511,22 +511,31 @@ int check_dicotomia(struct relBin verifica){
 	
 	if(verifica.controllo == 1){
 		while( a < verifica.dimensione){
-			b=a+1;
-			d=a-1;
-			while(d > 0){
-				if(verifica.primo_termine[a] == verifica.primo_termine[d])
-					secondo_riscontro=1;
-					d--;
+			d = a-1;
+			b = a+1;
+			secondo_riscontro = 0;
+		if(a>0){
+			while ( d >= 0 ){
+				if(verifica.primo_termine[a] == verifica.primo_termine[d]){
+					if(verifica.secondo_termine[a] == verifica.secondo_termine[d])
+						secondo_riscontro = 1;
+				}
+				d--;
 			}
-			if(secondo_riscontro != 1)
+		}
+		
+		if(secondo_riscontro != 1){
 			while ( b < verifica.dimensione){
 				if(verifica.primo_termine[a] == verifica.primo_termine[b])
-					if(verifica.secondo_termine[a] == verifica.secondo_termine[b])
-					dimensione--;
+					if(verifica.secondo_termine[a] == verifica.secondo_termine[b]){
+						dimensione--;
+				/*	secondo_riscontro--;*/
+				}
 			b++;
 			}
-		a++;
 		}
+		a++;
+	}
 	
 	
 		a=0;
@@ -536,31 +545,33 @@ int check_dicotomia(struct relBin verifica){
 		
 		
 	
+		riscontro = 0;
+	
 		while(a<verifica.dimensione){
-			b=0;
-			riscontro = 0;
-			while(b<verifica.dimensione){
-				if(verifica.primo_termine[a] == verifica.primo_termine[b]){
+			d=a-1;
+			secondo_riscontro = 0;
+			
+			while(d >= 0){
+				if(verifica.primo_termine[a] == verifica.primo_termine[d])
+					secondo_riscontro = 1;
+					d--;
+			}
+			if(secondo_riscontro != 1){
+				if(verifica.primo_termine[a] == verifica.secondo_termine[a])
 					riscontro++;
-					if((verifica.secondo_termine[a] == verifica.secondo_termine[b]) && riscontro > 1)	
-						riscontro--;
-				}
-			b++;
-		}
-		if(numero_elementi < riscontro)
-		numero_elementi = riscontro;
+					
+			}
 		a++;
 		}
 	
-	a=0;
+	numero_elementi = riscontro;
 	
 	
-		c = numero_elementi;
+	c = numero_elementi;
 	
-		while(numero_elementi > 0){
-	
-			numero_elementi--;
-			c = c + numero_elementi;
+	while(numero_elementi > 0){	
+		numero_elementi--;
+		c = c + numero_elementi;
 		
 		}
 	}
