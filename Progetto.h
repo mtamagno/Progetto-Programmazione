@@ -181,7 +181,7 @@ int check_riflessivita (struct relBin verifica){
 
 /*Verifica riflessività*/
 
-/*Definizione: una relazione per la quale esiste almeno un elemento che non è in relazione con sé stesso non soddisfa la definizione di riflessività*/
+/*Definizione: una relazione per la quale esiste almeno un elemento che non e' in relazione con sé stesso non soddisfa la definizione di riflessività*/
 
 	while((i < verifica.dimensione) && (k < verifica.dimensione)){
 
@@ -488,7 +488,7 @@ int check_transitivita(struct relBin verifica){
 	if(transitivita == 1)
 		printf("   e' transitiva\n");
 	else
-		printf("   non è transitiva\n");
+		printf("   non e' transitiva\n");
 	return(transitivita);
 
 }
@@ -637,6 +637,8 @@ void ordine_totale (struct relBin verifica){
 	printf("\n\n   ... Controllo Ordine Totale Terminato ...\n\n");	
 }
 
+/*Funzione che stabilisce se e' una relazione di equivalenza o meno*/
+
 void relazione_equivalenza(struct relBin verifica){
 	int riflessivita;
 	int simmetria;
@@ -654,5 +656,49 @@ void relazione_equivalenza(struct relBin verifica){
 	printf("\n Quindi non e' una relazione di equivalenza perche' non simmetrica\n");
 	if(transitivita == 0)
 	printf("\n Quindi non e' una relazione di equivalenza perche' non transitiva\n");	
+}
+
+/*Funzione che stabilisce se la relazione binaria acquisita e' una funzione matematica*/
+
+void check_funzione(struct relBin verifica){
+	int i;
+	int k;
+	int termini_diversi;
+	int termini_uguali_prima;
+	int termini_uguali_dopo;
+	int errore;
+	
+	i=0;
+	errore=0;
+	termini_diversi=0;
+	termini_uguali_dopo=0;
+	termini_uguali_prima=0;
+	while(i < verifica.dimensione){
+		k=verifica.dimensione-1;
+		termini_uguali_dopo=termini_uguali_prima;
+		while(k > i){
+			if(verifica.primo_termine[i] == verifica.primo_termine[k]){
+				if(verifica.secondo_termine[i] != verifica.secondo_termine[k]){
+					errore=1;
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("di essere una funzione\n");
+					k=i;
+					i=verifica.dimensione;
+				}
+				if(verifica.secondo_termine[i] == verifica.secondo_termine[k])
+					termini_uguali_dopo++;
+			}
+			k--;
+		}
+		if(errore == 0 && termini_uguali_dopo == termini_uguali_prima)
+		termini_diversi++;
+		
+		termini_uguali_prima = termini_uguali_dopo;
+		i++;
+	}
+	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
+	printf("\n La relazione binaria e' una funzione\n");
+	else
+	printf("\n La relazione binaria non e' una funzione\n");
 }
 

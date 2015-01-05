@@ -8,9 +8,10 @@ int main(void){
 	i=0;
 	ciao = acquisizione(ciao);
 	
-	stampa(ciao);	
+	stampa(ciao);
 /*	ordine_totale(ciao);*/
 /*	ordine_totale(ciao);*/
-	relazione_equivalenza(ciao);
+/*	relazione_equivalenza(ciao);*/
+	check_funzione(ciao);
 	return(0);
 }
