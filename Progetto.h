@@ -394,7 +394,7 @@ int check_simmetria(struct relBin verifica){
 	if(simmetria == 1)
 		printf("   e' simmetrica\n");
 	else
-		printf("   non e' simmetrica\n");
+		printf("   e' asimmetrica\n");
 
 	return(simmetria);
 }
@@ -497,20 +497,28 @@ int check_transitivita(struct relBin verifica){
 
 int check_dicotomia(struct relBin verifica){
 
-	int a,b,c;
+	int a,b,c,d;
 	int numero_elementi;
 	int dicotomia = 0;
 	int dimensione;
 	int riscontro;
-	
+	int secondo_riscontro;
 	a=0;
 	b=0;
 	c=0;
+	d=a-1;
 	dimensione = verifica.dimensione;
 	
 	if(verifica.controllo == 1){
 		while( a < verifica.dimensione){
 			b=a+1;
+			d=a-1;
+			while(d > 0){
+				if(verifica.primo_termine[a] == verifica.primo_termine[d])
+					secondo_riscontro=1;
+					d--;
+			}
+			if(secondo_riscontro != 1)
 			while ( b < verifica.dimensione){
 				if(verifica.primo_termine[a] == verifica.primo_termine[b])
 					if(verifica.secondo_termine[a] == verifica.secondo_termine[b])
@@ -598,7 +606,7 @@ int check_dicotomia(struct relBin verifica){
 	if(dimensione == c)
 		dicotomia = 1;
 	
-	if(dicotomia == 1)
+	if(dicotomia == 1 && (check_riflessivita(verifica) == 1))
 		printf("   e' dicotomica\n\n");
 
 	else
@@ -617,7 +625,6 @@ void ordine_totale (struct relBin verifica){
 
 	parziale = ordine_parziale (verifica);
 	dicotomia = check_dicotomia (verifica);
-
 	if(parziale == 0)
 		printf(" \n l'ordine non e' totale in quanto non e' nemmeno parziale");
 
