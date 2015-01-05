@@ -5,8 +5,8 @@
 /********************STRUTTURA relBin**************************/
 
 struct relBin{
-	int *primo_termine,
-		*secondo_termine;
+	double 	*primo_termine,
+			*secondo_termine;
 		
 	char **prima_stringa,
 		 **seconda_stringa;
@@ -24,8 +24,8 @@ struct relBin acquisizione(struct relBin relazione){
 int acquisizione_finita = 0;
 relazione.dimensione = 0;
 
-relazione.primo_termine = (int *) malloc(2);
-relazione.secondo_termine = (int *) malloc(2);
+relazione.primo_termine = (double *) malloc(2);
+relazione.secondo_termine = (double *) malloc(2);
 relazione.prima_stringa = (char **) malloc(100);
 relazione.seconda_stringa = (char **) malloc(100);
 
@@ -43,18 +43,18 @@ while(acquisizione_finita == 0){
 	acquisizione_finita = 2;
  /*Acquisisco il primo termine della coppia*/
  printf("\n Inserisci il primo termine della coppia \n ");
- relazione.primo_termine = (int *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(int));
+ relazione.primo_termine = (double *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(double));
  /*Check del primo termine della coppia*/
-	while((scanf("%d",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
+	while((scanf("%lf",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
 	fflush(stdin);
 	printf("\n C'e' un errore, riinserire il primo termine\n");
 	}
  
  /*Acquisisco il secondo termine della coppia*/
  printf("\n Inserisci il secondo termine della coppia \n ");
- relazione.secondo_termine = (int *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(int));
+ relazione.secondo_termine = (double *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(double));
 /*Check del secondo termine della coppia*/
-	while((scanf("%d",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
+	while((scanf("%lf",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
 	fflush(stdin);
 	printf("\n C'e' un errore, riinserire il secondo termine\n");
 	}
@@ -110,9 +110,9 @@ void stampa(struct relBin stampa){
 	 if(stampa.controllo == 1){
  		 while(i < stampa.dimensione){
 
-     		printf("(%d,%d)",stampa.primo_termine[i],stampa.secondo_termine[i]);
+     		printf(" (%.2lf,%.2lf)",stampa.primo_termine[i],stampa.secondo_termine[i]);
  	 		if(i+1 != stampa.dimensione)
-     			printf(";");
+     			printf(" ;");
 	 		i++;
 		}
 	 }
@@ -127,7 +127,7 @@ void stampa(struct relBin stampa){
 	
 		}
  	}
- 	printf("}\n");
+ 	printf(" }\n");
 	printf("\n\n   ... Stampa Terminata ...\n\n");	
 
 }
@@ -741,3 +741,6 @@ void check_funzione(struct relBin verifica){
 	printf("\n La relazione binaria non e' una funzione\n");
 }
 
+
+int check_suriettivita(struct relBin verifica){
+}
