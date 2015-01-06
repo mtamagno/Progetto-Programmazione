@@ -222,7 +222,7 @@ int check_riflessivita (struct relBin verifica){
 			riscontro = 0;
 			secondo_riscontro = 0;
 			if(verifica.primo_termine[i] == verifica.secondo_termine[i])
-				riscontro++;
+				riscontro++; /****Controllo se c'è stato un riscontro a,a****/
 				secondo_riscontro++;
 			if(riscontro != 0){
 				i++;
@@ -265,7 +265,9 @@ int check_riflessivita (struct relBin verifica){
 			}
 				if(riscontro != 0)
 					i++;
-			
+	
+/**** Se non c'è stato un riscontro di riflessività esco e setto la riflessività a 0 *****/			
+				
 				else{
 					i=verifica.dimensione;
 					riflessivita = 0;
@@ -778,6 +780,8 @@ void check_funzione(struct relBin verifica){
 	int termini_uguali_dopo;
 	int errore;
 	
+if(verifica.controllo == 1){
+	
 	i=0;
 	errore=0;
 	termini_diversi=0;
@@ -806,12 +810,58 @@ void check_funzione(struct relBin verifica){
 		termini_uguali_prima = termini_uguali_dopo;
 		i++;
 	}
-	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
+	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
 	printf("\n La relazione binaria e' una funzione\n");
+	check_suriettivita(verifica);
+	check_iniettivita(verifica);
+}
 	else
 	printf("\n La relazione binaria non e' una funzione\n");
 }
 
+/********** Controllo se c'è una funzione per stringhe(le stringhe sono considerate come costanti di diverso valore) ***********/
+
+if(verifica.controllo == 2){
+	i=0;
+	errore=0;
+	termini_diversi=0;
+	termini_uguali_dopo=0;
+	termini_uguali_prima=0;
+	while(i < verifica.dimensione){
+		k=verifica.dimensione-1;
+		termini_uguali_dopo=termini_uguali_prima;
+		while(k > i){
+			if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0){
+				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0){
+					errore=1;
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("di essere una funzione\n");
+					k=i;
+					i=verifica.dimensione;
+				}
+				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0)
+					termini_uguali_dopo++;
+			}
+			k--;
+		}
+		if(errore == 0 && termini_uguali_dopo == termini_uguali_prima)
+		termini_diversi++;
+		
+		termini_uguali_prima = termini_uguali_dopo;
+		i++;
+	}
+	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
+	printf("\n La relazione binaria e' una funzione\n");
+	check_suriettivita(verifica);
+	check_iniettivita(verifica);
+	}
+	else
+	printf("\n La relazione binaria non e' una funzione\n");
+}
+
+printf("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
+
+}
 
 int check_suriettivita(struct relBin verifica){
 
