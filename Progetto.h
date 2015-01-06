@@ -812,8 +812,7 @@ if(verifica.controllo == 1){
 	}
 	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
 	printf("\n La relazione binaria e' una funzione\n");
-	check_suriettivita(verifica);
-	check_iniettivita(verifica);
+	check_biiettivita(verifica);
 }
 	else
 	printf("\n La relazione binaria non e' una funzione\n");
@@ -832,14 +831,14 @@ if(verifica.controllo == 2){
 		termini_uguali_dopo=termini_uguali_prima;
 		while(k > i){
 			if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0){
-				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0){
+				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) != 0){
 					errore=1;
 					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
 					printf("di essere una funzione\n");
 					k=i;
 					i=verifica.dimensione;
 				}
-				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0)
+				else
 					termini_uguali_dopo++;
 			}
 			k--;
@@ -852,8 +851,7 @@ if(verifica.controllo == 2){
 	}
 	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
 	printf("\n La relazione binaria e' una funzione\n");
-	check_suriettivita(verifica);
-	check_iniettivita(verifica);
+	check_biiettivita(verifica);
 	}
 	else
 	printf("\n La relazione binaria non e' una funzione\n");
@@ -863,12 +861,118 @@ printf("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 
 }
 
+int check_iniettivita(struct relBin verifica){
+		int i;
+	int k;
+	int termini_diversi;
+	int termini_uguali_prima;
+	int termini_uguali_dopo;
+	int errore;
+	int iniettivita;
+	
+	iniettivita = 0;
+	
+if(verifica.controllo == 1){
+	
+	i=0;
+	errore=0;
+	termini_diversi=0;
+	termini_uguali_dopo=0;
+	termini_uguali_prima=0;
+	while(i < verifica.dimensione){
+		k=verifica.dimensione-1;
+		termini_uguali_dopo=termini_uguali_prima;
+		while(k > i){
+			if(verifica.secondo_termine[i] == verifica.secondo_termine[k]){
+				if(verifica.primo_termine[i] != verifica.primo_termine[k]){
+					errore=1;
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("di essere una funzione\n");
+					k=i;
+					i=verifica.dimensione;
+				}
+				if(verifica.primo_termine[i] == verifica.primo_termine[k])
+					termini_uguali_dopo++;
+			}
+			k--;
+		}
+		if(errore == 0 && termini_uguali_dopo == termini_uguali_prima)
+		termini_diversi++;
+		
+		termini_uguali_prima = termini_uguali_dopo;
+		i++;
+	}
+	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
+	printf("\n La relazione binaria e' iniettiva\n");
+
+	else
+	printf("\n La relazione binaria non e' iniettiva\n");
+
+
+}
+
+/********** Controllo iniettivita per stringhe ***********/
+
+if(verifica.controllo == 2){
+	i=0;
+	errore=0;
+	termini_diversi=0;
+	termini_uguali_dopo=0;
+	termini_uguali_prima=0;
+	while(i < verifica.dimensione){
+		k=verifica.dimensione-1;
+		termini_uguali_dopo=termini_uguali_prima;
+		while(k > i){
+			if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0){
+				if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) != 0){
+					errore=1;
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("di essere una funzione\n");
+					k=i;
+					i=verifica.dimensione;
+				}
+				if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0)
+					termini_uguali_dopo++;
+			}
+			k--;
+		}
+		if(errore == 0 && termini_uguali_dopo == termini_uguali_prima)
+		termini_diversi++;
+		
+		termini_uguali_prima = termini_uguali_dopo;
+		i++;
+	}
+	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
+	printf("\n La relazione binaria e' iniettiva");
+	iniettivita = 1;
+	}
+	else
+	printf("\n La relazione binaria non e' iniettiva");
+}
+
+return(iniettivita);	
+}
+
+
+
 int check_suriettivita(struct relBin verifica){
 
 
 }
 
-int check_iniettivita(struct relBin verifica){
+
+
+void check_biiettivita(struct relBin verifica){
+	
+	int surriettivita,
+		iniettivita;
+		
+		surriettivita = check_suriettivita(verifica);
+		iniettivita = check_iniettivita(verifica);
 	
 	
+	if( surriettivita == 1 && iniettivita == 1)
+		printf("\n la funzione è biiettiva");
+	else
+		printf("\n la funzione non è biiettiva");
 }
