@@ -19,6 +19,13 @@ struct relBin{
 		dimensione;
 };
 
+/*DICHIARO LE FUNZIONI*/
+int check_simmetria(struct relBin);
+int check_riflessivita(struct relBin);
+int check_transitivita(struct relBin);
+int check_suriettivita(struct relBin);
+void check_biiettivita(struct relBin);
+
 
 
 /*******************Funzione di acquisizione********************/
@@ -26,20 +33,25 @@ struct relBin{
 struct relBin acquisizione(struct relBin relazione){
 
 int acquisizione_finita = 0;
-relazione.dimensione = 0;
+int scan = 0;
 
+
+relazione.dimensione = 0;
 relazione.primo_termine = (double *) malloc(2);
 relazione.secondo_termine = (double *) malloc(2);
 relazione.prima_stringa = (char **) malloc(100);
 relazione.seconda_stringa = (char **) malloc(100);
 
- while((relazione.controllo < 1) || (relazione.controllo > 2)){
+ while((relazione.controllo < 1) || (relazione.controllo > 2) || scan != 1){
 fflush(stdin);
 printf("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
-scanf("%d",&relazione.controllo);
-
+scan = scanf("%d",&relazione.controllo);
 }
 /**/
+
+/** risetto scan a 0 **/
+scan=0;
+
 /*Acquisizione Numerica*/
 
 if(relazione.controllo == 1){
@@ -73,13 +85,14 @@ if(relazione.controllo == 1){
 
  /*Chiedo all'utente se ci sono altre coppie*/
  
- 	while(acquisizione_finita < 0 || acquisizione_finita > 1){
+ 	while(acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
  		printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
- 		scanf("%d",&acquisizione_finita);
+ 		scan = scanf("%d",&acquisizione_finita);
  		}
 	}
 }
-
+/*risetto scan a 0*/
+scan = 0;
 /*Acquisizione con stringhe*/
 if(relazione.controllo == 2){
 	while(acquisizione_finita == 0){
@@ -90,22 +103,23 @@ if(relazione.controllo == 2){
 
  		printf(" Inserisci il primo termine della coppia \n ");
  		relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
-		scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
+		scan = scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
 
  		printf(" Inserisci il secondo termine della coppia \n ");
  		relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
- 		scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
+ 		scan = scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
 
+/*risetto scan a 0*/
+scan = 0;
 
  /*Chiedo all'utente se ci sono altre coppie*/
 		
-		while(acquisizione_finita < 0 || acquisizione_finita > 1){
+		while(acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
  
  			printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
- 			scanf("%d",&acquisizione_finita);
- 
+ 			scan = scanf("%d",&acquisizione_finita);
  			}
 		}
 	}
@@ -158,7 +172,7 @@ void stampa(struct relBin stampa){
 
 int ordine_parziale(struct relBin verifica){
 
-	int riflessivita,
+	int 	riflessivita,
 		transitivita,
 		simmetria,	
 		parziale;
@@ -366,18 +380,16 @@ int check_riflessivita (struct relBin verifica){
 
 
 
-/*********** FUNZIONE PER CONTROLLARE LA SIMMETRIA**********/
+/**************************** FUNZIONE PER CONTROLLARE LA SIMMETRIA *******************/
 
-/************* Definizione: In matematica, una relazione binaria R in un insieme
-/*************				 X è simmetrica se e solo se,
-************** presi due elementi qualsiasi a e b, vale che se a è in relazione 
-************** con b allora anche b è in relazione con a.*************/
+/************* Definizione: In matematica, una relazione binaria R in un insieme X è **/
+/************* simmetrica se e solo se,presi due elementi qualsiasi a e b, vale che  **/
+/************* se a è in relazione con b allora anche b è in relazione con a. *********/
 
 int check_simmetria(struct relBin verifica){
 	
 	int i,
 		j,
-		k,
 		riscontro,
 		simmetria;
 
@@ -386,7 +398,6 @@ int check_simmetria(struct relBin verifica){
 
 	i = 0;
 	j = 0;
-	k = 0;
 	riscontro = 0;
 
 
@@ -675,7 +686,7 @@ int check_dicotomia(struct relBin verifica){
 		a=0;
 		b=0;
 		c=0;
-		numero_elementi=0;
+		numero_elementi = 0;
 		
 /*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
@@ -690,14 +701,11 @@ int check_dicotomia(struct relBin verifica){
 			}
 			if(secondo_riscontro != 1){
 				if((strcmp(verifica.prima_stringa[a],verifica.seconda_stringa[a])) == 0)
-					riscontro++;
+					numero_elementi++;
 					
 			}
 		a++;
-		}
-		
-		numero_elementi = riscontro;
-		
+		}		
 		c = numero_elementi;
 
 /************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
@@ -756,9 +764,9 @@ void relazione_equivalenza(struct relBin verifica){
 	int simmetria;
 	int transitivita;
 	
-	riflessivita	= 	check_riflessivita(verifica);
-	simmetria 		= 	check_simmetria(verifica);
-	transitivita	=	check_transitivita(verifica);
+	riflessivita = check_riflessivita(verifica);
+	simmetria = check_simmetria(verifica);
+	transitivita = check_transitivita(verifica);
 	
 	if(riflessivita == 1 && simmetria == 1 && transitivita == 1)
 	printf("\n Quindi e' una relazione di equivalenza\n");
@@ -954,21 +962,24 @@ return(iniettivita);
 }
 
 
-
 int check_suriettivita(struct relBin verifica){
+/******* La suriettività è sempre verificata in quanto il dominio e il codominio **********/
+/** sono entrambi i rispettivi x,y acquisiti, quindi non ho elementi y non associati a x **/
+int suriettivita;
 
-
+suriettivita = 1;
+return(suriettivita);
 }
 
 
 
 void check_biiettivita(struct relBin verifica){
 	
-	int surriettivita,
+	int 	surriettivita,
 		iniettivita;
 		
-		surriettivita = check_suriettivita(verifica);
-		iniettivita = check_iniettivita(verifica);
+surriettivita = check_suriettivita(verifica);
+iniettivita = check_iniettivita(verifica);
 	
 	
 	if( surriettivita == 1 && iniettivita == 1)
