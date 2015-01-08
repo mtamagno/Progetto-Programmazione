@@ -26,8 +26,6 @@ int check_transitivita(struct relBin);
 int check_suriettivita(struct relBin);
 void check_biiettivita(struct relBin);
 
-
-
 /*******************Funzione di acquisizione********************/
 
 struct relBin acquisizione(struct relBin relazione){
@@ -47,7 +45,6 @@ fflush(stdin);
 printf("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
 scan = scanf("%d",&relazione.controllo);
 }
-/**/
 
 /** risetto scan a 0 **/
 scan=0;
@@ -92,8 +89,10 @@ if(relazione.controllo == 1){
  		}
 	}
 }
+
 /*risetto scan a 0*/
 scan = 0;
+
 /*Acquisizione con stringhe*/
 if(relazione.controllo == 2){
 	while(acquisizione_finita == 0){
@@ -401,6 +400,7 @@ int check_simmetria(struct relBin verifica){
 	j = 0;
 	riscontro = 0;
 
+/*Check della simmetria per numeri*/
 
 	if(verifica.controllo == 1){
 		while( i < verifica.dimensione){
@@ -423,6 +423,8 @@ int check_simmetria(struct relBin verifica){
 		}	
 	
 	}
+
+/*Check della simmetria per stringhe*/
 
 	if(verifica.controllo == 2){
 		while( i < verifica.dimensione){
@@ -485,7 +487,6 @@ int check_transitivita(struct relBin verifica){
 
 	if(verifica.controllo == 1){
 
-	
 		while(i < verifica.dimensione){
 			j = 0;
 
@@ -494,8 +495,8 @@ int check_transitivita(struct relBin verifica){
 
 				if(verifica.secondo_termine[i] == verifica.primo_termine[j]){
 					transitivita = 0;
+					
 					while(k < verifica.dimensione){
-						
 						if(verifica.primo_termine[i] == verifica.primo_termine[k]){
 		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
 								 transitivita = 1;
@@ -503,10 +504,12 @@ int check_transitivita(struct relBin verifica){
 								 k = verifica.dimensione;
 							}
 						}
+						
 						 k++;
 		 			}
 
 				}
+				
 				j++;
 			}
 
@@ -528,8 +531,8 @@ int check_transitivita(struct relBin verifica){
 
 				if(strcmp(verifica.seconda_stringa[i],verifica.prima_stringa[j]) == 0){
 					transitivita = 0;
+					
 					while(k < verifica.dimensione){
-						
 						if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k]) == 0){
 		 					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0){
 								 transitivita = 1;
@@ -537,10 +540,11 @@ int check_transitivita(struct relBin verifica){
 								 k = verifica.dimensione;
 							}
 						}
+						
 						 k++;
 		 			}
-
 				}
+				
 				j++;
 			}
 
@@ -553,6 +557,7 @@ int check_transitivita(struct relBin verifica){
 	
 	if(transitivita == 1)
 		printf("   e' transitiva\n");
+		
 	else
 		printf("   non e' transitiva\n");
 		
@@ -588,6 +593,7 @@ int check_dicotomia(struct relBin verifica){
 			d = a-1;
 			b = a+1;
 			secondo_riscontro = 0;
+			
 		if(a>0){
 			while ( d >= 0 ){
 				if(verifica.primo_termine[a] == verifica.primo_termine[d]){
@@ -615,10 +621,8 @@ int check_dicotomia(struct relBin verifica){
 		b=0;
 		c=0;
 		numero_elementi=0;
-		
-/*************** Conto il numero degli elementi distinti esistenti ***************/		
-	
 		riscontro = 0;
+/*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
 		while(a<verifica.dimensione){
 			d=a-1;
@@ -638,8 +642,6 @@ int check_dicotomia(struct relBin verifica){
 		}
 	
 	numero_elementi = riscontro;
-	
-	
 	c = numero_elementi;
 
 /************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
@@ -647,7 +649,6 @@ int check_dicotomia(struct relBin verifica){
 	while(numero_elementi > 0){	
 		numero_elementi--;
 		c = c + numero_elementi;
-		
 		}
 	}
 
@@ -746,6 +747,7 @@ void ordine_totale (struct relBin verifica){
 
 	parziale = ordine_parziale (verifica);
 	dicotomia = check_dicotomia (verifica);
+	
 	if(parziale == 0)
 		printf(" \n l'ordine non e' totale in quanto non e' nemmeno parziale");
 
@@ -771,10 +773,13 @@ void relazione_equivalenza(struct relBin verifica){
 	
 	if(riflessivita == 1 && simmetria == 1 && transitivita == 1)
 	printf("\n Quindi e' una relazione di equivalenza\n");
+	
 	if(riflessivita == 0)
 	printf("\n Quindi non e' una relazione di equivalenza perche' non riflessiva\n");
+	
 	if(simmetria == 0)
 	printf("\n Quindi non e' una relazione di equivalenza perche' non simmetrica\n");
+	
 	if(transitivita == 0)
 	printf("\n Quindi non e' una relazione di equivalenza perche' non transitiva\n");	
 }
@@ -870,6 +875,8 @@ printf("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 
 }
 
+/**********FUNZIONE PER IL CHECK DELL'INIETTIVITA'*************/
+
 int check_iniettivita(struct relBin verifica){
 		int i;
 	int k;
@@ -888,6 +895,7 @@ if(verifica.controllo == 1){
 	termini_diversi=0;
 	termini_uguali_dopo=0;
 	termini_uguali_prima=0;
+	
 	while(i < verifica.dimensione){
 		k=verifica.dimensione-1;
 		termini_uguali_dopo=termini_uguali_prima;
@@ -920,7 +928,7 @@ if(verifica.controllo == 1){
 
 }
 
-/********** Controllo iniettivita per stringhe ***********/
+/********** Controllo iniettivita' per stringhe ***********/
 
 if(verifica.controllo == 2){
 	i=0;
@@ -928,6 +936,7 @@ if(verifica.controllo == 2){
 	termini_diversi=0;
 	termini_uguali_dopo=0;
 	termini_uguali_prima=0;
+	
 	while(i < verifica.dimensione){
 		k=verifica.dimensione-1;
 		termini_uguali_dopo=termini_uguali_prima;
@@ -943,6 +952,7 @@ if(verifica.controllo == 2){
 				if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0)
 					termini_uguali_dopo++;
 			}
+			
 			k--;
 		}
 		if(errore == 0 && termini_uguali_dopo == termini_uguali_prima)
@@ -962,6 +972,7 @@ if(verifica.controllo == 2){
 return(iniettivita);	
 }
 
+/****************FUNZIONE PER IL CHECK DELLA SURIETTIVITA'************/
 
 int check_suriettivita(struct relBin verifica){
 /******* La suriettività è sempre verificata in quanto il dominio e il codominio **********/
@@ -972,16 +983,15 @@ suriettivita = 1;
 return(suriettivita);
 }
 
-
+/****************FUNZIONE PER IL CHECK DELLA BIIETTIVITA'************/
 
 void check_biiettivita(struct relBin verifica){
 	
 	int 	surriettivita,
-		iniettivita;
+			iniettivita;
 		
 surriettivita = check_suriettivita(verifica);
 iniettivita = check_iniettivita(verifica);
-	
 	
 	if( surriettivita == 1 && iniettivita == 1)
 		printf("\n la funzione è biiettiva");
