@@ -68,7 +68,7 @@ if(relazione.controllo == 1){
 
 	while((scanf("%lf",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
 		fflush(stdin);
-		printf("\n C'e' un errore, riinserire il primo termine\n");
+		printf("\n C'e' un errore, reinserire il primo termine\n");
 		}
  
  /*Acquisisco il secondo termine della coppia*/
@@ -80,14 +80,15 @@ if(relazione.controllo == 1){
 
 	while((scanf("%lf",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
 		fflush(stdin);
-		printf("\n C'e' un errore, riinserire il secondo termine\n");
+		printf("\n C'e' un errore, reinserire il secondo termine\n");
 		}
 
  /*Chiedo all'utente se ci sono altre coppie*/
  
  	while(acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
  		printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
- 		scan = scanf("%d",&acquisizione_finita);
+ 		fflush(stdin);
+		scan = scanf("%d",&acquisizione_finita);
  		}
 	}
 }
