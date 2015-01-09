@@ -996,5 +996,6 @@ iniettivita = check_iniettivita(verifica);
 	if( surriettivita == 1 && iniettivita == 1)
 		printf("\n la funzione è biiettiva");
 	else
-		printf("\n la funzione non è biiettiva");
+		printf("\n la funzione non e' biiettiva");
+return;
 }
