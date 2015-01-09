@@ -195,7 +195,7 @@ int ordine_parziale(struct relBin verifica){
 	}
 	else{
 	
-		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propietà\n");
+		printf("\n Non e' una relazione d'ordine parziale in quanto non rispetta tutte le propieta'\n");
 		parziale = 0;
 	}
 	
