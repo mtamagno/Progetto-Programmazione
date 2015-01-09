@@ -974,7 +974,7 @@ if(verifica.controllo == 2){
 	else
 	printf("\n La relazione binaria non e' iniettiva");
 }
-printf("\n\n\n%d\n\n\n\n",iniettivita);
+
 return(iniettivita);	
 }
 
@@ -999,7 +999,7 @@ void check_biiettivita(struct relBin verifica){
 surriettivita = check_suriettivita(verifica);
 iniettivita = check_iniettivita(verifica);
 
-printf("%d",iniettivita);	
+	
 	if( surriettivita == 1 && iniettivita == 1)
 		printf("\n la funzione e' biiettiva");
 	else
