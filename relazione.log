@@ -1,0 +1,1287 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  9 JAN 2015 18:28
+entering extended mode
+**relazione.tex
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+
+LaTeX Warning: Unused global option(s):
+    [block].
+
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+\c@lstlisting=\count95
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+
+Overfull \hbox (2.56708pt too wide) in paragraph at lines 73--78
+\OT1/cmr/m/n/10.95 parametro di in-gresso una re-lazione bi-na-ria e sta-bilisc
+e se essa `e una re-lazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+[1]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Overfull \hbox (1.06654pt too wide) in paragraph at lines 83--85
+\OT1/cmr/m/n/10.95 2. Come in-put per le al-tre 5 fun-zioni ab-bi-amo una re-la
+zione(precedentemente
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+
+Overfull \hbox (2.19196pt too wide) in paragraph at lines 88--94
+\OT1/cmr/m/n/10.95 5. La quinta fun-zione(relazione equiv-alenza) non resti-tu-
+isce nulla, ma stampa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+[2]
+Missing character: There is no ‚ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no ô in font cmbx12!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Overfull \hbox (0.77255pt too wide) in paragraph at lines 100--121
+\OT1/cmr/m/n/10.95 Concetto di Re-lazione Bi-na-ria : In matem-at-ica, una re-l
+azione bi-na-ria definita
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+
+Overfull \hbox (2.44545pt too wide) in paragraph at lines 100--121
+\OT1/cmr/m/n/10.95 Concetto di fun-zione: In matem-at-ica, una fun-zione, an-ch
+e detta ap-pli-cazione,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--121
+
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+[3] [4]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+
+Overfull \hbox (3.84459pt too wide) in paragraph at lines 132--148
+\OT1/cmr/m/n/10.95 in questo caso sar sem-pre set-tata a 1 in quanto tutti gli 
+el-e-menti del codo-minio
+ []
+
+
+Overfull \hbox (4.08795pt too wide) in paragraph at lines 132--148
+\OT1/cmr/m/n/10.95 (presi come gli el-e-menti dei vari sec-ondi ter-mini dig-i-
+tati du-rante lac-qui-sizione)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--148
+
+ []
+
+[5]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+
+ []
+
+
+Overfull \hbox (16.83255pt too wide) in paragraph at lines 152--161
+\OT1/cmr/m/n/10.95 La scelta dellinput di tipo stringa dovr es-sere data per av
+er mag-gior com-pletezza,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+
+ []
+
+
+Overfull \hbox (4.69635pt too wide) in paragraph at lines 152--161
+\OT1/cmr/m/n/10.95 Alle varie fun-zioni verr data come in-put la strut-tura dat
+i sal-vata in prece-denza
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--161
+
+ []
+
+[6]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no π in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Overfull \hbox (2.59747pt too wide) in paragraph at lines 167--171
+\OT1/cmr/m/n/10.95 lu-tente nellinser-i-mento dei dati, e che seg-naler-anno ev
+en-tu-ali er-rori commessi.
+ []
+
+
+Overfull \hbox (6.39963pt too wide) in paragraph at lines 167--171
+\OT1/cmr/m/n/10.95 Finita lac-qui-sizione dovremo resti-tuire lind-i-rizzo dell
+a strut-tura, che allinterno
+ []
+
+
+Overfull \hbox (4.14883pt too wide) in paragraph at lines 167--171
+\OT1/cmr/m/n/10.95 strut-tura della re-lazione bi-na-ria) e la uti-liz-zano per
+ ver-i-fi-carne varie pro-pri-eta. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--171
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no π in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Overfull \hbox (5.66837pt too wide) in paragraph at lines 178--180
+\OT1/cmr/m/n/10.95 della ver-i-fica delle pro-pri-eta nec-es-sarie ad avere una
+ re-lazione dor-dine parziale,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+[7]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+[8]
+Missing character: There is no ‚ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no ô in font cmbx12!
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Progetto.h
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+ [9] [10]
+[11] [12]
+Missing character: There is no ‡ in font cmti10!
+ [13]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [14]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no È in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [15]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [16]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [17]
+Missing character: There is no ‡ in font cmti10!
+ [18]
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+ [19] [20]
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no Ë in font cmti10!
+ [21]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [22]
+Missing character: There is no Ë in font cmti10!
+Missing character: There is no ‡ in font cmti10!
+ [23] [24] [25]
+[26] [27]
+Missing character: There is no Ë in font cmti10!
+ [28] [29] [30]
+Missing character: There is no Ë in font cmti10!
+ [31] [32] [33] [34]
+Missing character: There is no ‡ in font cmti10!
+Missing character: There is no Ë in font cmti10!
+) [35]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Test.c) [36]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no † in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ® in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (32.40588pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs: check-ri-f-lessivit : 1,check-sim-me-tria : 0, chec
+k-tran-si-tivit : 1 check-di-co-to-mia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (8.40712pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs:checkriflessivit : 1,check-sim-me-tria : 0, check-tr
+an-si-tivit : 1 la re-lazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (8.40712pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs:checkriflessivit : 1,check-sim-me-tria : 0, check-tr
+an-si-tivit : 0 la re-lazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (28.14755pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs:checkriflessivit : 1,check-sim-me-tria : 1, check-tr
+an-si-tivit : 1 check-di-co-to-mia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (8.40712pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs:checkriflessivit : 0,check-sim-me-tria : 0, check-tr
+an-si-tivit : 0 la re-lazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Overfull \hbox (14.11938pt too wide) in paragraph at lines 202--287
+\OT1/cmr/m/n/10.95 Outputs:check[]riflessivit : 1,check[]simmetria : 1, check[]
+transitivit : 1 di-co-to-mia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--287
+
+ []
+
+[37] [38] [39] [40]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.aux) ) 
+Here is how much of TeX's memory you used:
+ 1750 strings out of 493921
+ 25537 string characters out of 3144865
+ 189614 words of memory out of 3000000
+ 5080 multiletter control sequences out of 15000+200000
+ 10053 words of font info for 35 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 29i,5n,49p,1251b,1472s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on relazione.pdf (42 pages, 210146 bytes).
+PDF statistics:
+ 170 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
