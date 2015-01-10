@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  10 JAN 2015 19:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  10 JAN 2015 19:27
 entering extended mode
 **relazione.tex
 (C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione.tex
@@ -526,11 +526,12 @@ Missing character: There is no è in font cmti10!
 Missing character: There is no è in font cmti10!
  [22]
 Missing character: There is no à in font cmti10!
-Missing character: There is no à in font cmti10!
  [23]
-Missing character: There is no è in font cmti10!
 Missing character: There is no à in font cmti10!
- [24] [25] [26]
+Missing character: There is no è in font cmti10!
+ [24]
+Missing character: There is no à in font cmti10!
+ [25] [26]
 [27] [28]
 Missing character: There is no è in font cmti10!
  [29] [30] [31]
@@ -538,13 +539,13 @@ Missing character: There is no è in font cmti10!
  [32] [33] [34] [35]
 Missing character: There is no à in font cmti10!
 Missing character: There is no è in font cmti10!
-) [36]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c) [37]
+ [36]) [37]
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c) [38]
 Underfull \hbox (badness 10000) in paragraph at lines 212--218
 
  []
 
-[38]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 227--300
 
  []
@@ -710,7 +711,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--300
 
  []
 
-[39] [40]
+[40] [41]
 Underfull \hbox (badness 10000) in paragraph at lines 301--313
 
  []
@@ -735,12 +736,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--313
 
  []
 
-[41] [42]
+[42] [43]
 (C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione.aux) ) 
 Here is how much of TeX's memory you used:
  1761 strings out of 493921
  25730 string characters out of 3144877
- 190690 words of memory out of 3000000
+ 194690 words of memory out of 3000000
  5087 multiletter control sequences out of 15000+200000
  10668 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -754,9 +755,9 @@ iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (44 pages, 218415 bytes).
+Output written on relazione.pdf (45 pages, 219528 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

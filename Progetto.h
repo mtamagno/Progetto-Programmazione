@@ -43,6 +43,7 @@ relazione.seconda_stringa = (char **) malloc(100);
  while((relazione.controllo < 1) || (relazione.controllo > 2) || scan != 1){
 fflush(stdin);
 printf("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
+printf("\n scelta: ");
 scan = scanf("%d",&relazione.controllo);
 }
 
@@ -60,23 +61,29 @@ if(relazione.controllo == 1){
  
 		printf("\n Inserisci il primo termine della coppia \n ");
 		relazione.primo_termine = (double *) realloc(relazione.primo_termine, (relazione.dimensione+1) * sizeof(double));
- 
+ 		scan = 0;
  /*Check del primo termine della coppia*/
 
-	while((scanf("%lf",&relazione.primo_termine[relazione.dimensione - 1])) != 1){
+	while(scan != 1){
+		printf("  Primo Termine: ");
 		fflush(stdin);
+		scan = scanf("%lf",&relazione.primo_termine[relazione.dimensione - 1]);
+		if(scan == 0)
 		printf("\n C'e' un errore, reinserire il primo termine\n");
 		}
- 
+ 		
  /*Acquisisco il secondo termine della coppia*/
- 	
+ 		scan = 0;
 	 	printf("\n Inserisci il secondo termine della coppia \n ");
 		relazione.secondo_termine = (double *) realloc(relazione.secondo_termine, (relazione.dimensione+1) * sizeof(double));
 
 /*Check del secondo termine della coppia*/
 
-	while((scanf("%lf",&relazione.secondo_termine[relazione.dimensione - 1])) != 1){
+	while(scan != 1){
+		printf("  Secondo Termine: ");
 		fflush(stdin);
+		scan = scanf("%lf",&relazione.secondo_termine[relazione.dimensione - 1]);
+		if(scan == 0)
 		printf("\n C'e' un errore, reinserire il secondo termine\n");
 		}
 
@@ -84,6 +91,7 @@ if(relazione.controllo == 1){
  
  	while(acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
  		printf("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
+ 		printf("\n scelta: ");
  		fflush(stdin);
 		scan = scanf("%d",&acquisizione_finita);
  		}
@@ -102,13 +110,15 @@ if(relazione.controllo == 2){
  /*Acquisisco il primo termine della coppia*/
 
  		printf(" Inserisci il primo termine della coppia \n ");
- 		relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+ 		printf("  Primo Termine: ");
+		 relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc(50);
 		scan = scanf(" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
 
  		printf(" Inserisci il secondo termine della coppia \n ");
- 		relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
+ 		printf("  Secondo Termine: ");
+		 relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc(50);
  		scan = scanf(" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
 
 /*risetto scan a 0*/

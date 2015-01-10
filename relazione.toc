@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.11}Output - check\textunderscore funzione}{9}
 \contentsline {section}{\numberline {4}Implementazione dell$'$ algoritmo}{10}
 \contentsline {subsection}{\numberline {4.1}Libreria}{10}
-\contentsline {subsection}{\numberline {4.2}Test}{37}
-\contentsline {subsection}{\numberline {4.3}Makefile}{38}
-\contentsline {section}{\numberline {5}Testing the program}{39}
-\contentsline {section}{\numberline {6}Verifying the program}{42}
+\contentsline {subsection}{\numberline {4.2}Test}{38}
+\contentsline {subsection}{\numberline {4.3}Makefile}{39}
+\contentsline {section}{\numberline {5}Testing the program}{40}
+\contentsline {section}{\numberline {6}Verifying the program}{43}
