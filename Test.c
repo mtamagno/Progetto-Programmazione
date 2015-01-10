@@ -21,7 +21,7 @@ int main(void){
 	if(scelta == 1)
 	RelazioneBinaria = acquisizione(RelazioneBinaria);
 	if(scelta == 2){
-	printf("\n\n.....Test terminati......");
+	printf("\n\n .....Test terminati......\n\n");
 	return(0);
 	}
 	scelta = -1;
@@ -50,7 +50,7 @@ int main(void){
 	if(scelta == 6)
 		check_funzione(RelazioneBinaria);
 	if(scelta == 7){
-		printf("\n\n.....Test terminati......");
+		printf("\n\n .....Test terminati......\n\n");
 		return(0);
 		}
 	}
