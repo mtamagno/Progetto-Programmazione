@@ -20,8 +20,10 @@ int main(void){
 	}
 	if(scelta == 1)
 	RelazioneBinaria = acquisizione(RelazioneBinaria);
-	if(scelta == 2)
+	if(scelta == 2){
+	printf("\n\n.....Test terminati......");
 	return(0);
+	}
 	scelta = -1;
 	while(scelta != 7){
 	printf("\n\n Digita il numero corrispondente all'azione che si vuole svolgere\n");
@@ -47,10 +49,11 @@ int main(void){
 		relazione_equivalenza(RelazioneBinaria);
 	if(scelta == 6)
 		check_funzione(RelazioneBinaria);
-	if(scelta == 7)
-	return(0);
+	if(scelta == 7){
+		printf("\n\n.....Test terminati......");
+		return(0);
+		}
 	}
-	
 return(0);
 
 }
