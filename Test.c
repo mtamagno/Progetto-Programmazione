@@ -11,9 +11,10 @@ int main(void){
 	
 	printf("\n\n Digita il numero corrispondente all'azione che si vuole svolgere\n");
 	printf("\n 1) Test Acquisizione\n 2) Esci\n");
-	printf("\n scelta: ");
+	
 	
 	 while((scelta < 1) || (scelta > 2) || scan != 1){
+		printf("\n scelta: ");
 		fflush(stdin);
 		scan = scanf("%d",&scelta);
 	}
@@ -26,9 +27,9 @@ int main(void){
 	printf("\n\n Digita il numero corrispondente all'azione che si vuole svolgere\n");
 	printf("\n 1) Test Acquisizione\n 2) Test Stampa\n 3) Test verifica ordine parziale\n 4) Test verifica ordine totale");
 	printf("\n 5) Test verifica relazione d'equivalenza\n 6) Test funzione\n 7) Esci\n" );
-	printf("\n scelta: ");
 	scelta = -1;
 	while((scelta < 1) || (scelta > 7) || scan != 1){
+		printf("\n scelta: ");
 		fflush(stdin);
 		scan = scanf("%d",&scelta);
 	}
