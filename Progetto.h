@@ -172,7 +172,7 @@ void stampa(struct relBin stampa){
 
 int ordine_parziale(struct relBin verifica){
 
-	int 	riflessivita,
+	int riflessivita,
 		transitivita,
 		simmetria,	
 		parziale;
@@ -408,9 +408,12 @@ int check_simmetria(struct relBin verifica){
 /*Check della simmetria per numeri*/
 
 	if(verifica.controllo == 1){
+		
 		while( i < verifica.dimensione){
+			
 			j = 0;
-			while( j < verifica.dimensione){		
+			while( j < verifica.dimensione){	
+				
 				if(verifica.primo_termine[i] == verifica.secondo_termine[j])
 					if(verifica.primo_termine[j] == verifica.secondo_termine[i])
 						riscontro++;
@@ -432,9 +435,12 @@ int check_simmetria(struct relBin verifica){
 /*Check della simmetria per stringhe*/
 
 	if(verifica.controllo == 2){
+		
 		while( i < verifica.dimensione){
+			
 			j = 0;
-			while( j < verifica.dimensione){		
+			while( j < verifica.dimensione){	
+				
 				if(strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[j]) == 0 )
 					if(strcmp(verifica.prima_stringa[j],verifica.seconda_stringa[i]) == 0 )
 						riscontro++;
@@ -768,6 +774,7 @@ void ordine_totale (struct relBin verifica){
 /*Funzione che stabilisce se e' una relazione di equivalenza o meno*/
 
 void relazione_equivalenza(struct relBin verifica){
+	
 	int riflessivita;
 	int simmetria;
 	int transitivita;
@@ -792,6 +799,7 @@ void relazione_equivalenza(struct relBin verifica){
 /*Funzione che stabilisce se la relazione binaria acquisita e' una funzione matematica*/
 
 void check_funzione(struct relBin verifica){
+	
 	int i;
 	int k;
 	int termini_diversi;
@@ -840,6 +848,7 @@ if(verifica.controllo == 1){
 /********** Controllo se c'è una funzione per stringhe(le stringhe sono considerate come costanti di diverso valore) ***********/
 
 if(verifica.controllo == 2){
+	
 	i=0;
 	errore=0;
 	termini_diversi=0;
@@ -883,7 +892,8 @@ printf("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 /**********FUNZIONE PER IL CHECK DELL'INIETTIVITA'*************/
 
 int check_iniettivita(struct relBin verifica){
-		int i;
+	
+	int i;
 	int k;
 	int termini_diversi;
 	int termini_uguali_prima;
@@ -902,11 +912,15 @@ if(verifica.controllo == 1){
 	termini_uguali_prima=0;
 	
 	while(i < verifica.dimensione){
+		
 		k=verifica.dimensione-1;
 		termini_uguali_dopo=termini_uguali_prima;
 		while(k > i){
+			
 			if(verifica.secondo_termine[i] == verifica.secondo_termine[k]){
+				
 				if(verifica.primo_termine[i] != verifica.primo_termine[k]){
+					
 					errore=1;
 					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
 					printf("di essere una funzione\n");
@@ -937,6 +951,7 @@ if(verifica.controllo == 1){
 /********** Controllo iniettivita' per stringhe ***********/
 
 if(verifica.controllo == 2){
+	
 	i=0;
 	errore=0;
 	termini_diversi=0;
@@ -981,6 +996,7 @@ return(iniettivita);
 /****************FUNZIONE PER IL CHECK DELLA SURIETTIVITA'************/
 
 int check_suriettivita(struct relBin verifica){
+	
 /******* La suriettività è sempre verificata in quanto il dominio e il codominio **********/
 /** sono entrambi i rispettivi x,y acquisiti, quindi non ho elementi y non associati a x **/
 int suriettivita;
