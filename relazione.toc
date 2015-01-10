@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Specifica del Problema}{1}
+\contentsline {section}{\numberline {2}Analisi del Problema}{2}
+\contentsline {subsection}{\numberline {2.1}Input}{2}
+\contentsline {subsection}{\numberline {2.2}Output}{2}
+\contentsline {section}{\numberline {3}Progettazione dell$'$ Algoritmo}{3}
+\contentsline {subsection}{\numberline {3.1}Teoria}{3}
+\contentsline {subsection}{\numberline {3.2}Funzioni per l`acquisizione:}{5}
+\contentsline {subsection}{\numberline {3.3}Funzioni per la verifica delle propriet\`a:}{5}
+\contentsline {subsection}{\numberline {3.4}Funzioni principali:}{6}
+\contentsline {subsection}{\numberline {3.5}Input}{7}
+\contentsline {subsection}{\numberline {3.6}Output - Acquisizione}{8}
+\contentsline {subsection}{\numberline {3.7}Output - stampa}{8}
+\contentsline {subsection}{\numberline {3.8}Output - ordine\textunderscore parziale}{8}
+\contentsline {subsection}{\numberline {3.9}Output - ordine\textunderscore totale}{8}
+\contentsline {subsection}{\numberline {3.10}Output - relazione\textunderscore equivalenza}{9}
+\contentsline {subsection}{\numberline {3.11}Output - check\textunderscore funzione}{9}
+\contentsline {section}{\numberline {4}Implementazione dell$'$ algoritmo}{10}
+\contentsline {subsection}{\numberline {4.1}Libreria}{10}
+\contentsline {subsection}{\numberline {4.2}Test}{37}
+\contentsline {subsection}{\numberline {4.3}Makefile}{38}
+\contentsline {section}{\numberline {5}Testing the program}{39}
+\contentsline {section}{\numberline {6}Verifying the program}{42}
