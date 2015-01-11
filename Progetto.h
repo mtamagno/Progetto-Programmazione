@@ -1,4 +1,4 @@
-#include<stdio.h>
+	#include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
@@ -173,7 +173,7 @@ void stampa(struct relBin stampa){
  	
 /***************** Fine Stampa *******************/
 
- 	printf(" }\n");
+ 	printf("}\n");
 	printf("\n\n   ... Stampa Terminata ...\n\n");	
 
 }
@@ -521,14 +521,17 @@ int check_transitivita(struct relBin verifica){
 						if(verifica.primo_termine[i] == verifica.primo_termine[k]){
 		 					if(verifica.secondo_termine[k]==verifica.secondo_termine[j]){
 								 transitivita = 1;
-								 j = verifica.dimensione;
 								 k = verifica.dimensione;
 							}
 						}
 						
-						 k++;
+						k++;
 		 			}
-
+				
+					if(transitivita==0){
+						j=verifica.dimensione;
+						i=verifica.dimensione;
+					}
 				}
 				
 				j++;
@@ -557,13 +560,17 @@ int check_transitivita(struct relBin verifica){
 						if(strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k]) == 0){
 		 					if(strcmp(verifica.seconda_stringa[k],verifica.seconda_stringa[j]) == 0){
 								 transitivita = 1;
-								 j = verifica.dimensione;
 								 k = verifica.dimensione;
 							}
 						}
 						
 						 k++;
 		 			}
+		 			
+		 			if(transitivita==0){
+		 				j=verifica.dimensione;
+		 				i=verifica.dimensione;
+					 }
 				}
 				
 				j++;
@@ -747,7 +754,7 @@ int check_dicotomia(struct relBin verifica){
 	if(dimensione == c)
 		dicotomia = 1;
 	
-	if(dicotomia == 1 && (check_riflessivita(verifica) == 1))
+	if(dicotomia == 1 )
 		printf("   e' dicotomica\n\n");
 
 	else
@@ -765,8 +772,10 @@ void ordine_totale (struct relBin verifica){
 	
 	int parziale,
 		dicotomia;
-
+	
+	dicotomia=2;
 	parziale = ordine_parziale (verifica);
+	if(parziale == 1)
 	dicotomia = check_dicotomia (verifica);
 	
 	if(parziale == 0)
