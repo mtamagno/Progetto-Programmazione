@@ -211,9 +211,9 @@ int ordine_parziale(struct relBin verifica){
 		if(transitivita == 0)
 		printf("\n manca la propieta' di transitivita'\n");
 		if(simmetria == 1)
-		printf("\n manca la propieta' di asimmetria'\n");
+		printf("\n manca la propieta' di asimmetria\n");
 		if(riflessivita == 0)
-		printf("\n manca la propieta' di asimmetria'\n");
+		printf("\n manca la propieta' di riflessivita'\n");
 /************* Fine controllo Ordine Parziale *********************/
 	
 	printf("\n\n   ... Controllo Ordine Parziale Terminato ...\n\n\n\n");
