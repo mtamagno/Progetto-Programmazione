@@ -840,8 +840,8 @@ if(verifica.controllo == 1){
 			if(verifica.primo_termine[i] == verifica.primo_termine[k]){
 				if(verifica.secondo_termine[i] != verifica.secondo_termine[k]){
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
-					printf("di essere una funzione\n");
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
+					printf(" di essere una funzione\n");
 					k=i;
 					i=verifica.dimensione;
 				}
@@ -880,8 +880,8 @@ if(verifica.controllo == 2){
 			if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0){
 				if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) != 0){
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
-					printf("di essere una funzione\n");
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
+					printf(" di essere una funzione\n");
 					k=i;
 					i=verifica.dimensione;
 				}
@@ -941,8 +941,8 @@ if(verifica.controllo == 1){
 				if(verifica.primo_termine[i] != verifica.primo_termine[k]){
 					
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
-					printf("di essere una funzione\n");
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla funzione\n",k+1);
+					printf(" di essere iniettiva\n");
 					k=i;
 					i=verifica.dimensione;
 				}
@@ -958,11 +958,11 @@ if(verifica.controllo == 1){
 		i++;
 	}
 	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
-	printf("\n La relazione binaria e' iniettiva\n");
+	printf("\n La funzione e' iniettiva\n");
 	iniettivita = 1;
 }
 	else
-	printf("\n La relazione binaria non e' iniettiva\n");
+	printf("\n La funzione non e' iniettiva\n");
 
 
 }
@@ -984,8 +984,8 @@ if(verifica.controllo == 2){
 			if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0){
 				if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) != 0){
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
-					printf("di essere una funzione\n");
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla funzione\n",k+1);
+					printf(" di essere iniettiva\n");
 					k=i;
 					i=verifica.dimensione;
 				}
@@ -1002,11 +1002,11 @@ if(verifica.controllo == 2){
 		i++;
 	}
 	if(errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
-	printf("\n La relazione binaria e' iniettiva");
+	printf("\n La funzione e' iniettiva");
 	iniettivita = 1;
 	}
 	else
-	printf("\n La relazione binaria non e' iniettiva");
+	printf("\n La funzione non e' iniettiva");
 }
 
 return(iniettivita);	
