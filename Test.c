@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"Progetto.h"
+#include"librerie/Progetto.h"
 
 int main(void){
 	struct	relBin RelazioneBinaria;
