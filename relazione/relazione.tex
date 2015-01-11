@@ -14,7 +14,7 @@
 		%        HEADING SECTIONS
 		%----------------------------------------------------------------------------------------
 		
-		\textsc{\LARGE Università di Urbino}\\[1.5cm] % Name of your university/college
+		\textsc{\LARGE Universit\`a di Urbino}\\[1.5cm] % Name of your university/college
 		\textsc{\Large Informatica Applicata}\\[0.5cm] % Major heading such as course name
 		\textsc{\large Programmazione Procedurale e Logica}\\[0.5cm] % Minor heading such as course title
 		
@@ -181,23 +181,23 @@
 	\newpage        
 	\subsection{Output - Acquisizione}
 	Durante l$'$ acquisizione avremo diversi output video (printf) che guideranno l$'$ utente nell$'$ inserimento dei dati, e che segnaleranno eventuali errori commessi.
-	Finita l$'$ acquisizione dovremo restituire l$'$ indirizzo della struttura, che all$'$ interno quindi conterra$'$  i dati inseriti dall$'$ utente. Abbiamo scelto di fare ciò perch\`e non essendo permesso l$'$ utilizzo di variabili globali, il modo più semplice di passare i dati inseriti da una funzione all$'$ altra e$'$  quello di creare una struttura dinamica.
+	Finita l$'$ acquisizione dovremo restituire l$'$ indirizzo della struttura, che all$'$ interno quindi conterra$'$  i dati inseriti dall$'$ utente. Abbiamo scelto di fare ciò perch\`e non essendo permesso l$'$ utilizzo di variabili globali, il modo più semplice di passare i dati inseriti da una funzione all$'$ altra \`e  quello di creare una struttura dinamica.
 	Una volta restituito l$'$ indirizzo della struttura, a seconda della funzione lanciata nel file Test.c si lanceranno le altre 5 funzioni, dato che queste prendono tutte in pasto l$'$ output della prima (cio\`e l$'$ indirizzo della struttura della relazione binaria) e la utilizzano per verificarne varie proprieta$'$ .\\
 	\\
 	\subsection{Output - stampa}
 	La funzione “stampa” avra$'$  come output la stampa a video della struttura acquisita, con qualche aggiunta grafica(le parentesi e le virgole) per rendere il tutto più facilmente interpretabile e leggibile.\\
 	\\
 	\subsection{Output - ordine\textunderscore parziale}
-	La funzione “ordine\textunderscore parziale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  antisimmetria e transitivita$'$ . Nel caso in cui siano tutte verificate si stampera$'$  che la relazione e$'$  una relazione di ordine parziale, mentre nel caso in cui non siano verificate si stampera$'$  che non lo e$'$  e il perche$'$  (cioe$'$  quale proprieta$'$  non e$'$  o non sono verificate).\\
+	La funzione “ordine\textunderscore parziale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  antisimmetria e transitivita$'$ . Nel caso in cui siano tutte verificate si stampera$'$  che la relazione \`e  una relazione di ordine parziale, mentre nel caso in cui non siano verificate si stampera$'$  che non lo \`e  e il perch\`e  (cio\`e  quale proprieta$'$  non \`e  o non sono verificate).\\
 	\\
 	\subsection{Output - ordine\textunderscore totale}
-	La funzione “ordine\textunderscore totale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  necessarie ad avere una relazione d$'$ ordine parziale, e verifichera$'$  poi se anche la dicotomia \`e valida per la relazione o meno. Nel caso in cui tutto sia positivo, allora si stampera$'$  che la relazione e$'$  di ordine totale, mentre se non lo e$'$  si stampera$'$  cosa fa in modo che non lo sia.\\
+	La funzione “ordine\textunderscore totale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  necessarie ad avere una relazione d$'$ ordine parziale, e verifichera$'$  poi se anche la dicotomia \`e valida per la relazione o meno. Nel caso in cui tutto sia positivo, allora si stampera$'$  che la relazione \`e  di ordine totale, mentre se non lo \`e  si stampera$'$  cosa fa in modo che non lo sia.\\
 	\\
 	\subsection{Output - relazione\textunderscore equivalenza}
-	La funzione “relazione\textunderscore equivalenza” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  simmetria e transitivita$'$  e nel caso in cui siano tutte positive si stampera$'$  che la relazione e$'$  una relazione di equivalenza, mentre nel caso in cui qualcosa non sia verificato si stampera$'$  cio$'$  che impedisce alla relazione di essere una relazione d$'$ equivalenza.\\
+	La funzione “relazione\textunderscore equivalenza” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  simmetria e transitivita$'$  e nel caso in cui siano tutte positive si stampera$'$  che la relazione \`e  una relazione di equivalenza, mentre nel caso in cui qualcosa non sia verificato si stampera$'$  cio$'$  che impedisce alla relazione di essere una relazione d$'$ equivalenza.\\
 	\\
 	\subsection{Output - check\textunderscore funzione}
-	La funzione ”check\textunderscore funzione” avra$'$  come output la stampa a video della verifica della proprieta$'$  che rende la relazione binaria una funzione, e in caso lo sia anche se questa e$'$  suriettiva(che poi spiegheremo essere sempre verificata) e iniettiva, e in caso sia entrambe si stampera$'$  che la relazione binaria oltre ad essere una funzione e$'$  una funzione biiettiva.\\
+	La funzione ”check\textunderscore funzione” avra$'$  come output la stampa a video della verifica della proprieta$'$  che rende la relazione binaria una funzione, e in caso lo sia anche se questa \`e  suriettiva(che poi spiegheremo essere sempre verificata) e iniettiva, e in caso sia entrambe si stampera$'$  che la relazione binaria oltre ad essere una funzione \`e  una funzione biiettiva.\\
 	\\
 	\newpage
 	\section{Implementazione dell$'$ algoritmo}
@@ -291,9 +291,9 @@
 	Test di Funzione.\\
 	\\
 	Inputs:(a,a)
-	Outputs:La relazione binaria e$'$  una funzione.\\
-	La relazione binaria e$'$  iniettiva.\\
-	La relazione binaria e$'$  biiettiva.\\
+	Outputs:La relazione binaria \`e  una funzione.\\
+	La relazione binaria \`e  iniettiva.\\
+	La relazione binaria \`e  biiettiva.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test6Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test6Output.png}
@@ -341,10 +341,10 @@
 	\subsection{Test 10:}
 	Inputs:(1,1)(2,1)\\
 	\\
-	Outputs: La relazione binaria e$'$  una funzione\\
+	Outputs: La relazione binaria \`e  una funzione\\
 	Nel 2 elemento c$'$ \`e un errore che impedisce alla funzione di essere iniettiva\\
-	La funzione non e$'$  iniettiva\\
-	La funzione non e$'$  biiettiva\\
+	La funzione non \`e  iniettiva\\
+	La funzione non \`e  biiettiva\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Output.PNG}
