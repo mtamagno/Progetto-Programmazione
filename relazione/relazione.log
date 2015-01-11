@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  11 JAN 2015 15:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  11 JAN 2015 19:03
 entering extended mode
 **relazione.tex
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.tex
+
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.te
+x
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -59,38 +61,81 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
 
 LaTeX Warning: Unused global option(s):
     [block].
 
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-\c@lstlisting=\count95
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 44.
 
-[1
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
+x)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+\c@lstlisting=\count96
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen110
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+ [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.toc)
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.to
+c)
 \tf@toc=\write3
-
-[2]
+ [2]
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -101,191 +146,191 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--78
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
 
-Overfull \hbox (2.56708pt too wide) in paragraph at lines 73--78
+Overfull \hbox (2.56708pt too wide) in paragraph at lines 74--79
 \OT1/cmr/m/n/10.95 parametro di in-gresso una re-lazione bi-na-ria e sta-bilisc
 e se essa `e una re-lazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--78
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
 [1]
-Overfull \hbox (1.06654pt too wide) in paragraph at lines 83--85
+Overfull \hbox (1.06654pt too wide) in paragraph at lines 84--86
 \OT1/cmr/m/n/10.95 2. Come in-put per le al-tre 5 fun-zioni ab-bi-amo una re-la
 zione(precedentemente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--99
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--99
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--99
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Overfull \hbox (2.19196pt too wide) in paragraph at lines 88--99
+Overfull \hbox (2.19196pt too wide) in paragraph at lines 89--100
 \OT1/cmr/m/n/10.95 5. La quinta fun-zione(relazione equiv-alenza) non resti-tu-
 isce nulla, ma stampa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--99
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--99
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 103.
+(Font)              <14.4> on input line 104.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 103.
+(Font)              <7> on input line 104.
 Missing character: There is no √ in font cmr10!
 Missing character: There is no π in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Overfull \hbox (0.77255pt too wide) in paragraph at lines 105--126
+Overfull \hbox (0.77255pt too wide) in paragraph at lines 106--127
 \OT1/cmr/m/n/10.95 Concetto di Re-lazione Bi-na-ria : In matem-at-ica, una re-l
 azione bi-na-ria definita
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 
-Overfull \hbox (2.44545pt too wide) in paragraph at lines 105--126
+Overfull \hbox (2.44545pt too wide) in paragraph at lines 106--127
 \OT1/cmr/m/n/10.95 Concetto di fun-zione: In matem-at-ica, una fun-zione, an-ch
 e detta ap-pli-cazione,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--126
+Underfull \hbox (badness 10000) in paragraph at lines 106--127
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
 
-Overfull \hbox (3.96632pt too wide) in paragraph at lines 128--132
+Overfull \hbox (3.96632pt too wide) in paragraph at lines 129--133
 \OT1/cmr/m/n/10.95 Concetto di Suri-et-tivita: Una fun-zione si dice suri-et-t
 iva quando ogni el-e-mento
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Overfull \hbox (2.88959pt too wide) in paragraph at lines 140--153
+Overfull \hbox (2.88959pt too wide) in paragraph at lines 141--154
 \OT1/cmr/m/n/10.95 check[]suriettivita(): ver-i-fica se la fun-zione gode della
  pro-prieta di suri-et-tivita,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 141--154
 
  []
 
@@ -294,27 +339,27 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--163
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--163
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--163
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--163
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--163
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
  []
 
@@ -326,39 +371,39 @@ Missing character: There is no ≤ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≤ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
 
  []
 
 
-Overfull \hbox (3.7838pt too wide) in paragraph at lines 167--176
+Overfull \hbox (3.7838pt too wide) in paragraph at lines 168--177
 \OT1/cmr/m/n/10.95 La scelta di due tipi di in-put dif-fer-ente dovra es-sere 
 data per dare la pos-si-bilita
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
 
  []
 
 
-Overfull \hbox (10.17136pt too wide) in paragraph at lines 167--176
+Overfull \hbox (10.17136pt too wide) in paragraph at lines 168--177
 \OT1/cmr/m/n/10.95 Alle varie fun-zioni verra data come in-put la strut-tura d
 ati sal-vata in prece-denza
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--177
 
  []
 
@@ -368,18 +413,18 @@ Missing character: There is no ≤ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no π in font cmr10!
 
-Overfull \hbox (13.07526pt too wide) in paragraph at lines 182--186
+Overfull \hbox (13.07526pt too wide) in paragraph at lines 183--187
 \OT1/cmr/m/n/10.95 l$[]$ utente nell$[]$ in-ser-i-mento dei dati, e che seg-nal
 er-anno even-tu-ali er-rori commessi.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--186
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--186
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
 
@@ -392,28 +437,12 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no π in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
@@ -424,12 +453,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
@@ -440,12 +469,28 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
@@ -457,12 +502,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
@@ -472,7 +517,7 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Progetto.h
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.h
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
@@ -539,225 +584,364 @@ Missing character: There is no Ë in font cmti10!
 Missing character: There is no ‡ in font cmti10!
 Missing character: There is no Ë in font cmti10!
  [36]) [37]
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Test.c [38])
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 212--218
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c [38]) [39]
+Underfull \hbox (badness 10000) in paragraph at lines 213--219
 
  []
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+[40] <../Screenshots/Test1Input.jpg, id=142, 480.29437pt x 225.09094pt>
+File: ../Screenshots/Test1Input.jpg Graphic file (type jpg)
 
- []
+<use ../Screenshots/Test1Input.jpg>
+Package pdftex.def Info: ../Screenshots/Test1Input.jpg used on input line 235.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
+<../Screenshots/Test1Output.png, id=143, 482.55281pt x 225.84375pt>
+File: ../Screenshots/Test1Output.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+<use ../Screenshots/Test1Output.png>
+Package pdftex.def Info: ../Screenshots/Test1Output.png used on input line 237.
 
- []
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 229--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 229--238
+
+ []
+
+[41 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test1I
+nput.jpg> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test1Output.png>]
+<../Screenshots/Test2Input.png, id=150, 481.8pt x 223.58531pt>
+File: ../Screenshots/Test2Input.png Graphic file (type png)
+
+<use ../Screenshots/Test2Input.png>
+Package pdftex.def Info: ../Screenshots/Test2Input.png used on input line 246.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test2Output.png, id=151, 481.8pt x 224.33812pt>
+File: ../Screenshots/Test2Output.png Graphic file (type png)
+
+<use ../Screenshots/Test2Output.png>
+Package pdftex.def Info: ../Screenshots/Test2Output.png used on input line 248.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 240--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 240--251
+
+ []
+
+[42 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test2I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test2Output.png>]
+<../Screenshots/Test3Input.png, id=157, 479.54156pt x 223.58531pt>
+File: ../Screenshots/Test3Input.png Graphic file (type png)
+
+<use ../Screenshots/Test3Input.png>
+Package pdftex.def Info: ../Screenshots/Test3Input.png used on input line 259.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test3Output.png, id=158, 481.8pt x 226.59656pt>
+File: ../Screenshots/Test3Output.png Graphic file (type png)
+
+<use ../Screenshots/Test3Output.png>
+Package pdftex.def Info: ../Screenshots/Test3Output.png used on input line 261.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 253--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 253--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 253--264
+
+ []
+
+[43 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test3I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test3Output.png>]
+<../Screenshots/Test4Input.png, id=164, 482.55281pt x 224.33812pt>
+File: ../Screenshots/Test4Input.png Graphic file (type png)
+
+<use ../Screenshots/Test4Input.png>
+Package pdftex.def Info: ../Screenshots/Test4Input.png used on input line 272.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test4Output.png, id=165, 481.8pt x 225.84375pt>
+File: ../Screenshots/Test4Output.png Graphic file (type png)
+
+<use ../Screenshots/Test4Output.png>
+Package pdftex.def Info: ../Screenshots/Test4Output.png used on input line 274.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 266--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
-
- []
-
-
-Overfull \hbox (39.09756pt too wide) in paragraph at lines 227--300
+Overfull \hbox (39.09756pt too wide) in paragraph at lines 266--277
 \OT1/cmr/m/n/10.95 Outputs:checkriflessivita : 1,check-sim-me-tria : 1, check-
 tran-si-tivita : 1 check-di-co-to-mia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 266--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 266--277
+
+ []
+
+[44 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test4I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test4Output.png>]
+<../Screenshots/Test5Input.png, id=171, 481.8pt x 226.59656pt>
+File: ../Screenshots/Test5Input.png Graphic file (type png)
+
+<use ../Screenshots/Test5Input.png>
+Package pdftex.def Info: ../Screenshots/Test5Input.png used on input line 284.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test5Output.png, id=172, 481.8pt x 226.59656pt>
+File: ../Screenshots/Test5Output.png Graphic file (type png)
+
+<use ../Screenshots/Test5Output.png>
+Package pdftex.def Info: ../Screenshots/Test5Output.png used on input line 286.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
+
+ []
+
+[45 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test5I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test5Output.png>]
+<../Screenshots/Test6Input.png, id=178, 507.39563pt x 255.20343pt>
+File: ../Screenshots/Test6Input.png Graphic file (type png)
+
+<use ../Screenshots/Test6Input.png>
+Package pdftex.def Info: ../Screenshots/Test6Input.png used on input line 297.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test6Output.png, id=179, 507.39563pt x 255.20343pt>
+File: ../Screenshots/Test6Output.png Graphic file (type png)
+
+<use ../Screenshots/Test6Output.png>
+Package pdftex.def Info: ../Screenshots/Test6Output.png used on input line 299.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 291--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 291--302
+
+ []
+
+[46 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test6I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test6Output.png>]
+<../Screenshots/Test7Input.png, id=185, 508.90125pt x 256.70906pt>
+File: ../Screenshots/Test7Input.png Graphic file (type png)
+
+<use ../Screenshots/Test7Input.png>
+Package pdftex.def Info: ../Screenshots/Test7Input.png used on input line 311.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test7Output.png, id=186, 508.14844pt x 256.70906pt>
+File: ../Screenshots/Test7Output.png Graphic file (type png)
+
+<use ../Screenshots/Test7Output.png>
+Package pdftex.def Info: ../Screenshots/Test7Output.png used on input line 313.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 304--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 304--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 304--316
+
+ []
+
+[47 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test7I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test7Output.png>]
+<../Screenshots/Test8Input.png, id=193, 508.90125pt x 258.21469pt>
+File: ../Screenshots/Test8Input.png Graphic file (type png)
+
+<use ../Screenshots/Test8Input.png>
+Package pdftex.def Info: ../Screenshots/Test8Input.png used on input line 325.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
+
+ []
+
+[48 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test8I
+nput.png>] <../Screenshots/Test9Input.png, id=198, 507.39563pt x 256.70906pt>
+File: ../Screenshots/Test9Input.png Graphic file (type png)
+
+<use ../Screenshots/Test9Input.png>
+Package pdftex.def Info: ../Screenshots/Test9Input.png used on input line 335.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+<../Screenshots/Test9Output.PNG, id=199, 508.14844pt x 256.70906pt>
+File: ../Screenshots/Test9Output.PNG Graphic file (type png)
+
+<use ../Screenshots/Test9Output.PNG>
+Package pdftex.def Info: ../Screenshots/Test9Output.PNG used on input line 337.
+
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 330--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+Underfull \hbox (badness 10000) in paragraph at lines 330--340
 
  []
 
+[49 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test9I
+nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
+Test9Output.PNG>]
+<../Screenshots/Test10Input.png, id=205, 508.90125pt x 257.46187pt>
+File: ../Screenshots/Test10Input.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+<use ../Screenshots/Test10Input.png>
+Package pdftex.def Info: ../Screenshots/Test10Input.png used on input line 348.
 
- []
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
+<../Screenshots/Test10Output.PNG, id=206, 507.39563pt x 255.20343pt>
+File: ../Screenshots/Test10Output.PNG Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
+<use ../Screenshots/Test10Output.PNG>
+Package pdftex.def Info: ../Screenshots/Test10Output.PNG used on input line 350
+.
+(pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--300
-
- []
-
-[41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 301--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--313
+Underfull \hbox (badness 10000) in paragraph at lines 342--351
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--313
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--313
-
- []
-
-[43] [44]
-(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione.aux) ) 
+[50 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test10
+Input.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots
+/Test10Output.PNG>] [51]
+(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
+x) ) 
 Here is how much of TeX's memory you used:
- 1763 strings out of 493921
- 25804 string characters out of 3144865
- 198690 words of memory out of 3000000
- 5089 multiletter control sequences out of 15000+200000
+ 2733 strings out of 493921
+ 40729 string characters out of 3144877
+ 213949 words of memory out of 3000000
+ 6005 multiletter control sequences out of 15000+200000
  10668 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,5n,49p,1244b,1508s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (46 pages, 224025 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on relazione.pdf (53 pages, 389504 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
+ 243 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

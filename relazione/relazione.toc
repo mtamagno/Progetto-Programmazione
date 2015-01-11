@@ -18,5 +18,15 @@
 \contentsline {subsection}{\numberline {4.1}Libreria}{10}
 \contentsline {subsection}{\numberline {4.2}Test}{38}
 \contentsline {subsection}{\numberline {4.3}Makefile}{40}
-\contentsline {section}{\numberline {5}Testing the program}{41}
-\contentsline {section}{\numberline {6}Verifying the program}{44}
+\contentsline {section}{\numberline {5}Testing del programma}{41}
+\contentsline {subsection}{\numberline {5.1}Test 1:}{41}
+\contentsline {subsection}{\numberline {5.2}Test 2:}{42}
+\contentsline {subsection}{\numberline {5.3}Test 3:}{43}
+\contentsline {subsection}{\numberline {5.4}Test 4:}{44}
+\contentsline {subsection}{\numberline {5.5}Test 5:}{45}
+\contentsline {subsection}{\numberline {5.6}Test 6:}{46}
+\contentsline {subsection}{\numberline {5.7}Test 7:}{47}
+\contentsline {subsection}{\numberline {5.8}Test 8:}{48}
+\contentsline {subsection}{\numberline {5.9}Test 9:}{49}
+\contentsline {subsection}{\numberline {5.10}Test 10:}{50}
+\contentsline {section}{\numberline {6}Verifying the program}{51}

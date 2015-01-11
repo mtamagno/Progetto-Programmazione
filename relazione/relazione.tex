@@ -1,5 +1,6 @@
 \documentclass[11pt, a4paper, titlepage, block]{article}
 \usepackage{listings}
+\usepackage{graphicx}
 \hyphenpenalty=10000
 
 \begin{document}
@@ -202,11 +203,11 @@
 	\section{Implementazione dell$'$ algoritmo}
 	\subsection{Libreria}
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
-	\lstinputlisting{Progetto.h} 
+	\lstinputlisting{../librerie/Progetto.h} 
 	\newpage
 	\subsection{Test}
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
-	\lstinputlisting{Test.c}
+	\lstinputlisting{../Test.c}
 	\newpage
 	\subsection{Makefile}
 	Test.exe: Test.c Makefile\\
@@ -223,63 +224,83 @@
 	
 	
 	\newpage
-	\section{Testing the program}
-	Test 1:\\
+	\section{Testing del programma}
+	\subsection{Test 1:}
 	Test di Relazione d$'$ ordine Totale.\\
 	\\
 	Inputs: (a,a)(a,b)(b,b)\\
 	\\
 	Outputs: checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
 	checkdicotomia : 1, la relazione \`e una relazione d$'$ ordine totale in quanto \`e rispetta anche la propiet\`a di Dicotomia.\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Input.jpg}
 	\\
-	\\
-	Test 2: \\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Output.png}
+	\newpage
+	\subsection{Test 2:}
 	Test di Relazione d$'$ ordine Parziale.\\
 	\\
 	Inputs:(a,a)(b,b)(a,b)(c,c)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
 	la relazione \`e una relazione d$'$ ordine parziale in quanto rispetta le propriet\`a.\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test2Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test2Output.png}
 	\\
 	\\
-	Test 3: \\
+	\newpage
+	\subsection{Test 3:} 
 	Test di Relazione d$'$ ordine non Parziale.\\
 	\\
 	Inputs:(a,a)(b,b)(c,c)(d,d)(e,e)(a,b)(b,c)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 0
 	la relazione non \`e una relazione d$'$ ordine parziale in quanto non rispetta le propriet\`a.\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test3Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test3Output.png}
 	\\
 	\\
-	Test 4:\\
+	\newpage
+	\subsection{Test 4:}
 	Test di Relazione d$'$ equivalenza.\\
 	\\
 	Inputs:(a,a)(a,b)(b,a)(b,b)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 1, checktransitivit\`a : 1
 	checkdicotomia : 0, la relazione \`e una relazione d$'$ equivalenza in quanto rispetta le propriet\`a.\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Output.png}
 	\\
 	\\
-	Test 5:\\
+	\newpage
+	\subsection{Test 5:}
 	Test di Relazione non d$'$ equivalenza.\\
 	\\
 	Inputs:(a,a)(a,b)(b,c)\\
 	Outputs:checkriflessivit\`a : 0,checksimmetria : 0, checktransitivit\`a : 0
 	la relazione non \`e una relazione d$'$ ordine d$'$ equivalenza in quanto non rispetta le propriet\`a.\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test5Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test5Output.png}
 	\\
 	\\
-	Test 6:\\\
+	\newpage
+	\subsection{Test 6:}
 	Test di Funzione.\\
 	\\
 	Inputs:(a,a)
 	Outputs:La relazione binaria e$'$  una funzione.\\
 	La relazione binaria e$'$  iniettiva.\\
 	La relazione binaria e$'$  biiettiva.\\
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Test6Input.png}
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Tes6Output.png}
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test6Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test6Output.png}
 	\\
 	\\
-	Test 7:\\
+	\newpage
+	\subsection{Test 7:}
 	Test per verificare il controllo degli inputs.\\
 	\\
 	Inputs:(casa rossa,casa blu)(casa blu,casa blu)(casa rossa,casa rossa)\\
@@ -287,11 +308,13 @@
 	Outputs:check\textunderscore riflessivit\`a : 1,check\textunderscore simmetria : 1, check\textunderscore transitivit\`a : 1 dicotomia :1
 	la relazione \`e una relazione d$'$ ordine totale in quanto rispetta le propriet\`a.\\
 	le funzioni funzionano anche con input contenti degli spazi.\\
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Test7Input.png}
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Test7Output.png}
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test7Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test7Output.png}
 	\\
 	\\
-	Test 8:\\
+	\newpage
+	\subsection{Test 8:}
 	Test per inserire stringhe in una relazione numerica.\\
 	\\
 	Inputs:(1,a)\\
@@ -299,31 +322,32 @@
 	Outputs: c$'$ \`e un errore reinserisci il valore.\\
 	\\
 	stampa errore in quanto si era selezionato di voler immettere un input di tipo numerico.\\
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Test8Input.png}
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test8Input.png}
 	\\
 	\\
 	\newpage
-	Test 9:\\
+	\subsection{Test 9:}
 	Test per vedere se una relazione binaria qualunque e' una funzione.\\
 	Inputs:(1,2)(1,1)\\
 	\\
 	Outputs: La relazione binaria non \`e una funzione\\
-	Nel 2 elemento c$'$ \`e un errore che impedisce alla relazione binaria di essere una funzione;
-	\includegraphics[width=4in,height=4in,viewport=0 0 300
-	300]{Test9Input.png}
-	\includegraphics[width=4in,height=4in,viewport=0 0 300
-	300]{Tes9Output.png}
+	Nel 2 elemento c$'$ \`e un errore che impedisce alla relazione binaria di essere una funzione;\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test9Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test9Output.PNG}
 	\\
 	\\
-	Test 10:\\
+	\newpage
+	\subsection{Test 10:}
 	Inputs:(1,1)(2,1)\\
 	\\
 	Outputs: La relazione binaria e$'$  una funzione\\
 	Nel 2 elemento c$'$ \`e un errore che impedisce alla funzione di essere iniettiva\\
 	La funzione non e$'$  iniettiva\\
 	La funzione non e$'$  biiettiva\\
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Test10Input.png}
-	\includegraphics[width=4in,height=4in,viewport=0 0 300 300]{Tes10Output.png}
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Input.png}
+	\\
+	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Output.PNG}
 	\newpage
 	\section{Verifying the program}
 	
