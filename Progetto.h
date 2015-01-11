@@ -941,7 +941,7 @@ if(verifica.controllo == 1){
 				if(verifica.primo_termine[i] != verifica.primo_termine[k]){
 					
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
 					printf("di essere una funzione\n");
 					k=i;
 					i=verifica.dimensione;
@@ -984,7 +984,7 @@ if(verifica.controllo == 2){
 			if((strcmp(verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0){
 				if((strcmp(verifica.prima_stringa[i],verifica.prima_stringa[k])) != 0){
 					errore=1;
-					printf("\n Nel %d elemento c'e' un errore che impedisce alla realzione binaria\n",k+1);
+					printf("\n Nel %d elemento c'e' un errore che impedisce alla relazione binaria\n",k+1);
 					printf("di essere una funzione\n");
 					k=i;
 					i=verifica.dimensione;
