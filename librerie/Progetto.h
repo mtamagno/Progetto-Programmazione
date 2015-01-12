@@ -184,7 +184,7 @@ int ordine_parziale(struct relBin verifica){
 
 	int riflessivita,
 		transitivita,
-		simmetria,	
+		antisimmetria,	
 		parziale;
 		
 	/*STAMPO LE PROPIETA' DELLA RELAZIONE*/
@@ -194,12 +194,12 @@ int ordine_parziale(struct relBin verifica){
 /********* Chiamo le funzioni per poter stabilire le propietà ******************/
 
 	riflessivita = check_riflessivita(verifica);
-	simmetria = check_simmetria(verifica);
+	antisimmetria = check_antisimmetria(verifica);
 	transitivita = check_transitivita(verifica);
 
 /************* Controllo se rispetta le propietà per essere una relazione d'ordine parziale************/
 	
-	if(transitivita == 1 && simmetria == 0 && riflessivita == 1){
+	if(transitivita == 1 && antisimmetria == 1 && riflessivita == 1){
 		parziale = 1;
 		printf("\n Quindi e' una relazione d'ordine parziale\n\n");
 	}
@@ -210,8 +210,8 @@ int ordine_parziale(struct relBin verifica){
 	}
 		if(transitivita == 0)
 		printf("\n manca la propieta' di transitivita'\n");
-		if(simmetria == 1)
-		printf("\n manca la propieta' di asimmetria\n");
+		if(antisimmetria == 0)
+		printf("\n manca la propieta' di antisimmetria\n");
 		if(riflessivita == 0)
 		printf("\n manca la propieta' di riflessivita'\n");
 /************* Fine controllo Ordine Parziale *********************/
@@ -427,7 +427,6 @@ int check_simmetria(struct relBin verifica){
 				if(verifica.primo_termine[i] == verifica.secondo_termine[j])
 					if(verifica.primo_termine[j] == verifica.secondo_termine[i])
 						riscontro++;
-				
 				j++;
 		}
 		
@@ -1041,3 +1040,86 @@ iniettivita = check_iniettivita(verifica);
 		printf("\n la funzione non e' biiettiva");
 return;
 }
+
+
+int check_antisimmetria(struct relBin verifica){
+	
+	int i,
+		j,
+		riscontro,
+		antisimmetria;
+
+	antisimmetria = 1;	
+
+
+	i = 0;
+	j = 0;
+	riscontro = 0;
+
+/*Check della antisimmetria per numeri*/
+
+	if(verifica.controllo == 1){
+		
+		while( i < verifica.dimensione){
+			
+			j = 0;
+			while( j < verifica.dimensione){	
+				
+				if(verifica.primo_termine[i] == verifica.secondo_termine[j])
+					if(verifica.primo_termine[j] == verifica.secondo_termine[i])
+						if(verifica.primo_termine[i] == verifica.primo_termine[j]) 
+						riscontro++;
+				j++;
+		}
+		
+			if(riscontro == 0){
+				j = verifica.dimensione;
+				i = verifica.dimensione;
+				antisimmetria = 0;
+			}
+			riscontro = 0;
+			i++;
+		}	
+	
+	}
+
+/*Check della antisimmetria per stringhe*/
+
+	if(verifica.controllo == 2){
+		
+		while( i < verifica.dimensione){
+			
+			j = 0;
+			while( j < verifica.dimensione){	
+				
+				if(strcmp(verifica.prima_stringa[i],verifica.seconda_stringa[j]) == 0 )
+					if(strcmp(verifica.prima_stringa[j],verifica.seconda_stringa[i]) == 0 )
+						if(strcmp(verifica.prima_stringa[j],verifica.prima_stringa[i]) == 0 )
+						riscontro++;
+			
+				j++;
+			}
+		
+			if(riscontro == 0){
+				j = verifica.dimensione;
+				i = verifica.dimensione;
+				antisimmetria = 0;
+			}
+			riscontro = 0;	
+			i++;
+		}	
+	
+	}
+
+/***** Controllo se la simmetria è stata verificata *********/
+
+	if(antisimmetria == 1)
+		printf("   e' antisimmetrica\n");
+	else
+		printf(" non  e' antisimmetrica\n");
+
+/****** Fine controllo simmetria ******/
+
+	return(antisimmetria);
+}
+
