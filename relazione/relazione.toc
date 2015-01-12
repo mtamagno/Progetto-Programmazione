@@ -29,4 +29,4 @@
 \contentsline {subsection}{\numberline {5.8}Test 8:}{48}
 \contentsline {subsection}{\numberline {5.9}Test 9:}{49}
 \contentsline {subsection}{\numberline {5.10}Test 10:}{50}
-\contentsline {section}{\numberline {6}Verifying the program}{51}
+\contentsline {section}{\numberline {6}Verica del programma}{51}

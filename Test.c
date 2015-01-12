@@ -5,6 +5,7 @@ int main(void){
 	struct	relBin RelazioneBinaria;
 	int scelta;
 	int scan;
+	scan = 0;
 	
 	printf("\n Programma per effettuare i Test sulla libreria\n");
 	

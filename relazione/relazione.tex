@@ -63,7 +63,7 @@
 		%        LOGO SECTION
 		%----------------------------------------------------------------------------------------		
 		%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package		
-		%----------------------------------------------------------------------------------------		
+		%----------------------------------------------------------------------------------------	
 		\newpage
 		\tableofcontents
 		\newpage
@@ -349,12 +349,109 @@
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Output.PNG}
 	\newpage
-	\section{Verifying the program}
-	
-	
-	
-	
-	
-	
+	\section{Verica del programma}
+
+Questa porzione di codice fa in modo che una volta eseguito si abbia nel valore c la sommatoria del numero di elementi distinti inseriti dall'utente.	
+\\
+\\	
+while(numero\textunderscore elementi\textgreater 0)\\
+\{
+numero\textunderscore elementi - -;\\
+c = c + numero\textunderscore elementi;\\
+\}
+\\
+\\
+La postcondizione \`e 
+\\
+\\
+\\
+R = (c = $\displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $\\
+\\
+\\
+\\
+si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
+\\
+\\
+\\
+ -Il predicato
+ 
+ $P = (numero\textunderscore elementi \textgreater 0 \wedge c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
+ \\ 
+ \\
+ \\
+ e la funzione :
+ \\
+ \\
+ \\
+ tr(numero\textunderscore elementi) = numero\textunderscore elementi - 1)
+ \\
+ \\
+ \\
+ soddisfano le ipotesi del teorema dell'invariante di ciclo in quanto:\\
+ \\
+ \\
+ \\
+ $\ast \lbrace P \wedge numero\textunderscore elementi\textgreater 0 \rbrace c = c + numero\textunderscore elementi; numero\textunderscore elementi = numero\textunderscore elementi - -;\lbrace P \rbrace $ \\
+ \\
+ \\
+ \\
+ segue da :\\
+ \\
+ \\
+ \\
+ $P_{numero\textunderscore elementi,numero\textunderscore elementi -1} \wedge c \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $
+ \\
+ \\
+ \\
+ e donatoto con P$'$ quest$'$ultimo predicato, da:
+ \\
+ \\
+ \\
+ P$'$$_{c,c + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge c + numero\textunderscore elementi $ = \\\\ =$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $)\\
+ \\
+ \\
+ 
+ P$'$$_{c,c + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge c$ =\\\\=$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
+ \\
+ \\
+ 
+ 
+ in quanto denotato con P$''$ quest$'$ ultimo predicato, si ha:
+ (P $\wedge$ numero$\textunderscore elementi \textgreater 1) = (numero \textunderscore elementi \textgreater 0 \wedge c =  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$)\\
+ $|= P''$\\
+ $\ast$ Il progresso \`e garantito dal fatto che tr(numero\textunderscore elemnti) decresce di un unit\`a ad ogni iterazione in quanto numero\textunderscore elementi viene decrementata di un$'$ unit\`a ad ogni iterazione.\\
+ $\ast$ La limitatezza segue da:\\
+ (P$\wedge$$tr(numero\textunderscore elementi) \textless 1) = (numero\textunderscore elementi \textgreater 0 \wedge c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$) \\
+ \\
+ $\equiv (c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1}$numero\textunderscore elementi -j)\\
+\\
+\\
+\\
+$|=$ numero\textunderscore elementi \textgreater numero\textunderscore elementi - 1
+
+Poich\`e: \\
+\\
+\\
+$(P \wedge numero\textunderscore elementi \textless 1 ) = (numero\textunderscore elementi \textgreater 0 c = (P\wedge numero\textunderscore elementi \textgreater 1) = ( numero\textunderscore elementi \textgreater 0 \wedge c =$\\\\$=  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $ $\wedge numero\textunderscore elementi \textless 1)$ \\\\$
+\equiv (numero\textunderscore elementi = 1 \wedge c =\\\\= \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j \wedge numero\textunderscore elementi \textless 1))$) 
+\\
+\\
+\\
+
+Dal corollario del teorema dell invariabilit\'a di ciclo si ha che P può essere usato solo come precondizione dell'intera istruzione di ripetizione.
+\\
+\\
+-Proseguendo infine a ritroso si ottiene prima:
+
+ $P_{numero\textunderscore elementi,0} = (0 \textless= 0 \textless= numero\textunderscore elementi \wedge c = \displaystyle \sum_{j=0}^{0-1} numero\textunderscore elementi - j$) (c = 0)
+ \\
+ \\
+ \\
+ e poi, denotato  con P$'''$ quest'ultimo predicato si ha:
+ \\
+ \\
+ \\
+ P$'''$$_{c,0}$ = (0 = 0) = vero
+
 \end{document}
 
