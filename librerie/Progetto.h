@@ -20,7 +20,7 @@ typedef struct relBin{
 }rel_bin;
 
 /*DICHIARO LE FUNZIONI*/
-rel_bin acquisizione(rel_bin);
+rel_bin acquisizione (rel_bin);
 int check_simmetria (rel_bin);
 int check_riflessivita (rel_bin);
 int check_transitivita (rel_bin);
