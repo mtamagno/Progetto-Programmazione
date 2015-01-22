@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/********************STRUTTURA relBin**************************/
-/***** Creo una struttura dove salvare le coppie appartenenti alla Relazione*******/
+
 	
 
 /*******************Funzione di acquisizione********************/
@@ -18,7 +17,7 @@ relazione.secondo_termine = (double *) malloc (2);
 relazione.prima_stringa = (char **) malloc (100);
 relazione.seconda_stringa = (char **) malloc (100);
 
- while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1){
+while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1){
 fflush (stdin);
 printf ("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
 printf ("\n scelta: ");
@@ -89,7 +88,7 @@ if (relazione.controllo == 2){
 
  		printf (" Inserisci il primo termine della coppia \n ");
  		printf ("  Primo Termine: ");
-		 relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (50);
+		relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (50);
 		risultato_lettura = scanf (" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
