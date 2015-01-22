@@ -20,12 +20,12 @@ typedef struct relBin{
 }rel_bin;
 
 /*DICHIARO LE FUNZIONI*/
-rel_bin acquisizione (rel_bin);
-int check_simmetria (rel_bin);
-int check_riflessivita (rel_bin);
-int check_transitivita (rel_bin);
-int check_suriettivita (rel_bin);
-void check_biiettivita (rel_bin);
+rel_bin acquisizione(rel_bin);
+int controllo_simmetria (rel_bin);
+int controllo_riflessivita (rel_bin);
+int controllo_transitivita (rel_bin);
+int controllo_suriettivita (rel_bin);
+void controllo_biiettivita (rel_bin);
 
 /*******************Funzione di acquisizione********************/
 
@@ -63,7 +63,7 @@ if (relazione.controllo == 1){
 		printf ("\n Inserisci il primo termine della coppia \n ");
 		relazione.primo_termine = (double *) realloc (relazione.primo_termine, (relazione.dimensione+1) * sizeof (double));
  		scan = 0;
- /*Check del primo termine della coppia*/
+ /*controllo del primo termine della coppia*/
 
 	while (scan != 1){
 		printf ("  Primo Termine: ");
@@ -78,7 +78,7 @@ if (relazione.controllo == 1){
 	 	printf ("\n Inserisci il secondo termine della coppia \n ");
 		relazione.secondo_termine = (double *) realloc (relazione.secondo_termine, (relazione.dimensione+1) * sizeof (double));
 
-/*Check del secondo termine della coppia*/
+/*controllo del secondo termine della coppia*/
 
 	while (scan != 1){
 		printf ("  Secondo Termine: ");
@@ -194,9 +194,9 @@ int ordine_parziale (rel_bin verifica){
 
 /********* Chiamo le funzioni per poter stabilire le propietà ******************/
 
-	riflessivita = check_riflessivita (verifica);
-	antisimmetria = check_antisimmetria (verifica);
-	transitivita = check_transitivita (verifica);
+	riflessivita = controllo_riflessivita (verifica);
+	antisimmetria = controllo_antisimmetria (verifica);
+	transitivita = controllo_transitivita (verifica);
 
 /************* Controllo se rispetta le propietà per essere una relazione d'ordine parziale************/
 	
@@ -224,7 +224,7 @@ int ordine_parziale (rel_bin verifica){
 
 /***********FUNZIONE PER CONTROLLARE LA RIFLESSIVITà**********/
 
-int check_riflessivita (rel_bin verifica){
+int controllo_riflessivita (rel_bin verifica){
 
 	int i,
 		j,
@@ -402,7 +402,7 @@ int check_riflessivita (rel_bin verifica){
 /************* simmetrica se e solo se,presi due elementi qualsiasi a e b, vale che  **/
 /************* se a è in relazione con b allora anche b è in relazione con a. *********/
 
-int check_simmetria (rel_bin verifica){
+int controllo_simmetria (rel_bin verifica){
 	
 	int i,
 		j,
@@ -416,7 +416,7 @@ int check_simmetria (rel_bin verifica){
 	j = 0;
 	riscontro = 0;
 
-/*Check della simmetria per numeri*/
+/*controllo della simmetria per numeri*/
 
 	if (verifica.controllo == 1){
 		
@@ -442,7 +442,7 @@ int check_simmetria (rel_bin verifica){
 	
 	}
 
-/*Check della simmetria per stringhe*/
+/*controllo della simmetria per stringhe*/
 
 	if (verifica.controllo == 2){
 		
@@ -490,7 +490,7 @@ int check_simmetria (rel_bin verifica){
 		 a è in relazione con c.*******/
 
 
-int check_transitivita (rel_bin verifica){
+int controllo_transitivita (rel_bin verifica){
 	
 	int i,
 		j,
@@ -597,7 +597,7 @@ int check_transitivita (rel_bin verifica){
 
 /********** Dicotomia *************/
 
-int check_dicotomia (rel_bin verifica){
+int controllo_dicotomia (rel_bin verifica){
 
 	int i,j,k;
 	int numero_elementi;
@@ -773,7 +773,7 @@ void ordine_totale (rel_bin verifica){
 	dicotomia=2;
 	parziale = ordine_parziale (verifica);
 	if (parziale == 1)
-	dicotomia = check_dicotomia (verifica);
+	dicotomia = controllo_dicotomia (verifica);
 	
 	if (parziale == 0)
 		printf (" \n l'ordine non e'totale in quanto non e'nemmeno parziale");
@@ -795,9 +795,9 @@ void relazione_equivalenza (rel_bin verifica){
 	int simmetria;
 	int transitivita;
 	
-	riflessivita = check_riflessivita (verifica);
-	simmetria = check_simmetria (verifica);
-	transitivita = check_transitivita (verifica);
+	riflessivita = controllo_riflessivita (verifica);
+	simmetria = controllo_simmetria (verifica);
+	transitivita = controllo_transitivita (verifica);
 	
 	if (riflessivita == 1 && simmetria == 1 && transitivita == 1)
 	printf ("\n Quindi e'una relazione di equivalenza\n");
@@ -814,7 +814,7 @@ void relazione_equivalenza (rel_bin verifica){
 
 /*Funzione che stabilisce se la relazione binaria acquisita e'una funzione matematica*/
 
-void check_funzione (rel_bin verifica){
+void controllo_funzione (rel_bin verifica){
 	
 	int i;
 	int k;
@@ -855,7 +855,7 @@ if (verifica.controllo == 1){
 	}
 	if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
 	printf ("\n La relazione binaria e'una funzione\n");
-	check_biiettivita (verifica);
+	controllo_biiettivita (verifica);
 }
 	else
 	printf ("\n La relazione binaria non e'una funzione\n");
@@ -895,7 +895,7 @@ if (verifica.controllo == 2){
 	}
 	if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))){
 	printf ("\n La relazione binaria e'una funzione\n");
-	check_biiettivita (verifica);
+	controllo_biiettivita (verifica);
 	}
 	else
 	printf ("\n La relazione binaria non e'una funzione\n");
@@ -905,9 +905,9 @@ printf ("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 
 }
 
-/**********FUNZIONE PER IL CHECK DELL'INIETTIVITA'*************/
+/**********FUNZIONE PER IL controllo DELL'INIETTIVITA'*************/
 
-int check_iniettivita (rel_bin verifica){
+int controllo_iniettivita (rel_bin verifica){
 	
 	int i;
 	int k;
@@ -1009,9 +1009,9 @@ if (verifica.controllo == 2){
 return (iniettivita);	
 }
 
-/****************FUNZIONE PER IL CHECK DELLA SURIETTIVITA'************/
+/****************FUNZIONE PER IL controllo DELLA SURIETTIVITA'************/
 
-int check_suriettivita (rel_bin verifica){
+int controllo_suriettivita (rel_bin verifica){
 	
 /******* La suriettività è sempre verificata in quanto il dominio e il codominio **********/
 /** sono entrambi i rispettivi x,y acquisiti, quindi non ho elementi y non associati a x **/
@@ -1021,15 +1021,15 @@ suriettivita = 1;
 return (suriettivita);
 }
 
-/****************FUNZIONE PER IL CHECK DELLA BIIETTIVITA'************/
+/****************FUNZIONE PER IL controllo DELLA BIIETTIVITA'************/
 
-void check_biiettivita (rel_bin verifica){
+void controllo_biiettivita (rel_bin verifica){
 	
 	int 	surriettivita,
 			iniettivita;
 		
-surriettivita = check_suriettivita (verifica);
-iniettivita = check_iniettivita (verifica);
+surriettivita = controllo_suriettivita (verifica);
+iniettivita = controllo_iniettivita (verifica);
 
 	
 	if ( surriettivita == 1 && iniettivita == 1)
@@ -1040,7 +1040,7 @@ return;
 }
 
 
-int check_antisimmetria (rel_bin verifica){
+int controllo_antisimmetria (rel_bin verifica){
 	
 	int i,
 		j,
@@ -1054,7 +1054,7 @@ int check_antisimmetria (rel_bin verifica){
 	j = 0;
 	riscontro = 0;
 
-/*Check della antisimmetria per numeri*/
+/*controllo della antisimmetria per numeri*/
 
 	if (verifica.controllo == 1){
 		
@@ -1081,7 +1081,7 @@ int check_antisimmetria (rel_bin verifica){
 	
 	}
 
-/*Check della antisimmetria per stringhe*/
+/*controllo della antisimmetria per stringhe*/
 
 	if (verifica.controllo == 2){
 		
