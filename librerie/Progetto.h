@@ -599,16 +599,15 @@ int check_transitivita (rel_bin verifica){
 
 int check_dicotomia (rel_bin verifica){
 
-	int a,b,c,d;
+	int i,j,k;
 	int numero_elementi;
 	int dicotomia = 0;
 	int dimensione;
 	int riscontro;
 	int secondo_riscontro;
-	a=0;
-	b=0;
-	c=0;
-	d=a-1;
+	i=0;
+	j=0;
+	k=i-1;
 	dimensione = verifica.dimensione;
 
 /********* Dicotomia per numeri *********/
@@ -617,66 +616,65 @@ int check_dicotomia (rel_bin verifica){
 		
 /********** Conto il numero delle coppie esistenti (scarto le coppie uguali) *********/		
 		
-		while ( a < verifica.dimensione){
-			d = a-1;
-			b = a+1;
+		while ( i < verifica.dimensione){
+			k = i-1;
+			j = i+1;
 			secondo_riscontro = 0;
 			
-		if (a>0){
-			while ( d >= 0 ){
-				if (verifica.primo_termine[a] == verifica.primo_termine[d]){
-					if (verifica.secondo_termine[a] == verifica.secondo_termine[d])
+		if (i>0){
+			while ( k >= 0 ){
+				if (verifica.primo_termine[i] == verifica.primo_termine[k]){
+					if (verifica.secondo_termine[i] == verifica.secondo_termine[k])
 						secondo_riscontro = 1;
 				}
-				d--;
+				k--;
 			}
 		}
 		
 		if (secondo_riscontro != 1){
-			while ( b < verifica.dimensione){
-				if (verifica.primo_termine[a] == verifica.primo_termine[b])
-					if (verifica.secondo_termine[a] == verifica.secondo_termine[b]){
+			while ( j < verifica.dimensione){
+				if (verifica.primo_termine[i] == verifica.primo_termine[j])
+					if (verifica.secondo_termine[i] == verifica.secondo_termine[j]){
 						dimensione--;
 				}
-			b++;
+			j++;
 			}
 		}
-		a++;
+		i++;
 	}
 	
 	
-		a=0;
-		b=0;
-		c=0;
+		i=0;
+		j=0;
+		k=0;
 		numero_elementi=0;
 		riscontro = 0;
 /*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
-		while (a<verifica.dimensione){
-			d=a-1;
+		while (i<verifica.dimensione){
+			k=i-1;
 			secondo_riscontro = 0;
 			
-			while (d >= 0){
-				if (verifica.primo_termine[a] == verifica.primo_termine[d])
+			while (k >= 0){
+				if (verifica.primo_termine[i] == verifica.primo_termine[k])
 					secondo_riscontro = 1;
-					d--;
+					k--;
 			}
 			if (secondo_riscontro != 1){
-				if (verifica.primo_termine[a] == verifica.secondo_termine[a])
+				if (verifica.primo_termine[i] == verifica.secondo_termine[i])
 					riscontro++;
 					
 			}
-		a++;
+		i++;
 		}
 	
 	numero_elementi = riscontro;
-	c = numero_elementi;
 
 /************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
 	
 	while (numero_elementi > 0){	
 		numero_elementi--;
-		c = c + numero_elementi;
+		riscontro = riscontro + numero_elementi;
 		}
 	}
 
@@ -686,64 +684,63 @@ int check_dicotomia (rel_bin verifica){
 	
 /********** Conto il numero delle coppie esistenti (scarto le coppie uguali) *********/	
 	
-		while ( a < verifica.dimensione){
-			d = a-1;
-			b = a+1;
+		while ( i < verifica.dimensione){
+			k = i-1;
+			j = i+1;
 			secondo_riscontro = 0;
-		if (a>0){
-			while ( d >= 0 ){
-				if ( (strcmp (verifica.prima_stringa[a],verifica.prima_stringa[d])) == 0){
-					if ( (strcmp (verifica.seconda_stringa[a],verifica.seconda_stringa[d])) == 0)
+		if (i>0){
+			while ( k >= 0 ){
+				if ( (strcmp (verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0){
+					if ( (strcmp (verifica.seconda_stringa[i],verifica.seconda_stringa[k])) == 0)
 						secondo_riscontro = 1;
 				}
-				d--;
+				k--;
 			}
 		}
 		
 		if (secondo_riscontro != 1){
-			while ( b < verifica.dimensione){
-				if ( (strcmp (verifica.prima_stringa[a],verifica.prima_stringa[b])) == 0)
-					if ( (strcmp (verifica.seconda_stringa[a],verifica.seconda_stringa[b])) == 0){
+			while ( j < verifica.dimensione){
+				if ( (strcmp (verifica.prima_stringa[i],verifica.prima_stringa[j])) == 0)
+					if ( (strcmp (verifica.seconda_stringa[i],verifica.seconda_stringa[j])) == 0){
 						dimensione--;
 				}
-			b++;
+			j++;
 			}
 		}
-		a++;
+		i++;
 	}
 	
 	
-		a=0;
-		b=0;
-		c=0;
+		i=0;
+		k=0;
+		j=0;
 		numero_elementi = 0;
-		
 /*************** Conto il numero degli elementi distinti esistenti ***************/		
 	
-		while (a<verifica.dimensione){
-			d=a-1;
+		while (i<verifica.dimensione){
+			k=i-1;
 			secondo_riscontro = 0;
 			
-			while (d >= 0){
-				if ( (strcmp (verifica.prima_stringa[a],verifica.prima_stringa[d])) == 0)
+			while (k >= 0){
+				if ( (strcmp (verifica.prima_stringa[i],verifica.prima_stringa[k])) == 0)
 					secondo_riscontro = 1;
-					d--;
+					k--;
 			}
 			if (secondo_riscontro != 1){
-				if ( (strcmp (verifica.prima_stringa[a],verifica.seconda_stringa[a])) == 0)
+				if ( (strcmp (verifica.prima_stringa[i],verifica.seconda_stringa[i])) == 0)
 					numero_elementi++;
 					
 			}
-		a++;
+		i++;
 		}		
-		c = numero_elementi;
+		riscontro = numero_elementi;
 
 /************ Conto quanti dovrebbero essere gli elementi per avere la dicotomia ***********/
 	
 		while (numero_elementi > 0){
 	
 			numero_elementi--;
-			c = c + numero_elementi;
+			riscontro = riscontro + numero_elementi;
 		
 		}
 
@@ -751,7 +748,7 @@ int check_dicotomia (rel_bin verifica){
 
 /************* Verifico se la dicotomia è verificata ****************/
 	
-	if (dimensione == c)
+	if (dimensione == riscontro)
 		dicotomia = 1;
 	
 	if (dicotomia == 1 )
