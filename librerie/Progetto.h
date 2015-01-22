@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 
 /********************STRUTTURA relBin**************************/
 /***** Creo una struttura dove salvare le coppie appartenenti alla Relazione*******/
