@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"librerie/Progetto.h"
+#include"librerie/progetto.h"
 
 int main(void){
 	struct	relBin RelazioneBinaria;
@@ -52,7 +52,7 @@ int main(void){
 	if(scelta == 5)
 		relazione_equivalenza(RelazioneBinaria);
 	if(scelta == 6)
-		check_funzione(RelazioneBinaria);
+		controllo_funzione(RelazioneBinaria);
 	if(scelta == 7){
 		printf("\n\n .....Test terminati......\n\n");
 		test_terminati = 1;

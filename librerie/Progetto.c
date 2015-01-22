@@ -1,10 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 	
 
 /*******************Funzione di acquisizione********************/
+rel_bin acquisizione (rel_bin);
+int controllo_simmetria (rel_bin);
+int controllo_riflessivita (rel_bin);
+int controllo_transitivita (rel_bin);
+int controllo_suriettivita (rel_bin);
+void controllo_biiettivita (rel_bin);
+int controllo_antisimmetria (rel_bin);
+void controllo_funzione (rel_bin);
+void relazione_equivalenza (rel_bin);
+void ordine_totale (rel_bin);
+int ordine_parziale (rel_bin);
+void stampa (rel_bin);
 
 rel_bin acquisizione (rel_bin relazione){
 
