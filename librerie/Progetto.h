@@ -32,7 +32,7 @@ void controllo_biiettivita (rel_bin);
 rel_bin acquisizione (rel_bin relazione){
 
 int acquisizione_finita = 0;
-int scan = 0;
+int risultato_lettura = 0;
 
 
 relazione.dimensione = 0;
@@ -41,15 +41,15 @@ relazione.secondo_termine = (double *) malloc (2);
 relazione.prima_stringa = (char **) malloc (100);
 relazione.seconda_stringa = (char **) malloc (100);
 
- while (relazione.controllo < 1 || relazione.controllo > 2 || scan != 1){
+ while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1){
 fflush (stdin);
 printf ("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
 printf ("\n scelta: ");
-scan = scanf ("%d",&relazione.controllo);
+risultato_lettura = scanf ("%d",&relazione.controllo);
 }
 
-/** imposto di nuovo scan a 0 **/
-scan=0;
+/** imposto di nuovo risultato_lettura a 0 **/
+risultato_lettura=0;
 
 /*Acquisizione Numerica*/
 
@@ -62,45 +62,45 @@ if (relazione.controllo == 1){
  
 		printf ("\n Inserisci il primo termine della coppia \n ");
 		relazione.primo_termine = (double *) realloc (relazione.primo_termine, (relazione.dimensione+1) * sizeof (double));
- 		scan = 0;
+ 		risultato_lettura = 0;
  /*controllo del primo termine della coppia*/
 
-	while (scan != 1){
+	while (risultato_lettura != 1){
 		printf ("  Primo Termine: ");
 		fflush (stdin);
-		scan = scanf ("%lf",&relazione.primo_termine[relazione.dimensione - 1]);
-		if (scan == 0)
+		risultato_lettura = scanf ("%lf",&relazione.primo_termine[relazione.dimensione - 1]);
+		if (risultato_lettura == 0)
 		printf ("\n C'e'un errore, reinserire il primo termine\n");
 		}
  		
  /*Acquisisco il secondo termine della coppia*/
- 		scan = 0;
+ 		risultato_lettura = 0;
 	 	printf ("\n Inserisci il secondo termine della coppia \n ");
 		relazione.secondo_termine = (double *) realloc (relazione.secondo_termine, (relazione.dimensione+1) * sizeof (double));
 
 /*controllo del secondo termine della coppia*/
 
-	while (scan != 1){
+	while (risultato_lettura != 1){
 		printf ("  Secondo Termine: ");
 		fflush (stdin);
-		scan = scanf ("%lf",&relazione.secondo_termine[relazione.dimensione - 1]);
-		if (scan == 0)
+		risultato_lettura = scanf ("%lf",&relazione.secondo_termine[relazione.dimensione - 1]);
+		if (risultato_lettura == 0)
 		printf ("\n C'e'un errore, reinserire il secondo termine\n");
 		}
 
  /*Chiedo all'utente se ci sono altre coppie*/
  
- 	while (acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
+ 	while (acquisizione_finita < 0 || acquisizione_finita > 1 || risultato_lettura != 1){
  		printf ("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n ");
  		printf ("\n scelta: ");
  		fflush (stdin);
-		scan = scanf ("%d",&acquisizione_finita);
+		risultato_lettura = scanf ("%d",&acquisizione_finita);
  		}
 	}
 }
 
-/*imposto di nuovo scan a 0*/
-scan = 0;
+/*imposto di nuovo risultato_lettura a 0*/
+risultato_lettura = 0;
 
 /*Acquisizione con stringhe*/
 if (relazione.controllo == 2){
@@ -113,24 +113,24 @@ if (relazione.controllo == 2){
  		printf (" Inserisci il primo termine della coppia \n ");
  		printf ("  Primo Termine: ");
 		 relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (50);
-		scan = scanf (" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
+		risultato_lettura = scanf (" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
 
  /*Acquisisco il secondo termine della coppia*/
 
  		printf (" Inserisci il secondo termine della coppia \n ");
  		printf ("  Secondo Termine: ");
 		 relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc (50);
- 		scan = scanf (" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
+ 		risultato_lettura = scanf (" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
 
-/*imposto di nuovo scan a 0*/
-scan = 0;
+/*imposto di nuovo risultato_lettura a 0*/
+risultato_lettura = 0;
 
  /*Chiedo all'utente se ci sono altre coppie*/
 		
-		while (acquisizione_finita < 0 || acquisizione_finita > 1 || scan != 1){
+		while (acquisizione_finita < 0 || acquisizione_finita > 1 || risultato_lettura != 1){
  
  			printf ("\n Vuoi acquisire un'altra coppia? immetti 1 per uscire, 0 per continuare\n");
- 			scan = scanf ("%d",&acquisizione_finita);
+ 			risultato_lettura = scanf ("%d",&acquisizione_finita);
  			}
 		}
 	}
