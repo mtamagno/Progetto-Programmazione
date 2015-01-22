@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  12 JAN 2015 15:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  22 JAN 2015 18:48
 entering extended mode
 **relazione.tex
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.te
-x
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -94,8 +94,8 @@ LaTeX Warning: Unused global option(s):
     [block].
 
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -132,8 +132,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.to
-c)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.toc)
 \tf@toc=\write3
  [2]
 Missing character: There is no Ô in font cmr10!
@@ -148,12 +148,6 @@ Missing character: There is no Å in font cmr10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
- []
-
-
-Overfull \hbox (2.56708pt too wide) in paragraph at lines 74--79
-\OT1/cmr/m/n/10.95 parametro di in-gresso una re-lazione bi-na-ria e sta-bilisc
-e se essa `e una re-lazione
  []
 
 
@@ -522,10 +516,10 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.h
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.
+h
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
@@ -558,8 +552,8 @@ Missing character: There is no Ë in font cmti10!
 Missing character: There is no ‡ in font cmti10!
 Missing character: There is no ‡ in font cmti10!
 Missing character: There is no ‡ in font cmti10!
-Missing character: There is no ‡ in font cmti10!
  [18]
+Missing character: There is no ‡ in font cmti10!
 Missing character: There is no ‡ in font cmti10!
  [19]
 Missing character: There is no Ë in font cmti10!
@@ -591,7 +585,8 @@ Missing character: There is no Ë in font cmti10!
  [36] [37] [38]
 Missing character: There is no Ë in font cmti10!
 ) [39]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c [40]) [41]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Test.c [40])
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 215--221
 
  []
@@ -620,9 +615,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--240
 
  []
 
-[43 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test1I
-nput.jpg> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test1Output.png>]
+[43 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st1Input.jpg> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test1Output.png>]
 <../Screenshots/Test2Input.png, id=156, 481.8pt x 223.58531pt>
 File: ../Screenshots/Test2Input.png Graphic file (type png)
 
@@ -657,9 +652,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--253
 
  []
 
-[44 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test2I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test2Output.png>]
+[44 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st2Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test2Output.png>]
 <../Screenshots/Test3Input.png, id=163, 479.54156pt x 223.58531pt>
 File: ../Screenshots/Test3Input.png Graphic file (type png)
 
@@ -694,9 +689,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--266
 
  []
 
-[45 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test3I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test3Output.png>]
+[45 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st3Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test3Output.png>]
 <../Screenshots/Test4Input.png, id=170, 482.55281pt x 224.33812pt>
 File: ../Screenshots/Test4Input.png Graphic file (type png)
 
@@ -737,9 +732,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--279
 
  []
 
-[46 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test4I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test4Output.png>]
+[46 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st4Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test4Output.png>]
 <../Screenshots/Test5Input.png, id=177, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test5Input.png Graphic file (type png)
 
@@ -769,9 +764,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--291
 
  []
 
-[47 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test5I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test5Output.png>]
+[47 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st5Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test5Output.png>]
 <../Screenshots/Test6Input.png, id=185, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test6Input.png Graphic file (type png)
 
@@ -801,9 +796,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--304
 
  []
 
-[48 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test6I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test6Output.png>]
+[48 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st6Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test6Output.png>]
 <../Screenshots/Test7Input.png, id=192, 508.90125pt x 256.70906pt>
 File: ../Screenshots/Test7Input.png Graphic file (type png)
 
@@ -838,9 +833,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--318
 
  []
 
-[49 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test7I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test7Output.png>]
+[49 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st7Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test7Output.png>]
 <../Screenshots/Test8Input.png, id=199, 508.90125pt x 258.21469pt>
 File: ../Screenshots/Test8Input.png Graphic file (type png)
 
@@ -872,8 +867,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--330
 
  []
 
-[50 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test8I
-nput.png>] <../Screenshots/Test9Input.png, id=204, 507.39563pt x 256.70906pt>
+[50 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st8Input.png>]
+<../Screenshots/Test9Input.png, id=204, 507.39563pt x 256.70906pt>
 File: ../Screenshots/Test9Input.png Graphic file (type png)
 
 <use ../Screenshots/Test9Input.png>
@@ -902,9 +898,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--342
 
  []
 
-[51 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test9I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test9Output.PNG>]
+[51 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st9Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test9Output.PNG>]
 <../Screenshots/Test10Input.png, id=211, 508.90125pt x 257.46187pt>
 File: ../Screenshots/Test10Input.png Graphic file (type png)
 
@@ -925,9 +921,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--353
 
  []
 
-[52 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test10
-Input.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots
-/Test10Output.PNG>]
+[52 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st10Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scr
+eenshots/Test10Output.PNG>]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 370.
 
@@ -1494,28 +1490,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 448--457
  []
 
 [55]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x) ) 
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux) ) 
 Here is how much of TeX's memory you used:
- 2738 strings out of 493921
- 40821 string characters out of 3144877
- 214949 words of memory out of 3000000
- 6010 multiletter control sequences out of 15000+200000
+ 2743 strings out of 493921
+ 40955 string characters out of 3144865
+ 212949 words of memory out of 3000000
+ 6015 multiletter control sequences out of 15000+200000
  10668 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,5n,49p,1244b,1508s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (57 pages, 422741 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on relazione.pdf (57 pages, 537942 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
