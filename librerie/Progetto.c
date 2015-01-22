@@ -3,7 +3,7 @@
 #include <string.h>
 	
 
-/*******************Funzione di acquisizione********************/
+
 rel_bin acquisizione (rel_bin);
 int controllo_simmetria (rel_bin);
 int controllo_riflessivita (rel_bin);
@@ -17,6 +17,8 @@ void ordine_totale (rel_bin);
 int ordine_parziale (rel_bin);
 void stampa (rel_bin);
 
+
+/*******************Funzione di acquisizione********************/
 rel_bin acquisizione (rel_bin relazione){
 
 int acquisizione_finita = 0;
@@ -595,6 +597,7 @@ int controllo_dicotomia (rel_bin verifica){
 	i=0;
 	j=0;
 	k=i-1;
+	riscontro = 0;
 	dimensione = verifica.dimensione;
 
 /********* Dicotomia per numeri *********/
