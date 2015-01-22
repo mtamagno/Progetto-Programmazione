@@ -5,7 +5,7 @@
 /********************STRUTTURA relBin**************************/
 /***** Creo una struttura dove salvare le coppie appartenenti alla Relazione*******/
 	
-struct relBin{
+typedef struct relBin{
 	/****** Coppia Numerica ******/
 	double 	*primo_termine,
 			*secondo_termine;
@@ -17,18 +17,19 @@ struct relBin{
 	/**** Variabili per salvare se ho acquisito una coppia numerica o no e il numero delle coppie*****/
 	int controllo,
 		dimensione;
-};
+}rel_bin;
 
 /*DICHIARO LE FUNZIONI*/
-int check_simmetria (struct relBin);
-int check_riflessivita (struct relBin);
-int check_transitivita (struct relBin);
-int check_suriettivita (struct relBin);
-void check_biiettivita (struct relBin);
+rel_bin acquisizione(rel_bin);
+int check_simmetria (rel_bin);
+int check_riflessivita (rel_bin);
+int check_transitivita (rel_bin);
+int check_suriettivita (rel_bin);
+void check_biiettivita (rel_bin);
 
 /*******************Funzione di acquisizione********************/
 
-struct relBin acquisizione (struct relBin relazione){
+rel_bin acquisizione (rel_bin relazione){
 
 int acquisizione_finita = 0;
 int scan = 0;
@@ -135,12 +136,12 @@ scan = 0;
 	}
 
 printf ("\n\n   ... Acquisizione Terminata ...\n\n");	
-return relazione;
+return (relazione);
 }
 
 /******************************FUNZIONE DI STAMPA********************************/
 
-void stampa (struct relBin stampa){
+void stampa (rel_bin stampa){
  
  int i = 0;
  
@@ -180,7 +181,7 @@ void stampa (struct relBin stampa){
 
 /******************FUNZIONE DI VERIFICA DI RELAZIONI D'ORDINE******************/
 
-int ordine_parziale (struct relBin verifica){
+int ordine_parziale (rel_bin verifica){
 
 	int riflessivita,
 		transitivita,
@@ -223,7 +224,7 @@ int ordine_parziale (struct relBin verifica){
 
 /***********FUNZIONE PER CONTROLLARE LA RIFLESSIVITà**********/
 
-int check_riflessivita (struct relBin verifica){
+int check_riflessivita (rel_bin verifica){
 
 	int i,
 		j,
@@ -401,7 +402,7 @@ int check_riflessivita (struct relBin verifica){
 /************* simmetrica se e solo se,presi due elementi qualsiasi a e b, vale che  **/
 /************* se a è in relazione con b allora anche b è in relazione con a. *********/
 
-int check_simmetria (struct relBin verifica){
+int check_simmetria (rel_bin verifica){
 	
 	int i,
 		j,
@@ -489,7 +490,7 @@ int check_simmetria (struct relBin verifica){
 		 a è in relazione con c.*******/
 
 
-int check_transitivita (struct relBin verifica){
+int check_transitivita (rel_bin verifica){
 	
 	int i,
 		j,
@@ -596,7 +597,7 @@ int check_transitivita (struct relBin verifica){
 
 /********** Dicotomia *************/
 
-int check_dicotomia (struct relBin verifica){
+int check_dicotomia (rel_bin verifica){
 
 	int a,b,c,d;
 	int numero_elementi;
@@ -767,7 +768,7 @@ int check_dicotomia (struct relBin verifica){
 /*Funzione di verifica dell'ordine totale*/
 
 
-void ordine_totale (struct relBin verifica){
+void ordine_totale (rel_bin verifica){
 	
 	int parziale,
 		dicotomia;
@@ -791,7 +792,7 @@ void ordine_totale (struct relBin verifica){
 
 /*Funzione che stabilisce se e'una relazione di equivalenza o meno*/
 
-void relazione_equivalenza (struct relBin verifica){
+void relazione_equivalenza (rel_bin verifica){
 	
 	int riflessivita;
 	int simmetria;
@@ -816,7 +817,7 @@ void relazione_equivalenza (struct relBin verifica){
 
 /*Funzione che stabilisce se la relazione binaria acquisita e'una funzione matematica*/
 
-void check_funzione (struct relBin verifica){
+void check_funzione (rel_bin verifica){
 	
 	int i;
 	int k;
@@ -909,7 +910,7 @@ printf ("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 
 /**********FUNZIONE PER IL CHECK DELL'INIETTIVITA'*************/
 
-int check_iniettivita (struct relBin verifica){
+int check_iniettivita (rel_bin verifica){
 	
 	int i;
 	int k;
@@ -1013,7 +1014,7 @@ return (iniettivita);
 
 /****************FUNZIONE PER IL CHECK DELLA SURIETTIVITA'************/
 
-int check_suriettivita (struct relBin verifica){
+int check_suriettivita (rel_bin verifica){
 	
 /******* La suriettività è sempre verificata in quanto il dominio e il codominio **********/
 /** sono entrambi i rispettivi x,y acquisiti, quindi non ho elementi y non associati a x **/
@@ -1025,7 +1026,7 @@ return (suriettivita);
 
 /****************FUNZIONE PER IL CHECK DELLA BIIETTIVITA'************/
 
-void check_biiettivita (struct relBin verifica){
+void check_biiettivita (rel_bin verifica){
 	
 	int 	surriettivita,
 			iniettivita;
@@ -1042,7 +1043,7 @@ return;
 }
 
 
-int check_antisimmetria (struct relBin verifica){
+int check_antisimmetria (rel_bin verifica){
 	
 	int i,
 		j,
