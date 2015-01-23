@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "progetto.h"
 
 
 rel_bin acquisizione (rel_bin);
@@ -133,12 +133,15 @@ rel_bin acquisizione (rel_bin relazione)
             }
         }
     }
-
-    printf ("\n ci sono elementi del secondo insieme che non fanno parte di nessuna coppia ordinata?");
-    printf ("\n 1: si\n 2: no");
-    while ((relazione.insieme_b < 0) && (relazione.insieme_b>2) risultato_lettura != 1)
+	
+	relazione.insieme_b = -1;
+	risultato_lettura = 0;
+	
+    printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia ordinata?");
+    printf ("\n\n 1) si\n 2) no\n\n scelta: ");
+    while ((relazione.insieme_b < 0) || (relazione.insieme_b>2) || risultato_lettura != 1)
     {
-        fflush (stdion);
+        fflush (stdin);
         risultato_lettura = scanf("%d",&relazione.insieme_b);
     }
 

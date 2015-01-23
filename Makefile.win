@@ -1,0 +1,35 @@
+# Project: Progetto
+# Makefile created by Dev-C++ 5.3.0.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = Untitled2.o Test.o librerie/progetto.o $(RES)
+LINKOBJ  = Untitled2.o Test.o librerie/progetto.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -L"C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/librerie" -m32 -pg -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Progetto.exe
+CXXFLAGS = $(CXXINCS)  -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
+CFLAGS   = $(INCS)  -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Untitled2.o: Untitled2.c 
+	$(CC) -c Untitled2.c -o Untitled2.o $(CFLAGS)
+
+Test.o: Test.c librerie/progetto.h
+	$(CC) -c Test.c -o Test.o $(CFLAGS)
+
+librerie/progetto.o: librerie/progetto.c librerie/progetto.h
+	$(CC) -c librerie/progetto.c -o librerie/progetto.o $(CFLAGS)
