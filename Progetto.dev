@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=1
 CompilerSettings=100000a111111010101000000
-UnitCount=4
+UnitCount=3
 
 [VersionInfo]
 Major=1
@@ -50,18 +50,8 @@ ProductVersion=1.0.0.0
 AutoIncBuildNr=0
 SyncProduct=1
 
-[Unit1]
-FileName=Untitled2.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
 [Unit2]
-FileName=Test.c
+FileName=librerie\progetto.c
 CompileCpp=0
 Folder=Progetto
 Compile=1
@@ -71,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=librerie\progetto.c
+FileName=librerie\progetto.h
 CompileCpp=0
 Folder=Progetto
 Compile=1
@@ -82,6 +72,16 @@ BuildCmd=
 
 [Unit4]
 FileName=librerie\progetto.h
+CompileCpp=0
+Folder=Progetto
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit1]
+FileName=Test.c
 CompileCpp=0
 Folder=Progetto
 Compile=1

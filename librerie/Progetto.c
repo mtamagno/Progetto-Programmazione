@@ -22,15 +22,18 @@ void stampa (rel_bin);
 rel_bin acquisizione (rel_bin relazione)
 {
 
-    int acquisizione_finita = 0;
-    int risultato_lettura = 0;
-
+    int acquisizione_finita = 0,
+    	risultato_lettura = 0,
+		i;
+		
+	char temporaneo;
+		
     relazione.dimensione = 0;
     relazione.primo_termine = (double *) malloc (2);
     relazione.secondo_termine = (double *) malloc (2);
     relazione.prima_stringa = (char **) malloc (100);
     relazione.seconda_stringa = (char **) malloc (100);
-
+	
     while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1)
     {
         fflush (stdin);
@@ -103,26 +106,47 @@ rel_bin acquisizione (rel_bin relazione)
     {
         while (acquisizione_finita == 0)
         {
-            relazione.dimensione++;
+        	i=0;
+			temporaneo = 'a';
+			relazione.dimensione++;
             acquisizione_finita = 2;
 
             /*Acquisisco il primo termine della coppia*/
-
-            printf (" Inserisci il primo termine della coppia \n ");
-            printf ("  Primo Termine: ");
-            relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (50);
-            risultato_lettura = scanf (" %[^\n]s",relazione.prima_stringa[relazione.dimensione - 1]);
-
-            /*Acquisisco il secondo termine della coppia*/
-
-            printf (" Inserisci il secondo termine della coppia \n ");
-            printf ("  Secondo Termine: ");
-            relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc (50);
-            risultato_lettura = scanf (" %[^\n]s",relazione.seconda_stringa[relazione.dimensione - 1]);
-
-            /*imposto di nuovo risultato_lettura a 0*/
-            risultato_lettura = 0;
-
+		 	relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (2);
+            fflush(stdin);
+            printf ("\n Inserisci il primo termine della coppia \n ");
+			printf ("  Primo Termine: ");
+			while (temporaneo != '\n'){
+				temporaneo = getc (stdin);
+        		relazione.prima_stringa [relazione.dimensione - 1] = (char*) realloc (relazione.prima_stringa[relazione.dimensione-1],
+				(i+1) * sizeof (char*));
+				relazione.prima_stringa [relazione.dimensione - 1] [i] = temporaneo;
+				i++;
+			}
+			
+			/*Imposto ora il carattere di terminazione a \0 dato che adesso è \n*/
+		
+			relazione.prima_stringa [relazione.dimensione - 1] [i - 1] = '\0';
+            
+			/*Acquisisco il secondo termine della coppia*/
+ 			
+		 	printf ("\n Inserisci il secondo termine della coppia \n ");
+			printf ("  Secondo Termine: ");
+			relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc (2);
+            fflush(stdin);
+            temporaneo='a';
+            i=0;
+			while (temporaneo != '\n'){
+				temporaneo = getc (stdin);
+        		relazione.seconda_stringa [relazione.dimensione - 1] = (char*) realloc (relazione.seconda_stringa[relazione.dimensione-1],
+				(i+1) * sizeof (char*));
+				relazione.seconda_stringa [relazione.dimensione - 1] [i] = temporaneo;
+				i++;
+			}
+			
+			/*Imposto ora il carattere di terminazione a \0 dato che adesso è \n*/
+			relazione.seconda_stringa [relazione.dimensione - 1] [i - 1] = '\0';
+			
             /*Chiedo all'utente se ci sono altre coppie*/
 
             while (acquisizione_finita < 0 || acquisizione_finita > 1 || risultato_lettura != 1)
@@ -166,9 +190,9 @@ void stampa (rel_bin stampa)
         while (i < stampa.dimensione)
         {
 
-            printf (" (%.2lf,%.2lf)",stampa.primo_termine[i],stampa.secondo_termine[i]);
+            printf ("(%.2lf,%.2lf)",stampa.primo_termine[i],stampa.secondo_termine[i]);
             if (i+1 != stampa.dimensione)
-                printf (" ;");
+                printf (" ; ");
             i++;
         }
     }
@@ -179,9 +203,9 @@ void stampa (rel_bin stampa)
     {
         while (i < stampa.dimensione)
         {
-            printf (" (%s,%s)",stampa.prima_stringa[i],stampa.seconda_stringa[i]);
+            printf ("(%s,%s)",stampa.prima_stringa[i],stampa.seconda_stringa[i]);
             if (i+1 != stampa.dimensione)
-                printf (";");
+                printf (" ; ");
             i++;
 
         }
