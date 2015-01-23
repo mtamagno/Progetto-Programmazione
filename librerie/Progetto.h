@@ -13,7 +13,9 @@ typedef struct relBin{
 	
 	/**** Variabili per salvare se ho acquisito una coppia numerica o no e il numero delle coppie*****/
 	int controllo,
-		dimensione;
+		dimensione,
+		insieme_a,
+		insieme_b;
 }rel_bin;
 
 extern rel_bin acquisizione (rel_bin);
