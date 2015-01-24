@@ -1271,6 +1271,8 @@ int controllo_antisimmetria (rel_bin verifica)
                     if (verifica.primo_termine[j] == verifica.secondo_termine[i])
                         if (verifica.primo_termine[i] == verifica.primo_termine[j])
                             riscontro++;
+                        else
+                        	riscontro = 0;
                 j++;
             }
 
@@ -1280,7 +1282,6 @@ int controllo_antisimmetria (rel_bin verifica)
                 i = verifica.dimensione;
                 antisimmetria = 0;
             }
-            riscontro = 0;
             i++;
         }
 
