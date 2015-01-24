@@ -166,20 +166,21 @@ rel_bin acquisizione (rel_bin relazione)
 	
     printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia ordinata?");
     printf ("\n\n 1) si\n 2) no\n\n scelta: ");
-    while ((relazione.insieme_b < 0) || (relazione.insieme_b>2) || risultato_lettura != 1)
+    while ((relazione.insieme_b < 0) || (relazione.insieme_b > 2) || risultato_lettura != 1)
     {
         fflush (stdin);
         risultato_lettura = scanf("%d",&relazione.insieme_b);
     }
 
+	relazione.insieme_a = -1;
 	risultato_lettura = 0;
 	
     printf ("\n Ci sono elementi del primo insieme\n che non fanno parte di nessuna coppia ordinata?");
     printf ("\n\n 1) si\n 2) no\n\n scelta: ");
-    while ((relazione.insieme_a < 0) || (relazione.insieme_a>2) || risultato_lettura != 1)
+    while ((relazione.insieme_a < 0) || (relazione.insieme_a > 2) || risultato_lettura != 1)
     {
         fflush (stdin);
-        risultato_lettura = scanf("%d",&relazione.insieme_b);
+        risultato_lettura = scanf("%d",&relazione.insieme_a);
     }
 
     printf ("\n\n   ... Acquisizione Terminata ...\n\n");
