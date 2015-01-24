@@ -135,8 +135,8 @@ rel_bin acquisizione (rel_bin relazione)
 		 	printf ("\n Inserisci il secondo termine della coppia \n ");
 			printf ("  Secondo Termine: ");
 			relazione.seconda_stringa = (double **) realloc (relazione.seconda_stringa, (relazione.dimensione+1) * sizeof (double*));
-			relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc (2);
-            fflush(stdin);
+			relazione.seconda_stringa [relazione.dimensione - 1] = (char *) malloc (2);
+            fflush (stdin);
             temporaneo='a';
             i=0;
 			while (temporaneo != '\n'){
@@ -167,6 +167,15 @@ rel_bin acquisizione (rel_bin relazione)
     printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia ordinata?");
     printf ("\n\n 1) si\n 2) no\n\n scelta: ");
     while ((relazione.insieme_b < 0) || (relazione.insieme_b>2) || risultato_lettura != 1)
+    {
+        fflush (stdin);
+        risultato_lettura = scanf("%d",&relazione.insieme_b);
+    }
+
+	
+    printf ("\n Ci sono elementi del primo insieme\n che non fanno parte di nessuna coppia ordinata?");
+    printf ("\n\n 1) si\n 2) no\n\n scelta: ");
+    while ((relazione.insieme_a < 0) || (relazione.insieme_a>2) || risultato_lettura != 1)
     {
         fflush (stdin);
         risultato_lettura = scanf("%d",&relazione.insieme_b);
