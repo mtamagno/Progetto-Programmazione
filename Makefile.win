@@ -1,22 +1,23 @@
 # Project: Progetto
-# Makefile created by Dev-C++ 5.8.3
+# Makefile created by Dev-C++ 5.3.0.3
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = Test.o librerie/progetto.o
-LINKOBJ  = Test.o librerie/progetto.o
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/librerie" -m32 -pg -g3
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+OBJ      = Test.o librerie/progetto.o $(RES)
+LINKOBJ  = Test.o librerie/progetto.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -L"C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/librerie" -m32 -pg -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 BIN      = Progetto.exe
-CXXFLAGS = $(CXXINCS) -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
-CFLAGS   = $(INCS) -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
-RM       = rm.exe -f
+CXXFLAGS = $(CXXINCS)  -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
+CFLAGS   = $(INCS)  -ansi -O2 -m32 -std=c90 -w -Wall -Wextra -pedantic -Werror -pg -g3
+RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
 all: all-before $(BIN) all-after
+
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
@@ -24,8 +25,8 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Test.o: Test.c
+Test.o: Test.c librerie/progetto.h
 	$(CC) -c Test.c -o Test.o $(CFLAGS)
 
-librerie/progetto.o: librerie/progetto.c
+librerie/progetto.o: librerie/progetto.c librerie/Progetto.h
 	$(CC) -c librerie/progetto.c -o librerie/progetto.o $(CFLAGS)

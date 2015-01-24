@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "progetto.h"
+#include "Progetto.h"
 
 
 rel_bin acquisizione (rel_bin);
@@ -31,8 +31,8 @@ rel_bin acquisizione (rel_bin relazione)
     relazione.dimensione = 0;
     relazione.primo_termine = (double *) malloc (2);
     relazione.secondo_termine = (double *) malloc (2);
-    relazione.prima_stringa = (char **) malloc (100);
-    relazione.seconda_stringa = (char **) malloc (100);
+    relazione.prima_stringa = (char **) malloc (2);
+    relazione.seconda_stringa = (char **) malloc (2);
 	
     while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1)
     {
@@ -111,6 +111,8 @@ rel_bin acquisizione (rel_bin relazione)
 			relazione.dimensione++;
             acquisizione_finita = 2;
 
+		relazione.prima_stringa = (char **) realloc (relazione.prima_stringa, (relazione.dimensione+1) * sizeof (char*));
+
             /*Acquisisco il primo termine della coppia*/
 		 	relazione.prima_stringa[relazione.dimensione - 1] = (char *) malloc (2);
             fflush(stdin);
@@ -132,6 +134,7 @@ rel_bin acquisizione (rel_bin relazione)
  			
 		 	printf ("\n Inserisci il secondo termine della coppia \n ");
 			printf ("  Secondo Termine: ");
+			relazione.seconda_stringa = (double **) realloc (relazione.seconda_stringa, (relazione.dimensione+1) * sizeof (double*));
 			relazione.seconda_stringa[relazione.dimensione - 1] = (char *) malloc (2);
             fflush(stdin);
             temporaneo='a';
