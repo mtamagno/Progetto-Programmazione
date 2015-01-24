@@ -192,7 +192,7 @@ rel_bin acquisizione (rel_bin relazione)
     risultato_lettura = 0;
 
     printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia ordinata?");
-    printf ("\n\n 1) si\n 2) no\n\n scelta: ");
+    printf ("\n 1) si\n 2) no\n\n scelta: ");
     while ((relazione.insieme_b < 0) || (relazione.insieme_b > 2) || risultato_lettura != 1)
     {
         fflush (stdin);
@@ -203,7 +203,7 @@ rel_bin acquisizione (rel_bin relazione)
     risultato_lettura = 0;
 
     printf ("\n Ci sono elementi del primo insieme\n che non fanno parte di nessuna coppia ordinata?");
-    printf ("\n\n 1) si\n 2) no\n\n scelta: ");
+    printf ("\n 1) si\n 2) no\n\n scelta: ");
     while ((relazione.insieme_a < 0) || (relazione.insieme_a > 2) || risultato_lettura != 1)
     {
         fflush (stdin);
@@ -1253,7 +1253,7 @@ int controllo_antisimmetria (rel_bin verifica)
 
     i = 0;
     j = 0;
-    riscontro = 0;
+    riscontro = 1;
 
     /*controllo della antisimmetria per numeri*/
 
