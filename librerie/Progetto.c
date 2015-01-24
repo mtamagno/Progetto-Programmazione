@@ -164,7 +164,7 @@ rel_bin acquisizione (rel_bin relazione)
 	relazione.insieme_b = -1;
 	risultato_lettura = 0;
 	
-    printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia ordinata?");
+    printf ("\n Ci sono elementi del secondo insieme\n che non fanno parte di nessuna coppia?");
     printf ("\n\n 1) si\n 2) no\n\n scelta: ");
     while ((relazione.insieme_b < 0) || (relazione.insieme_b > 2) || risultato_lettura != 1)
     {
@@ -175,7 +175,7 @@ rel_bin acquisizione (rel_bin relazione)
 	relazione.insieme_a = -1;
 	risultato_lettura = 0;
 	
-    printf ("\n Ci sono elementi del primo insieme\n che non fanno parte di nessuna coppia ordinata?");
+    printf ("\n Ci sono elementi del primo insieme\n che non fanno parte di nessuna coppia?");
     printf ("\n\n 1) si\n 2) no\n\n scelta: ");
     while ((relazione.insieme_a < 0) || (relazione.insieme_a > 2) || risultato_lettura != 1)
     {

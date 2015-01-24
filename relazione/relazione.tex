@@ -86,51 +86,58 @@
 	\subsection{Output}
 	
 	
-	1. La prima funzione(Acquisizione) restituisce una funzione binaria acquisita da tastiera;\\
+	1. Il primo problema (problema dell'acquisizione) ci richiede di andare a prendere una relazione binaria immessa tramite tastiera da un'utente;\\
+	
+	2. Il secondo problema (problema della stampa) ci richiede di andare a stampare la relazione binaria immessa precedentemente dall'utente;\\
 	\\
-	2. La seconda funzione(Stampa) non restituisce nulla, ma stampa a video la relazione che aveva in ingresso;//
+	3. Il terzo problema (problema della verifica dell ordine parziale) ci richiede di controllare se la relazione binaria immessa precedentemente dall'utente è una relazione d ordine parziale, e nel caso in cui non lo sia di andare a stampare a video le varie propriet\`a che non rispetta;\\
 	\\
-	3. La terza funzione "ordine parziale" non restituisce nulla, ma stampa a video se la Relazione binaria acquisita \`e di ordine parziale o meno e stampa a video le propiet\`a della funzione, per poter mostrare a schermo quali popiet\`a non vengono rispettate;\\
+	4. Il quarto problema (problema della verifica dell ordine totale) ci richiede di controllare se la relazione binaria immessa precedentemente dall'utente è una relazione d ordine totale, e nel caso in cui non lo sia di andare a stampare a video le varie propriet\`a che non rispetta;\\
 	\\
-	4. La quarta funzione (ordine totale) non restituisce nulla, ma stampa a video se la Relazione binaria acquisita \`e di ordine totale o meno,stampando a video quale proprieta$'$  non vale nel caso la relazione non sia tale;\\
+	5. Il quinto problema (problema della verifica dell ordine di equivalenza) ci richiede di controllare se la relazione binaria immessa precedentemente dall'utente è una relazione di equivalenza, e nel caso in cui non lo sia di andare a stampare a video le varie propriet\`a che non rispetta;\\
 	\\
-	5. La quinta funzione(relazione equivalenza) non restituisce nulla, ma stampa a video se la relazione binaria acquisita \`e una relazione di equivalenza o meno e stampa a video le propiet\`a della funzione, per poter mostrare a schermo quali popiet\`a non vengono rispettate;\\
-	\\
-	6. la sesta funzione(check funzione) non restituisce nulla, ma stampa a video se la relazione binaria acquisita \`e una funzione, e in caso contrario stampa a video quale coppia non fa rispettare le propiet\`a.\\
+	6. Il sesto problema (problema della verifica della funzione) ci richiede di controllare se la relazione binaria immessa precedentemente dall'utente è una funzione, e nel caso in cui non lo sia di andare a stampare a video le varie propriet\`a che non rispetta, mentre in caso in cui sia una funzione di controllare se tale funzione rispetti le propiet\`a di suriettivit\`a e iniettivit\`a, stampando a video se la funzione \`e suriettiva, iniettiva o biiettiva;\\
 	
 	
 	
 	\newpage                        
-	\section{Progettazione dell$'$ Algoritmo}
-	\subsection{Teoria}
-	Per lo sviluppo di questo programma si necessita di alcuni cenni di Teoria degli insiemi quali:\\
-	\\
-	Concetto di Relazione Binaria : In matematica, una relazione binaria definita su di un insieme, anche detta relazione o corrispondenza tra due oggetti, \`e un elenco di coppie ordinate di elementi appartenenti all`insieme. In modo equivalente, una relazione binaria \`e un sottoinsieme del prodotto cartesiano di un insieme con se stesso.\\
-	\\
-	Concetto di Relazione d$'$ Ordine Parziale: In matematica, più precisamente in teoria degli ordini, una relazione d`ordine o ordine su di un insieme \`e una relazione binaria tra elementi appartenenti all`insieme che gode delle seguenti propriet\`a:\\
-	* riflessiva\\
-	* antisimmetrica\\
-	* transitiva.\\
-	\\
-	Concetto di Relazione d$'$ Ordine Totale: Una relazione d$'$ ordine si dice Totale, quando oltre a essere parziale soddisfa anche la propiet\`a di Dicotomia ( tutti gli elementi devono essere in relazione tra di loro ).\\
-	\\
-	Concetto di riflessivit\`a : In logica e in matematica, una relazione binaria R in un insieme X \`e detta riflessiva se ogni elemento di X \`e in tale relazione con se stesso.        \\
-	\\
-	Concetto di transitivit\`a: In matematica, una relazione binaria R in un insieme X \`e transitiva se e solo se per ogni a, b, c appartenenti ad X, se a \`e in relazione con b e b \`e in relazione con c, allora a \`e in relazione con c. \\
-	\\
-	Concetto di simmetricit\`a: In matematica, una relazione binaria R in un insieme X \`e simmetrica se e solo se, presi due elementi qualsiasi a e b, vale che se a \`e in relazione con b allora anche b \`e in relazione con a.\\
-	\\
-	Concetto di funzione: In matematica, una funzione, anche detta applicazione, mappa o trasformazione, \`e definita dai seguenti oggetti:\\
-	* Un insieme  X  detto dominio della funzione.
-	* Un insieme  Y  detto codominio della funzione.
-	* Una relazione  f : X -> Y  che ad ogni elemento dell`insieme  X  associa uno ed un solo elemento dell`insieme  Y ; l`elemento assegnato a  x appartenente ad X  tramite  f  viene abitualmente indicato con  f(x) .\\
-	\newpage
-	
-	Concetto di Iniettivit\`a: Una funzione si dice iniettiva quando a ogni elemento del dominio \`e assegnato uno e uno solo elemento del codominio.\\
-	\\
-	Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento del codominio viene raggiunto da un elemento del dominio.\\
-	\\
-	\newpage        
+\section{Progettazione dell$'$ Algoritmo}
+\subsection{Teoria}
+Per lo sviluppo di questo programma si necessita di alcuni cenni di Teoria degli insiemi quali:\\
+\\
+Concetto di Relazione Binaria : una relazione binaria \`e un sottoinsieme del prodotto
+cartesiano di due insiemi (i quali potrebbero pure coincidere,
+ma ci\`o non \`e garantito).\\
+\\
+Concetto di Relazione d$'$ Ordine Parziale: In matematica, pi\`u precisamente in teoria degli ordini, una relazione d$'$ordine o ordine su di un insieme \`e una relazione binaria tra elementi appartenenti all$'$insieme che gode delle seguenti propriet\`a:\\
+* riflessiva\\
+* antisimmetrica\\
+* transitiva.\\
+\\
+Concetto di Relazione d$'$ Ordine Totale: Una relazione d$'$ ordine si dice Totale, quando oltre a essere parziale soddisfa anche la propiet\`a di Dicotomia ( tutti gli elementi devono essere in relazione con ogni altro elemento presente ).\\
+\\
+Concetto di riflessivit\`a : In logica e in matematica, una relazione binaria R in un insieme X \`e detta riflessiva se ogni elemento di X \`e in tale relazione con se stesso. \\
+\\
+Concetto di transitivit\`a: In matematica, una relazione binaria R in un insieme X \`e transitiva se e solo se per ogni a, b, c appartenenti ad X, se a \`e in relazione con b e b \`e in relazione con c, allora a \`e in relazione con c. \\
+\\
+Concetto di simmetricit\`a: In matematica, una relazione binaria R in un insieme X \`e simmetrica se e solo se, presi due elementi qualsiasi a e b, vale che se a \`e in relazione con b allora anche b \`e in relazione con a.\\
+\\
+Un sottoinsieme f di A x B \`e una funzione se ad ogni
+elemento di A viene associato da f al pi\`u un elemento di B,
+dando luogo alla distinzione tra funzioni totali e parziali
+(a seconda che tutti o solo alcuni degli elementi di A
+abbiano un corrispondente in B) e lasciando non specificato
+se tutti gli elementi di B siano i corrispondenti di
+qualche elemento di A oppure no.\\
+\newpage
+
+Concetto di Iniettivit\`a: ad ogni elemento del codominio corrisponde al pi\`u
+un elemento del dominio, cio\`e elementi diversi del dominio
+vengono trasformati in elementi diversi del codominio.\\
+\\
+Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento del codominio viene raggiunto da un elemento del dominio.\\
+\\
+\newpage
 	\subsection{Funzioni per l`acquisizione:}
 	
 	acquisizione() : per acquisire la relazione.\\
@@ -163,7 +170,7 @@
 	\\
 	check\textunderscore funzione():verifica se la relazione \`e una funzione(stampa  a video se c$'$ \`e o non c$'$ \`e una funzione e nel caso non ci sia dice quale coppia non soddisfa le propriet\`a).\\
 	\\
-	\newpage        
+	\newpage  
 	\subsection{Input}
 	
 	
@@ -182,7 +189,7 @@
 	
 	\newpage        
 	\subsection{Output - Acquisizione}
-	Durante l$'$ acquisizione avremo diversi output video (printf) che guideranno l$'$ utente nell$'$ inserimento dei dati, e che segnaleranno eventuali errori commessi.
+	Durante l$'$ acquisizione avremo diversi output video che guideranno l$'$ utente nell$'$ inserimento dei dati, e che segnaleranno eventuali errori commessi.
 	Finita l$'$ acquisizione dovremo restituire l$'$ indirizzo della struttura, che all$'$ interno quindi conterra$'$  i dati inseriti dall$'$ utente. Abbiamo scelto di fare ciò perch\`e non essendo permesso l$'$ utilizzo di variabili globali, il modo più semplice di passare i dati inseriti da una funzione all$'$ altra \`e  quello di creare una struttura dinamica.
 	Una volta restituito l$'$ indirizzo della struttura, a seconda della funzione lanciata nel file Test.c si lanceranno le altre 5 funzioni, dato che queste prendono tutte in pasto l$'$ output della prima (cio\`e l$'$ indirizzo della struttura della relazione binaria) e la utilizzano per verificarne varie proprieta$'$ .\\
 	\\
@@ -211,13 +218,15 @@
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
 	\lstinputlisting{../Test.c}
 	\newpage
-	\subsection{Makefile}
-	Test.exe: Test.c Makefile\\
-	gcc -ansi -Wall -O Test.c -o Test.exe\\
+\subsection{Makefile}
+\begin{tabbing}
+	Test.exe: \=Test.c Makefile\\
+	\>gcc -ansi -Wall -O Test.c -o Test.exe\\
 	pulisci:\\
-	rm -f Test.o\\
+	\>rm -f Test.o\\
 	pulisci\textunderscore tutto:\\
-	rm -f Test.exe Test.o\\
+	\>rm -f Test.exe Test.o\\
+\end{tabbing}
 	
 	
 	
@@ -355,11 +364,12 @@
 
 Questa porzione di codice fa in modo che una volta eseguito si abbia nel valore c la sommatoria del numero di elementi distinti inseriti dall'utente.	
 \\
-\\	
+\\
+riscontro = numero\textunderscore elementi\\	
 while(numero\textunderscore elementi\textgreater 0)\\
 \{
 numero\textunderscore elementi - -;\\
-c = c + numero\textunderscore elementi;\\
+riscontro = riscontro + numero\textunderscore elementi;\\
 \}
 \\
 \\
@@ -367,7 +377,7 @@ La postcondizione \`e
 \\
 \\
 \\
-R = (c = $\displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $\\
+R = (riscontro = $\displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $\\
 \\
 \\
 \\
@@ -377,7 +387,7 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
 \\
  -Il predicato
  
- $P = (numero\textunderscore elementi \textgreater 0 \wedge c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
+ $P = (numero\textunderscore elementi \textgreater 0 \wedge riscontro = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
  \\ 
  \\
  \\
@@ -393,7 +403,7 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  \\
  \\
- $\ast \lbrace P \wedge numero\textunderscore elementi\textgreater 0 \rbrace c = c + numero\textunderscore elementi; numero\textunderscore elementi = numero\textunderscore elementi - -;\lbrace P \rbrace $ \\
+ $\ast \lbrace P \wedge numero\textunderscore elementi\textgreater 0 \rbrace riscontro = riscontro + numero\textunderscore elementi; numero\textunderscore elementi = numero\textunderscore elementi - -;\lbrace P \rbrace $ \\
  \\
  \\
  \\
@@ -401,7 +411,7 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  \\
  \\
- $P_{numero\textunderscore elementi,numero\textunderscore elementi -1} \wedge c \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $
+ $P_{numero\textunderscore elementi,numero\textunderscore elementi -1} \wedge riscontro \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $
  \\
  \\
  \\
@@ -409,23 +419,23 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  \\
  \\
- P$'$$_{c,c + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge c + numero\textunderscore elementi $ = \\\\ =$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $)\\
+ P$'$$_{riscontro,riscontro + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge riscontro + numero\textunderscore elementi $ = \\\\ =$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-2} numero\textunderscore elementi - j $)\\
  \\
  \\
  
- P$'$$_{c,c + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge c$ =\\\\=$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
+ P$'$$_{riscontro,riscontro + numero\textunderscore elementi} = (numero\textunderscore elementi \textgreater 0 \wedge c$ =\\\\=$ \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $)\\
  \\
  \\
  
  
  in quanto denotato con P$''$ quest$'$ ultimo predicato, si ha:
- (P $\wedge$ numero$\textunderscore elementi \textgreater 1) = (numero \textunderscore elementi \textgreater 0 \wedge c =  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$)\\
+ (P $\wedge$ numero$\textunderscore elementi \textgreater 1) = (numero \textunderscore elementi \textgreater 0 \wedge riscontro =  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$)\\
  $|= P''$\\
  $\ast$ Il progresso \`e garantito dal fatto che tr(numero\textunderscore elemnti) decresce di un unit\`a ad ogni iterazione in quanto numero\textunderscore elementi viene decrementata di un$'$ unit\`a ad ogni iterazione.\\
  $\ast$ La limitatezza segue da:\\
  (P$\wedge$$tr(numero\textunderscore elementi) \textless 1) = (numero\textunderscore elementi \textgreater 0 \wedge c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$) \\
  \\
- $\equiv (c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1}$numero\textunderscore elementi -j)\\
+ $\equiv (riscontro = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1}$numero\textunderscore elementi -j)\\
 \\
 \\
 \\
@@ -434,8 +444,8 @@ $|=$ numero\textunderscore elementi \textgreater numero\textunderscore elementi 
 Poich\`e: \\
 \\
 \\
-$(P \wedge numero\textunderscore elementi \textless 1 ) = (numero\textunderscore elementi \textgreater 0 c = (P\wedge numero\textunderscore elementi \textgreater 1) = ( numero\textunderscore elementi \textgreater 0 \wedge c =$\\\\$=  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $ $\wedge numero\textunderscore elementi \textless 1)$ \\\\$
-\equiv (numero\textunderscore elementi = 1 \wedge c =\\\\= \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j \wedge numero\textunderscore elementi \textless 1))$) 
+$(P \wedge numero\textunderscore elementi \textless 1 ) = (numero\textunderscore elementi \textgreater 0 riscontro = (P\wedge numero\textunderscore elementi \textgreater 1) = ( numero\textunderscore elementi \textgreater 0 \wedge riscontro =$\\\\$=  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j $ $\wedge numero\textunderscore elementi \textless 1)$ \\\\$
+\equiv (numero\textunderscore elementi = 1 \wedge riscontro =\\\\= \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j \wedge numero\textunderscore elementi \textless 1))$) 
 \\
 \\
 \\
@@ -445,7 +455,7 @@ Dal corollario del teorema dell invariabilit\'a di ciclo si ha che P può essere
 \\
 -Proseguendo infine a ritroso si ottiene prima:
 
- $P_{numero\textunderscore elementi,0} = (0 \textless= 0 \textless= numero\textunderscore elementi \wedge c = \displaystyle \sum_{j=0}^{0-1} numero\textunderscore elementi - j$) (c = 0)
+ $P_{numero\textunderscore elementi,0} = (0 \textless= 0 \textless= numero\textunderscore elementi \wedge riscontro = \displaystyle \sum_{j=0}^{0-1} numero\textunderscore elementi - j$) (riscontro = 0)
  \\
  \\
  \\
@@ -453,7 +463,7 @@ Dal corollario del teorema dell invariabilit\'a di ciclo si ha che P può essere
  \\
  \\
  \\
- P$'''$$_{c,0}$ = (0 = 0) = vero
+ P$'''$$_{riscontro,0}$ = (0 = 0) = vero
 
 \end{document}
 
