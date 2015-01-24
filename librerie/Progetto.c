@@ -987,7 +987,7 @@ void controllo_funzione (rel_bin verifica)
             termini_uguali_prima = termini_uguali_dopo;
             i++;
         }
-        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
+        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))&& verifica.insieme_a == 2)
         {
             printf ("\n La relazione binaria e'una funzione\n");
             controllo_biiettivita (verifica);
@@ -1033,7 +1033,7 @@ void controllo_funzione (rel_bin verifica)
             termini_uguali_prima = termini_uguali_dopo;
             i++;
         }
-        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
+        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))&& verifica.insieme_a == 2)
         {
             printf ("\n La relazione binaria e'una funzione\n");
             controllo_biiettivita (verifica);
