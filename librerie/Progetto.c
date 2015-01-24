@@ -987,9 +987,12 @@ void controllo_funzione (rel_bin verifica)
             termini_uguali_prima = termini_uguali_dopo;
             i++;
         }
-        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))&& verifica.insieme_a == 2)
+        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
         {
-            printf ("\n La relazione binaria e'una funzione\n");
+            if(verifica.insieme_a == 2)
+            printf ("\n La relazione binaria e'una funzione totale\n");
+            else
+            printf ("\n La relazione binaria è una funzione parziale\n");
             controllo_biiettivita (verifica);
         }
         else
@@ -1033,10 +1036,13 @@ void controllo_funzione (rel_bin verifica)
             termini_uguali_prima = termini_uguali_dopo;
             i++;
         }
-        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima))&& verifica.insieme_a == 2)
+        if (errore == 0 && (termini_diversi == (verifica.dimensione - termini_uguali_prima)))
         {
-            printf ("\n La relazione binaria e'una funzione\n");
-            controllo_biiettivita (verifica);
+        	if(verifica.insieme_a == 2)
+            printf ("\n La relazione binaria e'una funzione totale\n");
+            else
+            printf ("\n La relazione binaria è una funzione parziale\n");
+			controllo_biiettivita (verifica);
         }
         else
             printf ("\n La relazione binaria non e'una funzione\n");
