@@ -1303,6 +1303,8 @@ int controllo_antisimmetria (rel_bin verifica)
                     if (strcmp (verifica.prima_stringa[j],verifica.seconda_stringa[i]) == 0 )
                         if (strcmp (verifica.prima_stringa[j],verifica.prima_stringa[i]) == 0 )
                             riscontro++;
+                        else
+                        	riscontro=0;
 
                 j++;
             }
@@ -1313,7 +1315,6 @@ int controllo_antisimmetria (rel_bin verifica)
                 i = verifica.dimensione;
                 antisimmetria = 0;
             }
-            riscontro = 0;
             i++;
         }
 
