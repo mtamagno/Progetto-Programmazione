@@ -21,6 +21,7 @@ void stampa (rel_bin);
 
 
 /*******************Funzione di acquisizione********************/
+
 rel_bin acquisizione (rel_bin relazione)
 {
 
@@ -45,23 +46,30 @@ rel_bin acquisizione (rel_bin relazione)
 
     do
     {
-        printf ("\n Premi 1 se vuoi immettere solo numeri, 2 per altro\n ");
+        printf ("\n Premi 1 se vuoi immettere solo numeri,\n 2 per inserire stringhe ");
+        printf ("\n 3 per la relazione vuota\n");
         printf ("\n scelta: ");
-
         risultato_lettura = scanf ("%d",
                                    &relazione.controllo);
-        if (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1)
+        if (relazione.controllo < 1 || relazione.controllo > 3 || risultato_lettura != 1)
             do
                 carattere_non_letto = getchar();
             while (carattere_non_letto != '\n');
     }
-    while (relazione.controllo < 1 || relazione.controllo > 2 || risultato_lettura != 1);
+    while (relazione.controllo < 1 || relazione.controllo > 3 || risultato_lettura != 1);
+    
+    /** Imposto di nuovo risultato_lettura a 0 **/
+    
+	risultato_lettura=0;
 
-    /** imposto di nuovo risultato_lettura a 0 **/
-    risultato_lettura=0;
-
-    /*Acquisizione Numerica*/
-
+    /* Relazione vuota */
+    
+	if (relazione.controllo == 3){
+    	printf("\n Si e' scelto di inserire una relazione vuota\n");
+    }
+    
+	/* Acquisizione Numerica */
+    
     if (relazione.controllo == 1)
     {
         while (acquisizione_finita == 0)
@@ -290,7 +298,6 @@ int ordine_parziale (rel_bin verifica)
     transitivita = controllo_transitivita (verifica);
 
     /************* Controllo se rispetta le propietà per essere una relazione d'ordine parziale************/
-
     if (transitivita == 1 && antisimmetria == 1 && riflessivita == 1)
     {
         parziale = 1;
@@ -494,6 +501,10 @@ int controllo_riflessivita (rel_bin verifica)
         }
 
     }
+    /* Relazione vuota */
+
+	if(verifica.controllo == 3)
+		riflessivita=0;
 
     /********* Controllo se è riflessiva *******************/
 
@@ -590,10 +601,16 @@ int controllo_simmetria (rel_bin verifica)
         }
 
     }
+    /* Relazione Vuota */
+
+	if (verifica.controllo == 3){
+		printf ("   e'simmetrica\n");
+		simmetria = 1;
+	}
 
     /***** Controllo se la simmetria è stata verificata *********/
 
-    if (simmetria == 1)
+    if (simmetria == 1 && verifica.controllo != 3)
         printf ("   e'simmetrica\n");
     else
         printf ("   e'asimmetrica\n");
@@ -719,7 +736,12 @@ int controllo_transitivita (rel_bin verifica)
         }
 
     }
+    /* Relazione Vuota */
 
+	if (verifica.controllo == 3){
+		transitivita = 1;
+	}
+	
     /********** Controllo se la relazione è Transitiva *********/
 
     if (transitivita == 1)
