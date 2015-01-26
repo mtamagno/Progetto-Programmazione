@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 21:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 21:40
 entering extended mode
 **relazione.tex
 
@@ -596,7 +596,7 @@ File: ../Screenshots/Test1Input.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../Screenshots/Test1Input.jpg used on input line 260.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test1Output.png, id=184, 482.55281pt x 225.84375pt>
+<../Screenshots/Test1Output.png, id=184, 481.8pt x 224.33812pt>
 File: ../Screenshots/Test1Output.png Graphic file (type png)
 
 <use ../Screenshots/Test1Output.png>
@@ -623,7 +623,7 @@ File: ../Screenshots/Test2Input.png Graphic file (type png)
 Package pdftex.def Info: ../Screenshots/Test2Input.png used on input line 271.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test2Output.png, id=191, 481.8pt x 224.33812pt>
+<../Screenshots/Test2Output.png, id=191, 482.55281pt x 231.11343pt>
 File: ../Screenshots/Test2Output.png Graphic file (type png)
 
 <use ../Screenshots/Test2Output.png>
@@ -697,7 +697,7 @@ File: ../Screenshots/Test4Input.png Graphic file (type png)
 Package pdftex.def Info: ../Screenshots/Test4Input.png used on input line 297.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test4Output.png, id=205, 481.8pt x 225.84375pt>
+<../Screenshots/Test4Output.png, id=205, 481.8pt x 228.855pt>
 File: ../Screenshots/Test4Output.png Graphic file (type png)
 
 <use ../Screenshots/Test4Output.png>
@@ -734,7 +734,7 @@ File: ../Screenshots/Test5Input.png Graphic file (type png)
 Package pdftex.def Info: ../Screenshots/Test5Input.png used on input line 309.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test5Output.png, id=212, 481.8pt x 226.59656pt>
+<../Screenshots/Test5Output.png, id=212, 481.8pt x 228.855pt>
 File: ../Screenshots/Test5Output.png Graphic file (type png)
 
 <use ../Screenshots/Test5Output.png>
@@ -766,7 +766,7 @@ File: ../Screenshots/Test6Input.png Graphic file (type png)
 Package pdftex.def Info: ../Screenshots/Test6Input.png used on input line 322.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test6Output.png, id=219, 507.39563pt x 255.20343pt>
+<../Screenshots/Test6Output.png, id=219, 482.55281pt x 226.59656pt>
 File: ../Screenshots/Test6Output.png Graphic file (type png)
 
 <use ../Screenshots/Test6Output.png>
@@ -798,7 +798,7 @@ File: ../Screenshots/Test7Input.png Graphic file (type png)
 Package pdftex.def Info: ../Screenshots/Test7Input.png used on input line 336.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test7Output.png, id=227, 508.14844pt x 256.70906pt>
+<../Screenshots/Test7Output.png, id=227, 482.55281pt x 226.59656pt>
 File: ../Screenshots/Test7Output.png Graphic file (type png)
 
 <use ../Screenshots/Test7Output.png>
@@ -834,7 +834,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--341
 [60 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
 st7Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
 enshots/Test7Output.png>]
-<../Screenshots/Test8Input.png, id=233, 508.90125pt x 258.21469pt>
+<../Screenshots/Test8Input.png, id=233, 480.29437pt x 229.60782pt>
 File: ../Screenshots/Test8Input.png Graphic file (type png)
 
 <use ../Screenshots/Test8Input.png>
@@ -1527,7 +1527,7 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (68 pages, 442232 bytes).
+Output written on relazione.pdf (68 pages, 457839 bytes).
 PDF statistics:
  303 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
