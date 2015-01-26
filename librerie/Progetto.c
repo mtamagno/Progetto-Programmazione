@@ -20,7 +20,7 @@ void ordine_totale (rel_bin);
 void stampa (rel_bin);
 
 
-/*******************Funzione di acquisizione********************/
+/*Funzione di acquisizione*/
 
 rel_bin acquisizione (rel_bin relazione)
 {
@@ -46,8 +46,8 @@ rel_bin acquisizione (rel_bin relazione)
 
     do
     {
-        printf ("\n Premi\n\n 1 se vuoi immettere solo numeri,\n 2 per inserire stringhe ");
-        printf ("\n 3 per la relazione vuota\n");
+        printf ("\n Premi\n\n 1 se vuoi immettere solo numeri\n 2 per");
+        printf (" inserire stringhe \n 3 per la relazione vuota\n");
         printf ("\n scelta: ");
         risultato_lettura = scanf ("%d",
                                    &relazione.controllo);
@@ -82,8 +82,10 @@ rel_bin acquisizione (rel_bin relazione)
             /*Acquisisco i termini della coppia*/
 
             printf ("\n Inserisci i termini della coppia \n ");
-            relazione.primo_termine = (double *) realloc (relazione.primo_termine, (relazione.dimensione+1) * sizeof (double));
-            relazione.secondo_termine = (double *) realloc (relazione.secondo_termine, (relazione.dimensione+1) * sizeof (double));
+            relazione.primo_termine = (double *) realloc (relazione.primo_termine,
+				(relazione.dimensione+1) * sizeof (double));
+            relazione.secondo_termine = (double *) realloc (relazione.secondo_termine,
+				(relazione.dimensione+1) * sizeof (double));
             risultato_lettura = 0;
 
 
@@ -93,8 +95,7 @@ rel_bin acquisizione (rel_bin relazione)
                 if (primo_termine_acquisito == 0)
                 {
                     printf ("  Primo Termine: ");
-                    risultato_lettura = scanf ("%lf",
-                                               &relazione.primo_termine[relazione.dimensione - 1]);
+                    risultato_lettura = scanf ("%lf",&relazione.primo_termine[relazione.dimensione - 1]);
                 }
 
                 if (risultato_lettura == 1)
@@ -105,8 +106,7 @@ rel_bin acquisizione (rel_bin relazione)
                 {
                     printf ("   Secondo Termine: ");
                     risultato_lettura = 0;
-                    risultato_lettura = scanf ("%lf",
-                                               &relazione.secondo_termine[relazione.dimensione - 1]);
+                    risultato_lettura = scanf ("%lf",&relazione.secondo_termine[relazione.dimensione - 1]);
                 }
                 /*Controllo che i valori siano stati letti correttamente e nel caso non sia cosi svuoto il buffer*/
                 if (risultato_lettura != 1)
@@ -165,7 +165,8 @@ rel_bin acquisizione (rel_bin relazione)
             while (temporaneo != '\n')
             {
                 temporaneo = getc (stdin);
-                relazione.prima_stringa [relazione.dimensione - 1] = (char*) realloc (relazione.prima_stringa[relazione.dimensione-1],
+                relazione.prima_stringa [relazione.dimensione - 1] = (char*) realloc
+				(relazione.prima_stringa[relazione.dimensione-1],
                         (i+1) * sizeof (char*));
                 relazione.prima_stringa [relazione.dimensione - 1] [i] = temporaneo;
                 i++;
@@ -178,7 +179,8 @@ rel_bin acquisizione (rel_bin relazione)
             /*Acquisisco il secondo termine della coppia*/
 
             printf ("   Secondo Termine: ");
-            relazione.seconda_stringa = (double **) realloc (relazione.seconda_stringa, (relazione.dimensione+1) * sizeof (double*));
+            relazione.seconda_stringa = (double **) realloc (relazione.seconda_stringa,
+			(relazione.dimensione+1) * sizeof (double*));
             relazione.seconda_stringa [relazione.dimensione - 1] = (char *) malloc (2);
             fflush (stdin);
             temporaneo='a';

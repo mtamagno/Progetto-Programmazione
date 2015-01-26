@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  26 JAN 2015 20:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 21:29
 entering extended mode
 **relazione.tex
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.te
-x
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -94,8 +94,8 @@ LaTeX Warning: Unused global option(s):
     [block].
 
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -132,8 +132,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.to
-c)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.toc)
 \tf@toc=\write3
  [2]
 Missing character: There is no ï in font cmr10!
@@ -503,10 +503,10 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.h
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.
+h
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
@@ -514,125 +514,89 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 ) [11]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.c
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.
+c
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
  [12] [13]
-Overfull \hbox (27.92383pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (54.2041pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (27.92383pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (34.4939pt too wide) in paragraph at lines 97--98
-[][] 
- []
-
-
-Overfull \hbox (27.92383pt too wide) in paragraph at lines 109--110
-[][] 
- []
-
-
-Overfull \hbox (67.34424pt too wide) in paragraph at lines 109--110
-[][] 
- []
-
-
-Overfull \hbox (27.92383pt too wide) in paragraph at lines 109--110
-[][] 
- []
-
-
-Overfull \hbox (34.4939pt too wide) in paragraph at lines 109--110
-[][] 
- []
-
-[14] [15]
+[14]
 Overfull \hbox (67.34424pt too wide) in paragraph at lines 132--133
 [][] 
  []
 
-[16]
+[15]
 Missing character: There is no è in font cmti10!
- [17]
+ [16]
 Missing character: There is no è in font cmti10!
- [18] [19]
+ [17] [18] [19]
+Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
  [20]
 Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
  [21]
-Missing character: There is no à in font cmti10!
 Missing character: There is no é in font cmti10!
 Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
 Missing character: There is no è in font cmti10!
+Missing character: There is no à in font cmti10!
  [22]
+Missing character: There is no à in font cmti10!
+Missing character: There is no è in font cmti10!
 Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
  [23]
-Missing character: There is no è in font cmti10!
-Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
 Missing character: There is no à in font cmti10!
  [24]
 Missing character: There is no à in font cmti10!
-Missing character: There is no à in font cmti10!
- [25] [26]
+ [25]
 Missing character: There is no è in font cmti10!
+ [26]
 Missing character: There is no è in font cmti10!
 Missing character: There is no è in font cmti10!
 Missing character: There is no è in font cmti10!
  [27] [28]
 Missing character: There is no è in font cmti10!
+Missing character: There is no à in font cmti10!
+Missing character: There is no è in font cmti10!
+Missing character: There is no è in font cmti10!
+Missing character: There is no è in font cmti10!
+Missing character: There is no è in font cmti10!
  [29]
 Missing character: There is no à in font cmti10!
-Missing character: There is no è in font cmti10!
-Missing character: There is no è in font cmti10!
-Missing character: There is no è in font cmti10!
-Missing character: There is no è in font cmti10!
-Missing character: There is no à in font cmti10!
- [30]
-Missing character: There is no à in font cmti10!
 
-[31] [32]
-Missing character: There is no è in font cmti10!
+[30]
 Missing character: There is no à in font cmti10!
- [33] [34] [35] [36] [37]
+ [31]
 Missing character: There is no è in font cmti10!
- [38] [39] [40]
+ [32]
+Missing character: There is no à in font cmti10!
+ [33] [34] [35] [36]
+Missing character: There is no è in font cmti10!
+ [37] [38] [39] [40]
 Missing character: There is no è in font cmr10!
 Missing character: There is no è in font cmti10!
- [41] [42]
+ [41]
 Missing character: There is no è in font cmr10!
- [43] [44] [45]
-[46] [47] [48]
+ [42] [43] [44]
+[45] [46] [47] [48]
 Missing character: There is no è in font cmti10!
- [49]) [50]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c [51] [52])
-[53] [54] <../Screenshots/Test1Input.jpg, id=186, 480.29437pt x 225.09094pt>
+) [49]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Test.c [50]
+[51]) [52] [53]
+<../Screenshots/Test1Input.jpg, id=183, 480.29437pt x 225.09094pt>
 File: ../Screenshots/Test1Input.jpg Graphic file (type jpg)
 
 <use ../Screenshots/Test1Input.jpg>
 Package pdftex.def Info: ../Screenshots/Test1Input.jpg used on input line 260.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test1Output.png, id=187, 482.55281pt x 225.84375pt>
+<../Screenshots/Test1Output.png, id=184, 482.55281pt x 225.84375pt>
 File: ../Screenshots/Test1Output.png Graphic file (type png)
 
 <use ../Screenshots/Test1Output.png>
@@ -649,17 +613,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--263
 
  []
 
-[55 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test1I
-nput.jpg> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test1Output.png>]
-<../Screenshots/Test2Input.png, id=193, 481.8pt x 223.58531pt>
+[54 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st1Input.jpg> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test1Output.png>]
+<../Screenshots/Test2Input.png, id=190, 481.8pt x 223.58531pt>
 File: ../Screenshots/Test2Input.png Graphic file (type png)
 
 <use ../Screenshots/Test2Input.png>
 Package pdftex.def Info: ../Screenshots/Test2Input.png used on input line 271.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test2Output.png, id=194, 481.8pt x 224.33812pt>
+<../Screenshots/Test2Output.png, id=191, 481.8pt x 224.33812pt>
 File: ../Screenshots/Test2Output.png Graphic file (type png)
 
 <use ../Screenshots/Test2Output.png>
@@ -686,17 +650,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--276
 
  []
 
-[56 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test2I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test2Output.png>]
-<../Screenshots/Test3Input.png, id=200, 479.54156pt x 223.58531pt>
+[55 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st2Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test2Output.png>]
+<../Screenshots/Test3Input.png, id=197, 479.54156pt x 223.58531pt>
 File: ../Screenshots/Test3Input.png Graphic file (type png)
 
 <use ../Screenshots/Test3Input.png>
 Package pdftex.def Info: ../Screenshots/Test3Input.png used on input line 284.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test3Output.png, id=201, 481.8pt x 226.59656pt>
+<../Screenshots/Test3Output.png, id=198, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test3Output.png Graphic file (type png)
 
 <use ../Screenshots/Test3Output.png>
@@ -723,17 +687,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--289
 
  []
 
-[57 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test3I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test3Output.png>]
-<../Screenshots/Test4Input.png, id=207, 482.55281pt x 224.33812pt>
+[56 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st3Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test3Output.png>]
+<../Screenshots/Test4Input.png, id=204, 482.55281pt x 224.33812pt>
 File: ../Screenshots/Test4Input.png Graphic file (type png)
 
 <use ../Screenshots/Test4Input.png>
 Package pdftex.def Info: ../Screenshots/Test4Input.png used on input line 297.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test4Output.png, id=208, 481.8pt x 225.84375pt>
+<../Screenshots/Test4Output.png, id=205, 481.8pt x 225.84375pt>
 File: ../Screenshots/Test4Output.png Graphic file (type png)
 
 <use ../Screenshots/Test4Output.png>
@@ -760,17 +724,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--302
 
  []
 
-[58 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test4I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test4Output.png>]
-<../Screenshots/Test5Input.png, id=214, 481.8pt x 226.59656pt>
+[57 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st4Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test4Output.png>]
+<../Screenshots/Test5Input.png, id=211, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test5Input.png Graphic file (type png)
 
 <use ../Screenshots/Test5Input.png>
 Package pdftex.def Info: ../Screenshots/Test5Input.png used on input line 309.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test5Output.png, id=215, 481.8pt x 226.59656pt>
+<../Screenshots/Test5Output.png, id=212, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test5Output.png Graphic file (type png)
 
 <use ../Screenshots/Test5Output.png>
@@ -792,17 +756,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--314
 
  []
 
-[59 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test5I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test5Output.png>]
-<../Screenshots/Test6Input.png, id=222, 507.39563pt x 255.20343pt>
+[58 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st5Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test5Output.png>]
+<../Screenshots/Test6Input.png, id=218, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test6Input.png Graphic file (type png)
 
 <use ../Screenshots/Test6Input.png>
 Package pdftex.def Info: ../Screenshots/Test6Input.png used on input line 322.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test6Output.png, id=223, 507.39563pt x 255.20343pt>
+<../Screenshots/Test6Output.png, id=219, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test6Output.png Graphic file (type png)
 
 <use ../Screenshots/Test6Output.png>
@@ -824,17 +788,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--327
 
  []
 
-[60 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test6I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test6Output.png>]
-<../Screenshots/Test7Input.png, id=229, 508.90125pt x 256.70906pt>
+[59 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st6Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test6Output.png>]
+<../Screenshots/Test7Input.png, id=226, 508.90125pt x 256.70906pt>
 File: ../Screenshots/Test7Input.png Graphic file (type png)
 
 <use ../Screenshots/Test7Input.png>
 Package pdftex.def Info: ../Screenshots/Test7Input.png used on input line 336.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test7Output.png, id=230, 508.14844pt x 256.70906pt>
+<../Screenshots/Test7Output.png, id=227, 508.14844pt x 256.70906pt>
 File: ../Screenshots/Test7Output.png Graphic file (type png)
 
 <use ../Screenshots/Test7Output.png>
@@ -867,10 +831,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--341
 
  []
 
-[61 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test7I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test7Output.png>]
-<../Screenshots/Test8Input.png, id=236, 508.90125pt x 258.21469pt>
+[60 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st7Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test7Output.png>]
+<../Screenshots/Test8Input.png, id=233, 508.90125pt x 258.21469pt>
 File: ../Screenshots/Test8Input.png Graphic file (type png)
 
 <use ../Screenshots/Test8Input.png>
@@ -901,15 +865,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--353
 
  []
 
-[62 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test8I
-nput.png>] <../Screenshots/Test9Input.png, id=241, 507.39563pt x 256.70906pt>
+[61 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st8Input.png>]
+<../Screenshots/Test9Input.png, id=238, 507.39563pt x 256.70906pt>
 File: ../Screenshots/Test9Input.png Graphic file (type png)
 
 <use ../Screenshots/Test9Input.png>
 Package pdftex.def Info: ../Screenshots/Test9Input.png used on input line 360.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test9Output.PNG, id=242, 508.14844pt x 256.70906pt>
+<../Screenshots/Test9Output.PNG, id=239, 508.14844pt x 256.70906pt>
 File: ../Screenshots/Test9Output.PNG Graphic file (type png)
 
 <use ../Screenshots/Test9Output.PNG>
@@ -931,10 +896,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--365
 
  []
 
-[63 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test9I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test9Output.PNG>]
-<../Screenshots/Test10Input.png, id=248, 508.90125pt x 257.46187pt>
+[62 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st9Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test9Output.PNG>]
+<../Screenshots/Test10Input.png, id=245, 508.90125pt x 257.46187pt>
 File: ../Screenshots/Test10Input.png Graphic file (type png)
 
 <use ../Screenshots/Test10Input.png>
@@ -942,7 +907,7 @@ Package pdftex.def Info: ../Screenshots/Test10Input.png used on input line 373.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test10Output.PNG, id=249, 507.39563pt x 255.20343pt>
+<../Screenshots/Test10Output.PNG, id=246, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test10Output.PNG Graphic file (type png)
 
 <use ../Screenshots/Test10Output.PNG>
@@ -954,9 +919,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--376
 
  []
 
-[64 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test10
-Input.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots
-/Test10Output.PNG>]
+[63 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st10Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scr
+eenshots/Test10Output.PNG>]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 394.
 
@@ -1229,7 +1194,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--439
 
  []
 
-[65]
+[64]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 440.
 
@@ -1373,7 +1338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--457
 
  []
 
-[66]
+[65]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 461.
 
@@ -1540,31 +1505,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 472--481
 
  []
 
-[67]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x) ) 
+[66]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux) ) 
 Here is how much of TeX's memory you used:
  2749 strings out of 493921
- 41267 string characters out of 3144877
- 203959 words of memory out of 3000000
+ 41335 string characters out of 3144865
+ 202959 words of memory out of 3000000
  6020 multiletter control sequences out of 15000+200000
  10053 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,5n,49p,1244b,1417s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (69 pages, 443103 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on relazione.pdf (68 pages, 442232 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
+ 303 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
