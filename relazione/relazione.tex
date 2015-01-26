@@ -105,7 +105,7 @@
 \subsection{Teoria}
 Per lo sviluppo di questo programma si necessita di alcuni cenni di Teoria degli insiemi quali:\\
 \\
-Concetto di Relazione Binaria : una relazione binaria \`e un sottoinsieme del prodotto
+Concetto di Relazione Binaria:  una relazione binaria \`e un sottoinsieme del prodotto
 cartesiano di due insiemi (i quali potrebbero pure coincidere,
 ma ci\`o non \`e garantito).\\
 \\
@@ -116,7 +116,7 @@ Concetto di Relazione d$'$Ordine Parziale: In matematica, pi\`u precisamente in 
 \\
 Concetto di Relazione d$'$Ordine Totale: Una relazione d$'$ordine si dice Totale, quando oltre a essere parziale soddisfa anche la propiet\`a di Dicotomia ( tutti gli elementi devono essere in relazione con ogni altro elemento presente ).\\
 \\
-Concetto di riflessivit\`a : In logica e in matematica, una relazione binaria R in un insieme X \`e detta riflessiva se ogni elemento di X \`e in tale relazione con se stesso. \\
+Concetto di riflessivit\`a:  In logica e in matematica, una relazione binaria R in un insieme X \`e detta riflessiva se ogni elemento di X \`e in tale relazione con se stesso. \\
 \\
 Concetto di transitivit\`a: In matematica, una relazione binaria R in un insieme X \`e transitiva se e solo se per ogni a, b, c appartenenti ad X, se a \`e in relazione con b e b \`e in relazione con c, allora a \`e in relazione con c. \\
 \\
@@ -138,46 +138,47 @@ vengono trasformati in elementi diversi del codominio.\\
 Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento del codominio viene raggiunto da un elemento del dominio.\\
 \\
 \newpage
-\subsection{Scelte di Progetto:}
+\subsection{Scelte di Progetto}
 
 - Una relazione binaria prende in considerazione due elementi, questi due elementi si potrebbero vedere come due variabili distinte che poi andranno a far parte della stessa struttura, per questo riteniamo opportuno creare una struttura dati che inglobi entrambi gli elementi.\\
 \\
 - I due termini potrebbero essere numerici, ma non \`e detto, quindi per completezza riteniamo opportuno far scegliere all$'$utente se inserire elementi di tipo numerico, o altro ( simboli,lettere etc.) a seconda delle sue necessit\`a.\\
 \\
-- A priori, prendendo come input una relazione binaria, non possiamo sapere se tutti gli elementi del primo insieme sono in relazione con almeno un elemento del secondo insieme o se tutti gli elementi del secondo insieme fanno parte di una coppia ordinata, quindi \`e opportuno chiedere all'utente se ci sono elementi isolati che non fanno parte di nessuna coppia ordinata.\\
-\\ 
+- A priori, prendendo come input una relazione binaria, non possiamo sapere se tutti gli elementi del primo insieme sono in relazione con almeno un elemento del secondo insieme o se tutti gli elementi del secondo insieme fanno parte di una coppia ordinata, quindi \`e opportuno chiedere all'utente se ci sono elementi isolati che non fanno parte di nessuna coppia ordinata.\\  
 \newpage
-	\subsection{Funzioni per l`acquisizione:}
+Breve lista delle funzioni da utilizzare:\\
+\\
+	\subsection{Funzioni per l`acquisizione}
 	
-	acquisizione() : per acquisire la relazione.\\
+	acquisizione:  per acquisire la relazione.\\
 	\\
 	
 	\subsection{Funzioni per la verifica delle propriet\`a:}
 
-	check\textunderscore iniettivita() : serve a controllare se l$'$iniettivit\`a \`e rispettata o meno.\\
+	controllo\textunderscore iniettivit\`a:  serve a controllare se l$'$iniettivit\`a \`e rispettata o meno.\\
 	\\
-	check\textunderscore transitivita() : serve a controllare se la transitivit\`a 
+	controllo\textunderscore transitivit\`a:  serve a controllare se la transitivit\`a 
 	viene rispettata o meno.\\
 	\\
-	check\textunderscore antisimmetria() : serve a controllare se l' antisimmetria viene rispettata o meno.\\
+	controllo\textunderscore antisimmetria:  serve a controllare se l' antisimmetria viene rispettata o meno.\\
 	\\
-	check\textunderscore simmetria() : serve a controllare se la simmetria viene rispettata o meno.\\
+	controllo\textunderscore simmetria:  serve a controllare se la simmetria viene rispettata o meno.\\
 	\\
-	check\textunderscore riflessivita() : serve a controllare se la riflessivit\`a viene rispettata o meno.\\
+	controllo\textunderscore riflessivit\`a:  serve a controllare se la riflessivit\`a viene rispettata o meno.\\
 	\\
-	check\textunderscore dicotomia() : serve a verificare se la dicotomia viene rispettata o meno.\\
+	controllo\textunderscore dicotomia:  serve a verificare se la dicotomia viene rispettata o meno.\\
 	\\
-	check\textunderscore suriettivita(): serve a verificare se la suriettivit\`a viene rispettata o meno.\\
+	controllo\textunderscore suriettivit\`a:  serve a verificare se la suriettivit\`a viene rispettata o meno.\\
 	\\
 	\newpage
 	\subsection{Funzioni principali:}
-	ordine\textunderscore parziale() : richiama le funzioni delle propriet\`a e controlla se c$'$\`e un ordine parziale(stampa a video se c$'$\`e o meno un ordine parziale, e nel caso non c$'$\`e stampa quali propriet\`a non vengono rispettate).\\
+	ordine\textunderscore parziale:  richiama le funzioni delle propriet\`a e controlla se c$'$\`e un ordine parziale(stampa a video se c$'$\`e o meno un ordine parziale, e nel caso non c$'$\`e stampa quali propriet\`a non vengono rispettate).\\
 	\\
-	ordine\textunderscore totale(): richiama la funzione ordine\textunderscore parziale e check\textunderscore dicotomia e controlla se c$'$\`e un ordine totale(stampa a video se esiste o meno un ordine totale, e nel caso non c$'$\`e stampa quali propiet\`a non vengono rispettate).\\
+	ordine\textunderscore totale:  richiama la funzione ordine\textunderscore parziale e controllo\textunderscore dicotomia e controlla se c$'$\`e un ordine totale(stampa a video se esiste o meno un ordine totale, e nel caso non c$'$\`e stampa quali propiet\`a non vengono rispettate).\\
 	\\
-	relazione\textunderscore equivalenza() : richiama le funzioni delle propriet\`a e controlla se c$'$\`e una relazione d$'$equivalenza(stampa a video se c$'$\`e o meno una relazione d$'$equivalenza, e nel caso non c$'$\`e stampa a schermo quali propriet\`a non vengono rispettate).\\
+	relazione\textunderscore equivalenza:  richiama le funzioni delle propriet\`a e controlla se c$'$\`e una relazione d$'$equivalenza(stampa a video se c$'$\`e o meno una relazione d$'$equivalenza, e nel caso non c$'$\`e stampa a schermo quali propriet\`a non vengono rispettate).\\
 	\\
-	check\textunderscore funzione():verifica se la relazione \`e una funzione(stampa  a video se c$'$\`e o non c$'$\`e una funzione e nel caso non ci sia dice quale coppia non soddisfa le propriet\`a).\\
+	controllo\textunderscore funzione: verifica se la relazione \`e una funzione(stampa  a video se c$'$\`e o non c$'$\`e una funzione e nel caso non ci sia dice quale coppia non soddisfa le propriet\`a).\\
 	\\
 	\newpage  
 	\subsection{Input}
@@ -187,7 +188,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	L$'$input dovr\`a essere dotato di diversi controlli, se l$'$utente sceglie di inserire un input di tipo numerico allora non potr\`a digitare stringhe e/o caratteri speciali etc.\\
 	\\
-	La scelta di due tipi di input differente dovr\`a essere data per dare la possibilit\`a all$'$utente nel caso scelga di fare un$'$input di tipo numerico di poter effettuare operazioni non legate alle funzioni della libreria, (esempio : l$'$utente vuole decidere di moltiplicare l$'$input per due, e vedere se mantiene le propiet\`a, con un$'$input di tipo numerico l$'$utente pu\`o farlo e ci\`o avrebbe un senso, con un$'$input di tipo stringa meno).\\
+	La scelta di due tipi di input differente dovr\`a essere data per dare la possibilit\`a all$'$utente nel caso scelga di fare un$'$input di tipo numerico di poter effettuare operazioni non legate alle funzioni della libreria, (esempio:  l$'$utente vuole decidere di moltiplicare l$'$input per due, e vedere se mantiene le propiet\`a, con un$'$input di tipo numerico l$'$utente pu\`o farlo e ci\`o avrebbe un senso, con un$'$input di tipo stringa meno).\\
 	\\
 	La scelta dell$'$input di tipo stringa dovr\`a essere data per aver maggior completezza, una relazione binaria non deve essere forzatamente numerica ma pu\`o essere anche tra cose, oggetti, animali, colori e qualsiasi altra cosa possa venire in mente.\\
 	\\
@@ -214,15 +215,19 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\subsection{Output - relazione\textunderscore equivalenza}
 	La funzione “relazione\textunderscore equivalenza” avr\`a  come output la stampa a video del risultato della verifica delle propriet\`a  di riflessivit\`a  simmetria e transitivit\`a e nel caso in cui siano tutte positive si stamper\`a  che la relazione \`e  una relazione di equivalenza, mentre nel caso in cui qualcosa non sia verificato si stamper\`a ci\`o  che impedisce alla relazione di essere una relazione d$'$equivalenza.\\
 	\\
-	\subsection{Output - check\textunderscore funzione}
-	La funzione ”check\textunderscore funzione” avr\`a  come output la stampa a video della verifica della propriet\`a  che rende la relazione binaria una funzione, e in caso lo sia,se questa \`e  sia suriettiva e iniettiva, e in caso sia entrambe si stamper\`a  che la relazione binaria oltre ad essere una funzione \`e  una funzione biiettiva.\\
+	\subsection{Output - controllo\textunderscore funzione}
+	La funzione ”controllo\textunderscore funzione” avr\`a  come output la stampa a video della verifica della propriet\`a  che rende la relazione binaria una funzione, e in caso lo sia,se questa \`e  sia suriettiva e iniettiva, e in caso sia entrambe si stamper\`a  che la relazione binaria oltre ad essere una funzione \`e  una funzione biiettiva.\\
 	\\
 	\newpage
 	\section{Implementazione dell'Algoritmo}
-	\subsection{Libreria}
+	\subsection{Libreria (file .h)}
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
 	\lstinputlisting{../librerie/Progetto.h} 
 	\newpage
+	\subsection{Libreria (file .c)}
+	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
+	\lstinputlisting{../librerie/Progetto.c} 
+	\newpage	
 	\subsection{Test}
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
 	\lstinputlisting{../Test.c}
@@ -250,8 +255,8 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs: (a,a)(a,b)(b,b)\\
 	\\
-	Outputs: checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
-	checkdicotomia : 1, la relazione \`e una relazione d$'$ordine totale in quanto \`e rispetta anche la propiet\`a di Dicotomia.\\
+	Outputs: controlloriflessivit\`a:  1,controllosimmetria:  0, controllotransitivit\`a:  1
+	controllodicotomia:  1, la relazione \`e una relazione d$'$ordine totale in quanto \`e rispetta anche la propiet\`a di Dicotomia.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Input.jpg}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Output.png}
@@ -261,7 +266,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs:(a,a)(b,b)(a,b)(c,c)\\
 	\\
-	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
+	Outputs:controlloriflessivit\`a:  1,controllosimmetria:  0, controllotransitivit\`a:  1
 	la relazione \`e una relazione d$'$ordine parziale in quanto rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test2Input.png}
 	\\
@@ -274,7 +279,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs:(a,a)(b,b)(c,c)(d,d)(e,e)(a,b)(b,c)\\
 	\\
-	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 0
+	Outputs:controlloriflessivit\`a:  1,controllosimmetria:  0, controllotransitivit\`a:  0
 	la relazione non \`e una relazione d$'$ordine parziale in quanto non rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test3Input.png}
 	\\
@@ -287,8 +292,8 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs:(a,a)(a,b)(b,a)(b,b)\\
 	\\
-	Outputs:checkriflessivit\`a : 1,checksimmetria : 1, checktransitivit\`a : 1
-	checkdicotomia : 0, la relazione \`e una relazione d$'$equivalenza in quanto rispetta le propriet\`a.\\
+	Outputs:controlloriflessivit\`a:  1,controllosimmetria:  1, controllotransitivit\`a:  1
+	controllodicotomia:  0, la relazione \`e una relazione d$'$equivalenza in quanto rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Output.png}
@@ -299,7 +304,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	Test di Relazione non d$'$equivalenza.\\
 	\\
 	Inputs:(a,a)(a,b)(b,c)\\
-	Outputs:checkriflessivit\`a : 0,checksimmetria : 0, checktransitivit\`a : 0
+	Outputs:controlloriflessivit\`a:  0,controllosimmetria:  0, controllotransitivit\`a:  0
 	la relazione non \`e una relazione d$'$ordine d$'$equivalenza in quanto non rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test5Input.png}
 	\\
@@ -325,7 +330,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs:(casa rossa,casa blu)(casa blu,casa blu)(casa rossa,casa rossa)\\
 	\\
-	Outputs:check\textunderscore riflessivit\`a : 1,check\textunderscore simmetria : 1, check\textunderscore transitivit\`a : 1 dicotomia :1
+	Outputs:controllo\textunderscore riflessivit\`a:  1,controllo\textunderscore simmetria:  1, controllo\textunderscore transitivit\`a:  1 dicotomia: 1
 	la relazione \`e una relazione d$'$ordine totale in quanto rispetta le propriet\`a.\\
 	le funzioni funzionano anche con input contenti degli spazi.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test7Input.png}
@@ -400,7 +405,7 @@ si pu\`o rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\ 
  \\
  \\
- e la funzione :
+ e la funzione: 
  \\
  \\
  \\
@@ -416,7 +421,7 @@ si pu\`o rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  \\
  \\
- segue da :\\
+ segue da: \\
  \\
  \\
  \\
