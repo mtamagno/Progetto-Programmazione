@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.9)  24 JAN 2015 18:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 16:53
 entering extended mode
 **relazione.tex
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.te
-x
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -94,8 +94,8 @@ LaTeX Warning: Unused global option(s):
     [block].
 
 
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -132,8 +132,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.to
-c)
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.toc)
 \tf@toc=\write3
  [2]
 Missing character: There is no Ô in font cmr10!
@@ -156,60 +156,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--79
  []
 
 [1]
-Overfull \hbox (1.06654pt too wide) in paragraph at lines 84--86
-\OT1/cmr/m/n/10.95 2. Come in-put per le al-tre 5 fun-zioni ab-bi-amo una re-la
-zione(precedentemente
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ® in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ® in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ® in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ® in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--100
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--100
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--100
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--100
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--100
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--100
 
  []
 
 [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 104.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 104.
-
 Underfull \hbox (badness 10000) in paragraph at lines 106--132
 
  []
@@ -271,219 +252,178 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--140
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 143--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 143--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
+Underfull \hbox (badness 10000) in paragraph at lines 143--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Overfull \hbox (2.88959pt too wide) in paragraph at lines 148--163
-\OT1/cmr/m/n/10.95 check[]suriettivita(): ver-i-fica se la fun-zione gode della
- pro-prieta di suri-et-tivita,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--163
+Underfull \hbox (badness 10000) in paragraph at lines 143--149
 
  []
 
 [5]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ò in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--173
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--173
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--173
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--173
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--173
+Overfull \hbox (3.9541pt too wide) in paragraph at lines 157--172
+\OT1/cmr/m/n/10.95 check[]antisimmetria() : serve a con-trol-lare se l' an-ti-s
+im-me-tria viene rispet-tata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--172
 
  []
 
 [6]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
 
  []
 
 
-Overfull \hbox (3.7838pt too wide) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--182
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
+
+ []
+
+
+Overfull \hbox (3.7838pt too wide) in paragraph at lines 186--195
 \OT1/cmr/m/n/10.95 La scelta di due tipi di in-put dif-fer-ente dovra es-sere 
 data per dare la pos-si-bilita
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
  []
 
 
-Overfull \hbox (10.17136pt too wide) in paragraph at lines 177--186
+Overfull \hbox (10.17136pt too wide) in paragraph at lines 186--195
 \OT1/cmr/m/n/10.95 Alle varie fun-zioni verra data come in-put la strut-tura d
 ati sal-vata in prece-denza
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--186
-
- []
-
-[7]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no π in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no π in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
  []
 
 [8]
+Overfull \hbox (3.32457pt too wide) in paragraph at lines 201--205
+\OT1/cmr/m/n/10.95 nell$[]$inserimento dei dati, e che seg-naler-anno even-tu-a
+li er-rori commessi. Finita
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
@@ -497,24 +437,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--211
 
  []
 
-[9] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (8.47513pt too wide) in paragraph at lines 212--214
+\OT1/cmr/m/n/10.95 della ver-i-fica delle pro-prieta nec-es-sarie ad avere una
+ re-lazione d$[]$ordine parziale,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+[9]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+[10] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.h
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\librerie\Progetto.
+h
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
-) [10]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\Test.c
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+) [11]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\Test.c
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
@@ -522,465 +517,464 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
- [11]) [12]
-[13] <../Screenshots/Test1Input.jpg, id=57, 480.29437pt x 225.09094pt>
+ [12] [13])
+[14] [15] <../Screenshots/Test1Input.jpg, id=63, 480.29437pt x 225.09094pt>
 File: ../Screenshots/Test1Input.jpg Graphic file (type jpg)
 
 <use ../Screenshots/Test1Input.jpg>
-Package pdftex.def Info: ../Screenshots/Test1Input.jpg used on input line 246.
+Package pdftex.def Info: ../Screenshots/Test1Input.jpg used on input line 255.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test1Output.png, id=58, 482.55281pt x 225.84375pt>
+<../Screenshots/Test1Output.png, id=64, 482.55281pt x 225.84375pt>
 File: ../Screenshots/Test1Output.png Graphic file (type png)
 
 <use ../Screenshots/Test1Output.png>
-Package pdftex.def Info: ../Screenshots/Test1Output.png used on input line 248.
+Package pdftex.def Info: ../Screenshots/Test1Output.png used on input line 257.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--249
+Underfull \hbox (badness 10000) in paragraph at lines 249--258
 
  []
 
-[14 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test1I
-nput.jpg> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test1Output.png>]
-<../Screenshots/Test2Input.png, id=64, 481.8pt x 223.58531pt>
+[16 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st1Input.jpg> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test1Output.png>]
+<../Screenshots/Test2Input.png, id=70, 481.8pt x 223.58531pt>
 File: ../Screenshots/Test2Input.png Graphic file (type png)
 
 <use ../Screenshots/Test2Input.png>
-Package pdftex.def Info: ../Screenshots/Test2Input.png used on input line 257.
+Package pdftex.def Info: ../Screenshots/Test2Input.png used on input line 266.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test2Output.png, id=65, 481.8pt x 224.33812pt>
+<../Screenshots/Test2Output.png, id=71, 481.8pt x 224.33812pt>
 File: ../Screenshots/Test2Output.png Graphic file (type png)
 
 <use ../Screenshots/Test2Output.png>
-Package pdftex.def Info: ../Screenshots/Test2Output.png used on input line 259.
+Package pdftex.def Info: ../Screenshots/Test2Output.png used on input line 268.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 260--271
 
  []
 
-[15 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test2I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test2Output.png>]
-<../Screenshots/Test3Input.png, id=71, 479.54156pt x 223.58531pt>
+[17 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st2Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test2Output.png>]
+<../Screenshots/Test3Input.png, id=78, 479.54156pt x 223.58531pt>
 File: ../Screenshots/Test3Input.png Graphic file (type png)
 
 <use ../Screenshots/Test3Input.png>
-Package pdftex.def Info: ../Screenshots/Test3Input.png used on input line 270.
+Package pdftex.def Info: ../Screenshots/Test3Input.png used on input line 279.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test3Output.png, id=72, 481.8pt x 226.59656pt>
+<../Screenshots/Test3Output.png, id=79, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test3Output.png Graphic file (type png)
 
 <use ../Screenshots/Test3Output.png>
-Package pdftex.def Info: ../Screenshots/Test3Output.png used on input line 272.
+Package pdftex.def Info: ../Screenshots/Test3Output.png used on input line 281.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--275
+Underfull \hbox (badness 10000) in paragraph at lines 273--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--275
+Underfull \hbox (badness 10000) in paragraph at lines 273--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--275
+Underfull \hbox (badness 10000) in paragraph at lines 273--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--275
+Underfull \hbox (badness 10000) in paragraph at lines 273--284
 
  []
 
-[16 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test3I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test3Output.png>]
-<../Screenshots/Test4Input.png, id=78, 482.55281pt x 224.33812pt>
+[18 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st3Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test3Output.png>]
+<../Screenshots/Test4Input.png, id=85, 482.55281pt x 224.33812pt>
 File: ../Screenshots/Test4Input.png Graphic file (type png)
 
 <use ../Screenshots/Test4Input.png>
-Package pdftex.def Info: ../Screenshots/Test4Input.png used on input line 283.
+Package pdftex.def Info: ../Screenshots/Test4Input.png used on input line 292.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test4Output.png, id=79, 481.8pt x 225.84375pt>
+<../Screenshots/Test4Output.png, id=86, 481.8pt x 225.84375pt>
 File: ../Screenshots/Test4Output.png Graphic file (type png)
 
 <use ../Screenshots/Test4Output.png>
-Package pdftex.def Info: ../Screenshots/Test4Output.png used on input line 285.
+Package pdftex.def Info: ../Screenshots/Test4Output.png used on input line 294.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
  []
 
 
-Overfull \hbox (39.09756pt too wide) in paragraph at lines 277--288
+Overfull \hbox (39.09756pt too wide) in paragraph at lines 286--297
 \OT1/cmr/m/n/10.95 Outputs:checkriflessivita : 1,check-sim-me-tria : 1, check-
 tran-si-tivita : 1 check-di-co-to-mia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--297
 
  []
 
-[17 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test4I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test4Output.png>]
-<../Screenshots/Test5Input.png, id=86, 481.8pt x 226.59656pt>
+[19 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st4Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test4Output.png>]
+<../Screenshots/Test5Input.png, id=92, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test5Input.png Graphic file (type png)
 
 <use ../Screenshots/Test5Input.png>
-Package pdftex.def Info: ../Screenshots/Test5Input.png used on input line 295.
+Package pdftex.def Info: ../Screenshots/Test5Input.png used on input line 304.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test5Output.png, id=87, 481.8pt x 226.59656pt>
+<../Screenshots/Test5Output.png, id=93, 481.8pt x 226.59656pt>
 File: ../Screenshots/Test5Output.png Graphic file (type png)
 
 <use ../Screenshots/Test5Output.png>
-Package pdftex.def Info: ../Screenshots/Test5Output.png used on input line 297.
+Package pdftex.def Info: ../Screenshots/Test5Output.png used on input line 306.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--300
+Underfull \hbox (badness 10000) in paragraph at lines 299--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--300
+Underfull \hbox (badness 10000) in paragraph at lines 299--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--300
+Underfull \hbox (badness 10000) in paragraph at lines 299--309
 
  []
 
-[18 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test5I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test5Output.png>]
-<../Screenshots/Test6Input.png, id=93, 507.39563pt x 255.20343pt>
+[20 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st5Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test5Output.png>]
+<../Screenshots/Test6Input.png, id=99, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test6Input.png Graphic file (type png)
 
 <use ../Screenshots/Test6Input.png>
-Package pdftex.def Info: ../Screenshots/Test6Input.png used on input line 308.
+Package pdftex.def Info: ../Screenshots/Test6Input.png used on input line 317.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test6Output.png, id=94, 507.39563pt x 255.20343pt>
+<../Screenshots/Test6Output.png, id=100, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test6Output.png Graphic file (type png)
 
 <use ../Screenshots/Test6Output.png>
-Package pdftex.def Info: ../Screenshots/Test6Output.png used on input line 310.
+Package pdftex.def Info: ../Screenshots/Test6Output.png used on input line 319.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--322
 
  []
 
-[19 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test6I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test6Output.png>]
-<../Screenshots/Test7Input.png, id=100, 508.90125pt x 256.70906pt>
+[21 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st6Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test6Output.png>]
+<../Screenshots/Test7Input.png, id=106, 508.90125pt x 256.70906pt>
 File: ../Screenshots/Test7Input.png Graphic file (type png)
 
 <use ../Screenshots/Test7Input.png>
-Package pdftex.def Info: ../Screenshots/Test7Input.png used on input line 322.
+Package pdftex.def Info: ../Screenshots/Test7Input.png used on input line 331.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test7Output.png, id=101, 508.14844pt x 256.70906pt>
+<../Screenshots/Test7Output.png, id=107, 508.14844pt x 256.70906pt>
 File: ../Screenshots/Test7Output.png Graphic file (type png)
 
 <use ../Screenshots/Test7Output.png>
-Package pdftex.def Info: ../Screenshots/Test7Output.png used on input line 324.
+Package pdftex.def Info: ../Screenshots/Test7Output.png used on input line 333.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--327
+Underfull \hbox (badness 10000) in paragraph at lines 324--336
 
  []
 
-[20 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test7I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test7Output.png>]
-<../Screenshots/Test8Input.png, id=107, 508.90125pt x 258.21469pt>
+[22 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st7Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test7Output.png>]
+<../Screenshots/Test8Input.png, id=113, 508.90125pt x 258.21469pt>
 File: ../Screenshots/Test8Input.png Graphic file (type png)
 
 <use ../Screenshots/Test8Input.png>
-Package pdftex.def Info: ../Screenshots/Test8Input.png used on input line 336.
+Package pdftex.def Info: ../Screenshots/Test8Input.png used on input line 345.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
+Underfull \hbox (badness 10000) in paragraph at lines 338--348
 
  []
 
-[21 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test8I
-nput.png>] <../Screenshots/Test9Input.png, id=112, 507.39563pt x 256.70906pt>
+[23 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st8Input.png>]
+<../Screenshots/Test9Input.png, id=119, 507.39563pt x 256.70906pt>
 File: ../Screenshots/Test9Input.png Graphic file (type png)
 
 <use ../Screenshots/Test9Input.png>
-Package pdftex.def Info: ../Screenshots/Test9Input.png used on input line 346.
+Package pdftex.def Info: ../Screenshots/Test9Input.png used on input line 355.
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test9Output.PNG, id=113, 508.14844pt x 256.70906pt>
+<../Screenshots/Test9Output.PNG, id=120, 508.14844pt x 256.70906pt>
 File: ../Screenshots/Test9Output.PNG Graphic file (type png)
 
 <use ../Screenshots/Test9Output.PNG>
-Package pdftex.def Info: ../Screenshots/Test9Output.PNG used on input line 348.
+Package pdftex.def Info: ../Screenshots/Test9Output.PNG used on input line 357.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--351
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--351
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--351
+Underfull \hbox (badness 10000) in paragraph at lines 350--360
 
  []
 
-[22 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test9I
-nput.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/
-Test9Output.PNG>]
-<../Screenshots/Test10Input.png, id=119, 508.90125pt x 257.46187pt>
+[24 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st9Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scre
+enshots/Test9Output.PNG>]
+<../Screenshots/Test10Input.png, id=126, 508.90125pt x 257.46187pt>
 File: ../Screenshots/Test10Input.png Graphic file (type png)
 
 <use ../Screenshots/Test10Input.png>
-Package pdftex.def Info: ../Screenshots/Test10Input.png used on input line 359.
+Package pdftex.def Info: ../Screenshots/Test10Input.png used on input line 368.
 
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-<../Screenshots/Test10Output.PNG, id=120, 507.39563pt x 255.20343pt>
+<../Screenshots/Test10Output.PNG, id=127, 507.39563pt x 255.20343pt>
 File: ../Screenshots/Test10Output.PNG Graphic file (type png)
 
 <use ../Screenshots/Test10Output.PNG>
-Package pdftex.def Info: ../Screenshots/Test10Output.PNG used on input line 361
+Package pdftex.def Info: ../Screenshots/Test10Output.PNG used on input line 370
 .
 (pdftex.def)             Requested size: 216.80577pt x 216.80577pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--362
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
 
  []
 
-[23 <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots/Test10
-Input.png> <C:/Users/Marco/Documents/GitHub/Progetto-Programmazione/Screenshots
-/Test10Output.PNG>]
+[25 <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Screenshots/Te
+st10Input.png> <C:/Users/Francesco/Documents/GitHub/Progetto-Programmazione/Scr
+eenshots/Test10Output.PNG>]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 380.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 380.
-
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
-
- []
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 389.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 389.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--389
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
 
  []
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 390.
+Underfull \hbox (badness 10000) in paragraph at lines 374--398
+
+ []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 390.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 399.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 390.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 399.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 390.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 399.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 390.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 399.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 406.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 399.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 406.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 406.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 406.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 406.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 406.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 414.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 415.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 414.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 414.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 414.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 431.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 422.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 431.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 422.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 431.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 431.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 431.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 431.
 
 
-Overfull \hbox (23.02171pt too wide) in paragraph at lines 390--425
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 431.
+
+
+Overfull \hbox (23.02171pt too wide) in paragraph at lines 399--434
 []$\OML/cmm/m/it/10.95 P \OT1/cmr/m/n/10.95 = (\OML/cmm/m/it/10.95 numero[]elem
 enti[]\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 riscontro 
 \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 numero[]elementi \OMS/cmsy/m/n/10.9
@@ -988,57 +982,57 @@ enti[]\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 riscontro
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Overfull \hbox (70.57817pt too wide) in paragraph at lines 390--425
+Overfull \hbox (70.57817pt too wide) in paragraph at lines 399--434
 $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 P \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/i
 t/10.95 numero[]elementi[]\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 g\OML/cmm/m/i
 t/10.95 riscontro \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 riscontro \OT1/cmr/m
@@ -1047,205 +1041,205 @@ it/10.95 numero[]elementi \OT1/cmr/m/n/10.95 =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Overfull \hbox (21.38574pt too wide) in paragraph at lines 390--425
+Overfull \hbox (21.38574pt too wide) in paragraph at lines 399--434
 $\OML/cmm/m/it/10.95 P[] \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 riscontro []
  numero[]elementi \OMS/cmsy/m/n/10.95  $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Overfull \hbox (60.1016pt too wide) in paragraph at lines 390--425
+Overfull \hbox (60.1016pt too wide) in paragraph at lines 399--434
 \OT1/cmr/m/n/10.95 P$[]$$[] = (\OML/cmm/m/it/10.95 numero[]elementi[]\OT1/cmr/m
 /n/10.95 0 \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 riscontro \OT1/cmr/m/n/10.
 95 + \OML/cmm/m/it/10.95 numero[]elementi$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--425
+Underfull \hbox (badness 10000) in paragraph at lines 399--434
 
  []
 
-[24]
+[26]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 426.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 426.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 435.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 426.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 435.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 426.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 435.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 426.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 435.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 426.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 435.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
-
- []
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 435.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
  []
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 432.
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
 
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 432.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 436.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 438.
-
-
-Overfull \hbox (60.8548pt too wide) in paragraph at lines 431--443
-[]\OT1/cmr/m/n/10.95 in quanto de-no-tato con P$[]$ quest$[]$ ul-timo pred-i-ca
-to, si ha: (P $\OMS/cmsy/m/n/10.95 ^$ \OT1/cmr/m/n/10.95 numero$[]\OML/cmm/m/it
-/10.95 elementi[]\OT1/cmr/m/n/10.95 1) =$
  []
 
 
-Overfull \hbox (96.65028pt too wide) in paragraph at lines 431--443
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 441.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 445.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+
+
+Overfull \hbox (58.42146pt too wide) in paragraph at lines 440--452
+[]\OT1/cmr/m/n/10.95 in quanto de-no-tato con P$[]$ quest$[]$ultimo pred-i-cato
+, si ha: (P $\OMS/cmsy/m/n/10.95 ^$ \OT1/cmr/m/n/10.95 numero$[]\OML/cmm/m/it/1
+0.95 elementi[]\OT1/cmr/m/n/10.95 1) =$
+ []
+
+
+Overfull \hbox (96.65028pt too wide) in paragraph at lines 440--452
 \OT1/cmr/m/n/10.95 (P$\OMS/cmsy/m/n/10.95 ^$$\OML/cmm/m/it/10.95 tr\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 numero[]elementi\OT1/cmr/m/n/10.95 )[]1) = (\OML/cm
 m/m/it/10.95 numero[]elementi[]\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^ \OML/
@@ -1254,107 +1248,107 @@ OMS/cmsy/m/n/10.95  $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--443
+Underfull \hbox (badness 10000) in paragraph at lines 440--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--443
+Underfull \hbox (badness 10000) in paragraph at lines 440--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--443
+Underfull \hbox (badness 10000) in paragraph at lines 440--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--443
+Underfull \hbox (badness 10000) in paragraph at lines 440--452
 
  []
 
-[25]
+[27]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 447.
+LaTeX Warning: Command \textless invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textless invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 447.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 447.
+LaTeX Warning: Command \textless invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 448.
+LaTeX Warning: Command \textless invalid in math mode on input line 456.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 448.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 448.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 448.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 448.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 457.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 448.
+LaTeX Warning: Command \textless invalid in math mode on input line 457.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
-
- []
+LaTeX Warning: Command \textless invalid in math mode on input line 457.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-Overfull \hbox (75.22101pt too wide) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
+
+ []
+
+
+Overfull \hbox (75.22101pt too wide) in paragraph at lines 453--461
 $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 P \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/
 10.95 numero[]elementi[]\OT1/cmr/m/n/10.95 1) = (\OML/cmm/m/it/10.95 numero[]el
 ementi[]\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 riscontro \OT1/cmr/m/n/10.95 = 
@@ -1363,110 +1357,108 @@ ti[]\OT1/cmr/m/n/10.95 1) =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--452
-
- []
-
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≤ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--457
+Underfull \hbox (badness 10000) in paragraph at lines 453--461
 
  []
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 458.
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
+
+ []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 458.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 467.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 458.
+LaTeX Warning: Command \textless invalid in math mode on input line 467.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 458.
+LaTeX Warning: Command \textless invalid in math mode on input line 467.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 458.
+LaTeX Warning: Command \textless invalid in math mode on input line 467.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 458.
+LaTeX Warning: Command \textless invalid in math mode on input line 467.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 458.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 467.
 
 
-Overfull \hbox (76.05367pt too wide) in paragraph at lines 458--467
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 467.
+
+
+Overfull \hbox (76.05367pt too wide) in paragraph at lines 467--476
 []$\OML/cmm/m/it/10.95 P[] \OT1/cmr/m/n/10.95 = (0[] = 0[] = \OML/cmm/m/it/10.9
 5 numero[]elementi \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 riscontro \OT1/cmr
 /m/n/10.95 = [] \OML/cmm/m/it/10.95 numero[]elementi \OMS/cmsy/m/n/10.95  $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--467
+Underfull \hbox (badness 10000) in paragraph at lines 467--476
 
  []
 
-[26]
-(C:\Users\Marco\Documents\GitHub\Progetto-Programmazione\relazione\relazione.au
-x) ) 
+[28]
+(C:\Users\Francesco\Documents\GitHub\Progetto-Programmazione\relazione\relazion
+e.aux) ) 
 Here is how much of TeX's memory you used:
- 2680 strings out of 493921
- 40040 string characters out of 3144877
- 214949 words of memory out of 3000000
- 5952 multiletter control sequences out of 15000+200000
- 10668 words of font info for 37 fonts, out of 3000000 for 9000
+ 2676 strings out of 493921
+ 40066 string characters out of 3144865
+ 202940 words of memory out of 3000000
+ 5949 multiletter control sequences out of 15000+200000
+ 10053 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,5n,49p,1244b,1417s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (28 pages, 345314 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on relazione.pdf (30 pages, 367289 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 180 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

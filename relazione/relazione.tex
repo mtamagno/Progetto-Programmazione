@@ -101,7 +101,7 @@
 	
 	
 	\newpage                        
-\section{Progettazione dell$'$ Algoritmo}
+\section{Progettazione dell'Algoritmo}
 \subsection{Teoria}
 Per lo sviluppo di questo programma si necessita di alcuni cenni di Teoria degli insiemi quali:\\
 \\
@@ -109,12 +109,12 @@ Concetto di Relazione Binaria : una relazione binaria \`e un sottoinsieme del pr
 cartesiano di due insiemi (i quali potrebbero pure coincidere,
 ma ci\`o non \`e garantito).\\
 \\
-Concetto di Relazione d$'$ Ordine Parziale: In matematica, pi\`u precisamente in teoria degli ordini, una relazione d$'$ordine o ordine su di un insieme \`e una relazione binaria tra elementi appartenenti all$'$insieme che gode delle seguenti propriet\`a:\\
+Concetto di Relazione d$'$Ordine Parziale: In matematica, pi\`u precisamente in teoria degli ordini, una relazione d$'$ordine o ordine su di un insieme \`e una relazione binaria tra elementi appartenenti all$'$insieme che gode delle seguenti propriet\`a:\\
 * riflessiva\\
 * antisimmetrica\\
 * transitiva.\\
 \\
-Concetto di Relazione d$'$ Ordine Totale: Una relazione d$'$ ordine si dice Totale, quando oltre a essere parziale soddisfa anche la propiet\`a di Dicotomia ( tutti gli elementi devono essere in relazione con ogni altro elemento presente ).\\
+Concetto di Relazione d$'$Ordine Totale: Una relazione d$'$ordine si dice Totale, quando oltre a essere parziale soddisfa anche la propiet\`a di Dicotomia ( tutti gli elementi devono essere in relazione con ogni altro elemento presente ).\\
 \\
 Concetto di riflessivit\`a : In logica e in matematica, una relazione binaria R in un insieme X \`e detta riflessiva se ogni elemento di X \`e in tale relazione con se stesso. \\
 \\
@@ -138,6 +138,15 @@ vengono trasformati in elementi diversi del codominio.\\
 Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento del codominio viene raggiunto da un elemento del dominio.\\
 \\
 \newpage
+\subsection{Scelte di Progetto:}
+
+- Una relazione binaria prende in considerazione due elementi, questi due elementi si potrebbero vedere come due variabili distinte che poi andranno a far parte della stessa struttura, per questo riteniamo opportuno creare una struttura dati che inglobi entrambi gli elementi.\\
+\\
+- I due termini potrebbero essere numerici, ma non \`e detto, quindi per completezza riteniamo opportuno far scegliere all$'$utente se inserire elementi di tipo numerico, o altro ( simboli,lettere etc.) a seconda delle sue necessit\`a.\\
+\\
+- A priori, prendendo come input una relazione binaria, non possiamo sapere se tutti gli elementi del primo insieme sono in relazione con almeno un elemento del secondo insieme o se tutti gli elementi del secondo insieme fanno parte di una coppia ordinata, quindi \`e opportuno chiedere all'utente se ci sono elementi isolati che non fanno parte di nessuna coppia ordinata.\\
+\\ 
+\newpage
 	\subsection{Funzioni per l`acquisizione:}
 	
 	acquisizione() : per acquisire la relazione.\\
@@ -145,7 +154,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	
 	\subsection{Funzioni per la verifica delle propriet\`a:}
 
-	check\textunderscore iniettivita() : serve a controllare se l$'$ iniettivit\`a \`e rispettata o meno.\\
+	check\textunderscore iniettivita() : serve a controllare se l$'$iniettivit\`a \`e rispettata o meno.\\
 	\\
 	check\textunderscore transitivita() : serve a controllare se la transitivit\`a 
 	viene rispettata o meno.\\
@@ -162,25 +171,25 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	\newpage
 	\subsection{Funzioni principali:}
-	ordine\textunderscore parziale() : richiama le funzioni delle propriet\`a e controlla se c$'$ \`e un ordine parziale(stampa a video se c$'$ \`e o meno un ordine parziale, e nel caso non c$'$ \`e stampa quali propriet\`a non vengono rispettate).\\
+	ordine\textunderscore parziale() : richiama le funzioni delle propriet\`a e controlla se c$'$\`e un ordine parziale(stampa a video se c$'$\`e o meno un ordine parziale, e nel caso non c$'$\`e stampa quali propriet\`a non vengono rispettate).\\
 	\\
-	ordine\textunderscore totale(): richiama la funzione ordine\textunderscore parziale e check\textunderscore dicotomia e controlla se c$'$ \`e un ordine totale(stampa a video se esiste o meno un ordine totale, e nel caso non c$'$ \`e stampa quali propiet\`a non vengono rispettate).\\
+	ordine\textunderscore totale(): richiama la funzione ordine\textunderscore parziale e check\textunderscore dicotomia e controlla se c$'$\`e un ordine totale(stampa a video se esiste o meno un ordine totale, e nel caso non c$'$\`e stampa quali propiet\`a non vengono rispettate).\\
 	\\
-	relazione\textunderscore equivalenza() : richiama le funzioni delle propriet\`a e controlla se c$'$ \`e una relazione d$'$ equivalenza(stampa a video se c$'$ \`e o meno una relazione d$'$ equivalenza, e nel caso non c$'$ \`e stampa a schermo quali propriet\`a non vengono rispettate).\\
+	relazione\textunderscore equivalenza() : richiama le funzioni delle propriet\`a e controlla se c$'$\`e una relazione d$'$equivalenza(stampa a video se c$'$\`e o meno una relazione d$'$equivalenza, e nel caso non c$'$\`e stampa a schermo quali propriet\`a non vengono rispettate).\\
 	\\
-	check\textunderscore funzione():verifica se la relazione \`e una funzione(stampa  a video se c$'$ \`e o non c$'$ \`e una funzione e nel caso non ci sia dice quale coppia non soddisfa le propriet\`a).\\
+	check\textunderscore funzione():verifica se la relazione \`e una funzione(stampa  a video se c$'$\`e o non c$'$\`e una funzione e nel caso non ci sia dice quale coppia non soddisfa le propriet\`a).\\
 	\\
 	\newpage  
 	\subsection{Input}
 	
 	
-	Per l$'$ input abbiamo necessit\`a di usare una struttura dati dinamica, nella quale andiamo a salvare la Relazione Binaria dataci dall$'$ utente, il numero delle coppie e il tipo di input ( numerico o per stringhe).\\
+	Per l$'$input abbiamo necessit\`a di usare una struttura dati dinamica, nella quale andiamo a salvare la Relazione Binaria dataci dall$'$utente, il numero delle coppie e il tipo di input (numerico o per stringhe).\\
 	\\
-	L input dovr\`a essere dotato di diversi controlli, se l$'$ utente sceglie di inserire un input di tipo numerico allora non potra digitare stringhe e/o caratteri speciali etc.\\
+	L$'$input dovr\`a essere dotato di diversi controlli, se l$'$utente sceglie di inserire un input di tipo numerico allora non potr\`a digitare stringhe e/o caratteri speciali etc.\\
 	\\
-	La scelta di due tipi di input differente dovr\`a essere data per dare la possibilit\`a all$'$ utente nel caso scelga di fare un$'$ input di tipo numerico di poter effettuare operazioni non legate alle funzioni della libreria, (esempio : l$'$ utente vuole decidere di moltiplicare l$'$ input per due, e vedere se mantiene le propiet\`a, con un$'$ input di tipo numerico l$'$ utente può farlo e ciò avrebbe un senso, con un$'$ input di tipo stringa meno).\\
+	La scelta di due tipi di input differente dovr\`a essere data per dare la possibilit\`a all$'$utente nel caso scelga di fare un$'$input di tipo numerico di poter effettuare operazioni non legate alle funzioni della libreria, (esempio : l$'$utente vuole decidere di moltiplicare l$'$input per due, e vedere se mantiene le propiet\`a, con un$'$input di tipo numerico l$'$utente pu\`o farlo e ci\`o avrebbe un senso, con un$'$input di tipo stringa meno).\\
 	\\
-	La scelta dell$'$ input di tipo stringa dovr\`a essere data per aver maggior completezza, una relazione binaria non deve essere forzatamente numerica ma può essere anche tra cose, oggetti, animali, colori e qualsiasi altra cosa possa venire in mente.\\
+	La scelta dell$'$input di tipo stringa dovr\`a essere data per aver maggior completezza, una relazione binaria non deve essere forzatamente numerica ma pu\`o essere anche tra cose, oggetti, animali, colori e qualsiasi altra cosa possa venire in mente.\\
 	\\
 	Alle varie funzioni verr\`a data come input la struttura dati salvata in precedenza dalla funzione Acquisizione, per poterne verificare le varie propiet\`a.\\
 	
@@ -189,27 +198,27 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	
 	\newpage        
 	\subsection{Output - Acquisizione}
-	Durante l$'$ acquisizione avremo diversi output video che guideranno l$'$ utente nell$'$ inserimento dei dati, e che segnaleranno eventuali errori commessi.
-	Finita l$'$ acquisizione dovremo restituire l$'$ indirizzo della struttura, che all$'$ interno quindi conterra$'$  i dati inseriti dall$'$ utente. Abbiamo scelto di fare ciò perch\`e non essendo permesso l$'$ utilizzo di variabili globali, il modo più semplice di passare i dati inseriti da una funzione all$'$ altra \`e  quello di creare una struttura dinamica.
-	Una volta restituito l$'$ indirizzo della struttura, a seconda della funzione lanciata nel file Test.c si lanceranno le altre 5 funzioni, dato che queste prendono tutte in pasto l$'$ output della prima (cio\`e l$'$ indirizzo della struttura della relazione binaria) e la utilizzano per verificarne varie proprieta$'$ .\\
+	Durante l$'$acquisizione avremo diversi output video che guideranno l$'$utente nell$'$inserimento dei dati, e che segnaleranno eventuali errori commessi.
+	Finita l$'$acquisizione dovremo restituire l$'$indirizzo della struttura, che all$'$interno quindi conterr\`a  i dati inseriti dall$'$utente. Abbiamo scelto di fare ci\`o perch\`e non essendo permesso l$'$utilizzo di variabili globali, il modo pi\`u semplice di passare i dati inseriti da una funzione all$'$altra \`e  quello di creare una struttura dinamica.
+	Una volta restituito l$'$indirizzo della struttura, a seconda della funzione lanciata nel file Test.c si lanceranno le altre 5 funzioni, dato che queste prendono tutte in pasto l$'$output della prima (cio\`e l$'$indirizzo della struttura della relazione binaria) e la utilizzano per verificarne varie propriet\`a.\\
 	\\
 	\subsection{Output - stampa}
-	La funzione “stampa” avra$'$  come output la stampa a video della struttura acquisita, con qualche aggiunta grafica(le parentesi e le virgole) per rendere il tutto più facilmente interpretabile e leggibile.\\
+	La funzione “stampa” avr\`a  come output la stampa a video della struttura acquisita, con qualche aggiunta grafica(le parentesi e le virgole) per rendere il tutto pi\`u facilmente interpretabile e leggibile.\\
 	\\
 	\subsection{Output - ordine\textunderscore parziale}
-	La funzione “ordine\textunderscore parziale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  antisimmetria e transitivita$'$ . Nel caso in cui siano tutte verificate si stampera$'$  che la relazione \`e  una relazione di ordine parziale, mentre nel caso in cui non siano verificate si stampera$'$  che non lo \`e  e il perch\`e  (cio\`e  quale proprieta$'$  non \`e  o non sono verificate).\\
+	La funzione “ordine\textunderscore parziale” avr\`a  come output la stampa a video del risultato della verifica delle propriet\`a  di riflessivit\`a  antisimmetria e transitivit\`a. Nel caso in cui siano tutte verificate si stamper\`a  che la relazione \`e  una relazione di ordine parziale, mentre nel caso in cui non siano verificate si stamper\`a  che non lo \`e  e il perch\`e  (cio\`e  quale(o quali) propriet\`a  non \`e  verificata(o non sono verificate).\\
 	\\
 	\subsection{Output - ordine\textunderscore totale}
-	La funzione “ordine\textunderscore totale” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  necessarie ad avere una relazione d$'$ ordine parziale, e verifichera$'$  poi se anche la dicotomia \`e valida per la relazione o meno. Nel caso in cui tutto sia positivo, allora si stampera$'$  che la relazione \`e  di ordine totale, mentre se non lo \`e  si stampera$'$  cosa fa in modo che non lo sia.\\
+	La funzione “ordine\textunderscore totale” avr\`a  come output la stampa a video del risultato della verifica delle propriet\`a  necessarie ad avere una relazione d$'$ordine parziale, e verificher\`a  poi se anche la dicotomia \`e valida per la relazione o meno. Nel caso in cui tutto sia positivo, allora si stamper\`a  che la relazione \`e  di ordine totale, mentre se non lo \`e  si stamper\`a  cosa fa in modo che non lo sia.\\
 	\\
 	\subsection{Output - relazione\textunderscore equivalenza}
-	La funzione “relazione\textunderscore equivalenza” avra$'$  come output la stampa a video del risultato della verifica delle proprieta$'$  di riflessivita$'$  simmetria e transitivita$'$  e nel caso in cui siano tutte positive si stampera$'$  che la relazione \`e  una relazione di equivalenza, mentre nel caso in cui qualcosa non sia verificato si stampera$'$  cio$'$  che impedisce alla relazione di essere una relazione d$'$ equivalenza.\\
+	La funzione “relazione\textunderscore equivalenza” avr\`a  come output la stampa a video del risultato della verifica delle propriet\`a  di riflessivit\`a  simmetria e transitivit\`a e nel caso in cui siano tutte positive si stamper\`a  che la relazione \`e  una relazione di equivalenza, mentre nel caso in cui qualcosa non sia verificato si stamper\`a ci\`o  che impedisce alla relazione di essere una relazione d$'$equivalenza.\\
 	\\
 	\subsection{Output - check\textunderscore funzione}
-	La funzione ”check\textunderscore funzione” avra$'$  come output la stampa a video della verifica della proprieta$'$  che rende la relazione binaria una funzione, e in caso lo sia anche se questa \`e  suriettiva(che poi spiegheremo essere sempre verificata) e iniettiva, e in caso sia entrambe si stampera$'$  che la relazione binaria oltre ad essere una funzione \`e  una funzione biiettiva.\\
+	La funzione ”check\textunderscore funzione” avr\`a  come output la stampa a video della verifica della propriet\`a  che rende la relazione binaria una funzione, e in caso lo sia,se questa \`e  sia suriettiva e iniettiva, e in caso sia entrambe si stamper\`a  che la relazione binaria oltre ad essere una funzione \`e  una funzione biiettiva.\\
 	\\
 	\newpage
-	\section{Implementazione dell$'$ algoritmo}
+	\section{Implementazione dell'Algoritmo}
 	\subsection{Libreria}
 	\lstset{numbers=left, tabsize=2,breaklines=true, language=C}
 	\lstinputlisting{../librerie/Progetto.h} 
@@ -237,23 +246,23 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\newpage
 	\section{Testing del programma}
 	\subsection{Test 1:}
-	Test di Relazione d$'$ ordine Totale.\\
+	Test di Relazione d$'$ordine Totale.\\
 	\\
 	Inputs: (a,a)(a,b)(b,b)\\
 	\\
 	Outputs: checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
-	checkdicotomia : 1, la relazione \`e una relazione d$'$ ordine totale in quanto \`e rispetta anche la propiet\`a di Dicotomia.\\
+	checkdicotomia : 1, la relazione \`e una relazione d$'$ordine totale in quanto \`e rispetta anche la propiet\`a di Dicotomia.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Input.jpg}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test1Output.png}
 	\newpage
 	\subsection{Test 2:}
-	Test di Relazione d$'$ ordine Parziale.\\
+	Test di Relazione d$'$ordine Parziale.\\
 	\\
 	Inputs:(a,a)(b,b)(a,b)(c,c)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 1
-	la relazione \`e una relazione d$'$ ordine parziale in quanto rispetta le propriet\`a.\\
+	la relazione \`e una relazione d$'$ordine parziale in quanto rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test2Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test2Output.png}
@@ -261,12 +270,12 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	\newpage
 	\subsection{Test 3:} 
-	Test di Relazione d$'$ ordine non Parziale.\\
+	Test di Relazione d$'$ordine non Parziale.\\
 	\\
 	Inputs:(a,a)(b,b)(c,c)(d,d)(e,e)(a,b)(b,c)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 0, checktransitivit\`a : 0
-	la relazione non \`e una relazione d$'$ ordine parziale in quanto non rispetta le propriet\`a.\\
+	la relazione non \`e una relazione d$'$ordine parziale in quanto non rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test3Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test3Output.png}
@@ -274,12 +283,12 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	\newpage
 	\subsection{Test 4:}
-	Test di Relazione d$'$ equivalenza.\\
+	Test di Relazione d$'$equivalenza.\\
 	\\
 	Inputs:(a,a)(a,b)(b,a)(b,b)\\
 	\\
 	Outputs:checkriflessivit\`a : 1,checksimmetria : 1, checktransitivit\`a : 1
-	checkdicotomia : 0, la relazione \`e una relazione d$'$ equivalenza in quanto rispetta le propriet\`a.\\
+	checkdicotomia : 0, la relazione \`e una relazione d$'$equivalenza in quanto rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test4Output.png}
@@ -287,11 +296,11 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	\newpage
 	\subsection{Test 5:}
-	Test di Relazione non d$'$ equivalenza.\\
+	Test di Relazione non d$'$equivalenza.\\
 	\\
 	Inputs:(a,a)(a,b)(b,c)\\
 	Outputs:checkriflessivit\`a : 0,checksimmetria : 0, checktransitivit\`a : 0
-	la relazione non \`e una relazione d$'$ ordine d$'$ equivalenza in quanto non rispetta le propriet\`a.\\
+	la relazione non \`e una relazione d$'$ordine d$'$equivalenza in quanto non rispetta le propriet\`a.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test5Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test5Output.png}
@@ -317,7 +326,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	Inputs:(casa rossa,casa blu)(casa blu,casa blu)(casa rossa,casa rossa)\\
 	\\
 	Outputs:check\textunderscore riflessivit\`a : 1,check\textunderscore simmetria : 1, check\textunderscore transitivit\`a : 1 dicotomia :1
-	la relazione \`e una relazione d$'$ ordine totale in quanto rispetta le propriet\`a.\\
+	la relazione \`e una relazione d$'$ordine totale in quanto rispetta le propriet\`a.\\
 	le funzioni funzionano anche con input contenti degli spazi.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test7Input.png}
 	\\
@@ -330,7 +339,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	\\
 	Inputs:(1,a)\\
 	\\
-	Outputs: c$'$ \`e un errore reinserisci il valore.\\
+	Outputs: c$'$\`e un errore reinserisci il valore.\\
 	\\
 	stampa errore in quanto si era selezionato di voler immettere un input di tipo numerico.\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test8Input.png}
@@ -342,7 +351,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	Inputs:(1,2)(1,1)\\
 	\\
 	Outputs: La relazione binaria non \`e una funzione\\
-	Nel 2 elemento c$'$ \`e un errore che impedisce alla relazione binaria di essere una funzione;\\
+	Nel 2 elemento c$'$\`e un errore che impedisce alla relazione binaria di essere una funzione;\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test9Input.png}
 	\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test9Output.PNG}
@@ -353,7 +362,7 @@ Concetto di Suriettivit\`a: Una funzione si dice suriettiva quando ogni elemento
 	Inputs:(1,1)(2,1)\\
 	\\
 	Outputs: La relazione binaria \`e  una funzione\\
-	Nel 2 elemento c$'$ \`e un errore che impedisce alla funzione di essere iniettiva\\
+	Nel 2 elemento c$'$\`e un errore che impedisce alla funzione di essere iniettiva\\
 	La funzione non \`e  iniettiva\\
 	La funzione non \`e  biiettiva\\
 	\includegraphics[width=3in,height=3in,viewport=0 0 300 300]{../Screenshots/Test10Input.png}
@@ -381,7 +390,7 @@ R = (riscontro = $\displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} nu
 \\
 \\
 \\
-si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
+si pu\`o rendere la tripla vera mettendo precondizione vero  in quanto:\\
 \\
 \\
 \\
@@ -415,7 +424,7 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  \\
  \\
- e donatoto con P$'$ quest$'$ultimo predicato, da:
+ e donatoto con P$'$quest$'$ultimo predicato, da:
  \\
  \\
  \\
@@ -428,10 +437,10 @@ si può rendere la tripla vera mettendo precondizione vero  in quanto:\\
  \\
  
  
- in quanto denotato con P$''$ quest$'$ ultimo predicato, si ha:
+ in quanto denotato con P$''$ quest$'$ultimo predicato, si ha:
  (P $\wedge$ numero$\textunderscore elementi \textgreater 1) = (numero \textunderscore elementi \textgreater 0 \wedge riscontro =  \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$)\\
  $|= P''$\\
- $\ast$ Il progresso \`e garantito dal fatto che tr(numero\textunderscore elemnti) decresce di un unit\`a ad ogni iterazione in quanto numero\textunderscore elementi viene decrementata di un$'$ unit\`a ad ogni iterazione.\\
+ $\ast$ Il progresso \`e garantito dal fatto che tr(numero\textunderscore elemnti) decresce di un unit\`a ad ogni iterazione in quanto numero\textunderscore elementi viene decrementata di un$'$unit\`a ad ogni iterazione.\\
  $\ast$ La limitatezza segue da:\\
  (P$\wedge$$tr(numero\textunderscore elementi) \textless 1) = (numero\textunderscore elementi \textgreater 0 \wedge c = \displaystyle \sum_{j=0}^{numero\textunderscore elementi-1} numero\textunderscore elementi - j  \wedge numero\textunderscore elementi \textgreater 1$) \\
  \\
@@ -450,7 +459,7 @@ $(P \wedge numero\textunderscore elementi \textless 1 ) = (numero\textunderscore
 \\
 \\
 
-Dal corollario del teorema dell invariabilit\'a di ciclo si ha che P può essere usato solo come precondizione dell'intera istruzione di ripetizione.
+Dal corollario del teorema dell invariabilit\'a di ciclo si ha che P pu\`o essere usato solo come precondizione dell'intera istruzione di ripetizione.
 \\
 \\
 -Proseguendo infine a ritroso si ottiene prima:

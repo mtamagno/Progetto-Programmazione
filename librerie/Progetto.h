@@ -1,18 +1,20 @@
 
-/********************STRUTTURA relBin**************************/
-/***** Creo una struttura dove salvare le coppie appartenenti alla Relazione*******/
+/* STRUTTURA relBin */
+/* Creo una struttura dove salvare le coppie*/
+/* appartenenti alla Relazione */
 
 typedef struct relBin
 {
-    /****** Coppia Numerica ******/
+/****** Coppia Numerica ******/
     double 	*primo_termine,
             *secondo_termine;
 
-    /***** Coppia Qualsiasi******/
+/***** Coppia Qualsiasi******/
     char **prima_stringa,
          **seconda_stringa;
 
-    /**** Variabili per salvare se ho acquisito una coppia numerica o no e il numero delle coppie*****/
+/**** Variabili per salvare se ho acquisito una*/
+/* coppia numerica o no e il numero delle coppie */
     int controllo,
         dimensione,
         insieme_a,
