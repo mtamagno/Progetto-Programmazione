@@ -286,15 +286,15 @@ int ordine_parziale (rel_bin verifica)
         transitivita,
         antisimmetria,
         parziale;
-
+	
     /*STAMPO LE PROPIETA'DELLA RELAZIONE*/
 
     printf ("\n\n La relazione:\n\n");
 
     /********* Chiamo le funzioni per poter stabilire le propietà ******************/
-
     riflessivita = controllo_riflessivita (verifica);
-    antisimmetria = controllo_antisimmetria (verifica);
+    controllo_simmetria(verifica);
+	antisimmetria = controllo_antisimmetria (verifica);
     transitivita = controllo_transitivita (verifica);
 
     /************* Controllo se rispetta le propietà per essere una relazione d'ordine parziale************/
@@ -609,12 +609,12 @@ int controllo_simmetria (rel_bin verifica)
 	}
 
     /***** Controllo se la simmetria è stata verificata *********/
-
-    if (simmetria == 1 && verifica.controllo != 3)
-        printf ("   e'simmetrica\n");
-    else
-        printf ("   e'asimmetrica\n");
-
+	if(verifica.controllo != 3){
+ 		if (simmetria == 1)
+    	    printf ("   e'simmetrica\n");
+   		else
+        	printf ("   e'asimmetrica\n");
+}
     /****** Fine controllo simmetria ******/
 
     return (simmetria);
@@ -983,10 +983,11 @@ void relazione_equivalenza (rel_bin verifica)
     int riflessivita;
     int simmetria;
     int transitivita;
-
+    
     riflessivita = controllo_riflessivita (verifica);
     simmetria = controllo_simmetria (verifica);
-    transitivita = controllo_transitivita (verifica);
+    controllo_antisimmetria (verifica);
+	transitivita = controllo_transitivita (verifica);
 
     if (riflessivita == 1 && simmetria == 1 && transitivita == 1)
         printf ("\n Quindi e'una relazione di equivalenza\n");
@@ -1352,13 +1353,6 @@ int controllo_antisimmetria (rel_bin verifica)
         }
 
     }
-    
-    /*Relazione vuota*/
-    
-	if (verifica.controllo == 3){
-		antisimmetria = 1;
-		printf("   e'simmetrica\n");
-	}
 	
     /***** Controllo se la simmetria è stata verificata *********/
 
