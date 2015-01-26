@@ -1108,7 +1108,9 @@ void controllo_funzione (rel_bin verifica)
         else
             printf ("\n La relazione binaria non e'una funzione\n");
     }
-
+    /*Relazione Vuota*/
+    if (verifica.controllo == 3)
+    	printf ("\n La relazione vuota non e'una funzione\n");
     printf ("\n\n   ... Controllo Funzione Terminato ...\n\n\n\n");
 
 }
@@ -1350,7 +1352,14 @@ int controllo_antisimmetria (rel_bin verifica)
         }
 
     }
-
+    
+    /*Relazione vuota*/
+    
+	if (verifica.controllo == 3){
+		antisimmetria = 1;
+		printf("   e'simmetrica\n");
+	}
+	
     /***** Controllo se la simmetria è stata verificata *********/
 
     if (antisimmetria == 1)
