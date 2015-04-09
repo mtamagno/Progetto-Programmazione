@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"librerie/progetto.h"
+#include"librerie/progetto.c"
 
 int main (void)
 {

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 21:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.7)  26 JAN 2015 23:03
 entering extended mode
 **relazione.tex
 
@@ -1333,11 +1333,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--457
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--457
-
- []
-
 [65]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 461.
@@ -1416,15 +1411,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 458--466
 
 Underfull \hbox (badness 10000) in paragraph at lines 458--466
 
- []
-
-
-Overfull \hbox (75.22101pt too wide) in paragraph at lines 458--466
-$\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 P \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/
-10.95 numero[]elementi[]\OT1/cmr/m/n/10.95 1) = (\OML/cmm/m/it/10.95 numero[]el
-ementi[]\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 riscontro \OT1/cmr/m/n/10.95 = 
-(\OML/cmm/m/it/10.95 P \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 numero[]elemen
-ti[]\OT1/cmr/m/n/10.95 1) =$
  []
 
 
@@ -1527,7 +1513,7 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on relazione.pdf (68 pages, 457839 bytes).
+Output written on relazione.pdf (68 pages, 499014 bytes).
 PDF statistics:
  303 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
